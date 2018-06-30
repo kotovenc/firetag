@@ -1,10 +1,8 @@
 from django.conf.urls import url
 from . import views
+from django.views.generic import TemplateView
+
 
 urlpatterns = [
-    url(r'^home/', views.home, name='home'),
-    url(r'^contact/', views.contact, name='contact'),
-    url(r'^services/', views.services, name='services'),
-    url(r'^enviroment/', views.enviroment, name='enviroment'),
-    url(r'^games/', views.games, name='games'),
+    url(r'^$', TemplateView.as_view(template_name="Firetag_app/index.html")), 
 ]

@@ -2,21 +2,11 @@
 from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.template import loader
 
 def home(request):
-    return HttpResponse("Hello, world. You're at the Firetag home.")
+    template = loader.get_template('Firetag_app/index.html')
+    return HttpResponse(template.render())
 
-def contact(request):
-    return HttpResponse("Hello, world. You're at the Firetag contact.")
-
-def services(request):
-    return HttpResponse("Hello, world. You're at the Firetag services.")
-
-def enviroment(request):
-    return HttpResponse("Hello, world. You're at the Firetag enviroment.")
-
-def games(request):
-    return HttpResponse("Hello, world. You're at the Firetag games.")
 
 
