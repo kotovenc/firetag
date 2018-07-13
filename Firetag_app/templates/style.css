@@ -1,3 +1,65 @@
+
+
+.header {
+	background-color: #59e3e6;
+	height: 100px;
+}
+
+.header_content {
+	background-color: #ffce0b;
+	height: 80px;
+}
+
+.menu {
+	background-color: #1a1e23;
+	height: 100px;
+}
+
+.menu_content {
+	background-color: grey;
+	height: 80px;
+}
+
+.fireLazertag {
+	background-color: #15a050;
+	height: 100px;
+}
+
+.fireLazertag_content {
+	background-color: #0d222b;
+	height: 80px;
+}
+
+.about {
+	background-color: #f4f4f4;
+	height: 100px;
+}
+
+.about_content {
+	background-color: #d3d7dc;
+	height: 80px;
+}
+
+.whatIsFiretag {
+	background-color: #15a050;
+	height: 100px;
+}
+
+.whatIsFiretag_content {
+	background-color: #0d222b;
+	height: 80px;
+}
+
+.clubNews {
+	background-color: #f4f4f4;
+	height: 100px;
+}
+
+.clubNews_content {
+	background-color: #d3d7dc;
+	height: 80px;
+}
+
 .services {
   height: 
 }
