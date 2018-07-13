@@ -1,3 +1,39 @@
 .services {
-  height: 
+  height: 200px;
+  background-color: #6d92ad;
+}
+
+.services_content {
+  height: 100px;
+  background-color: #3d6583;
+}
+
+.equipment {
+  height: 200px;
+  background-color: #4cbf87;
+}
+
+.equipment_content {
+  height: 100px;
+  background-color: #2f7754;
+}
+
+.map {
+  height: 200px;
+  background-color: #6d92ad;
+}
+
+.map_content {
+  height: 100px;
+  background-color: #3d6583;
+}
+
+.footer {
+  height: 200px;
+  background-color: #4cbf87;
+}
+
+.footer_content {
+  height: 100px;
+  background-color: #2f7754;
 }
