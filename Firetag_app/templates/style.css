@@ -1,101 +1,256 @@
-
-
 .header {
-	background-color: #59e3e6;
-	height: 200px;
+	background-color: #4d0625;
 }
 
 .header_content {
-	background-color: #ffce0b;
-	height: 100px;
 }
 
+
+.logo { 
+	min-height: 100px;
+ }
+
+ .logo img {
+	width: auto;
+ }
+
+ .contact_block {
+ 	margin-top: 20px;
+ 	color: white;
+ }
+
+.icons {
+	margin-top: 10px;
+}
 .menu {
 	background-color: #1a1e23;
-	height: 100px;
+	height: 90px;
 }
 
 .menu_content {
 	background-color: grey;
-	height: 80px;
+	height: 50px;
 }
 
+
+
 .fireLazertag {
-	background-color: #15a050;
-	height: 100px;
+
+	//border: 2px solid Turquoise;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+.fireLazertag_bg {
+	position:relative;
+	z-index: 2;
+	margin: 0 0 -10vw 0px;
+	//border: 2px solid blue;
+}
+
+.fireLazertag_bg>img{
+	width: 100%;
 }
 
 .fireLazertag_content {
-	background-color: #0d222b;
-	height: 80px;
+	//border: 5px solid green;
+	width: 100%;
+	position: absolute;
 }
 
 .about {
-	background-color: #f4f4f4;
-	height: 100px;
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+.about_bg {
+	margin: -20vw 0 -10vw 0px;
+	//border: 2px solid red;
+}
+
+.about_bg>img {
+	width: 100%;
 }
 
 .about_content {
-	background-color: #d3d7dc;
-	height: 80px;
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
 }
 
-.whatIsFiretag {
-	background-color: #15a050;
-	height: 100px;
+.whatIsFiretag{
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
 }
 
-.whatIsFiretag_content {
-	background-color: #0d222b;
-	height: 80px;
+.whatis_bg{
+	position: relative;
+	z-index: 2;
+	margin: -16.7vw 0 -10vw 0px;
+	//border: 2px solid red;
 }
 
-.clubNews {
-	background-color: #f4f4f4;
-	height: 100px;
+.whatis_bg>img{
+	width: 100%;
 }
 
-.clubNews_content {
-	background-color: #d3d7dc;
-	height: 80px;
+.whatIsFiretag_content{
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
 }
 
-.services {
-  height: 200px;
-  background-color: #6d92ad;
+.clubNews{
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
 }
 
-.services_content {
-  height: 100px;
-  background-color: #3d6583;
+.news_bg{
+	z-index: -1;
+	margin: -16.5vw 0 -10vw 0px;
+	//border: 2px solid red;
 }
 
-.equipment {
-  height: 200px;
-  background-color: #4cbf87;
+.news_bg>img{
+	width: 100%;
 }
 
-.equipment_content {
-  height: 100px;
-  background-color: #2f7754;
+.clubNews_content{
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
 }
 
-.map {
-  height: 200px;
-  background-color: #6d92ad;
+.services{
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
 }
 
-.map_content {
-  height: 100px;
-  background-color: #3d6583;
+.services_bg{
+	position: relative;
+	z-index: 2;
+	margin: -16.5vw 0 -10vw 0px;
+	//border: 2px solid red;
 }
 
-.footer {
-  height: 200px;
-  background-color: #4cbf87;
+.services_bg>img{
+	width: 100%;
 }
 
-.footer_content {
-  height: 100px;
-  background-color: #2f7754;
+.services_content{
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
+}
+
+.equipment{
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+.equip_bg{
+	position: relative;
+	z-index: -1;
+	margin: -21vw 0 -10vw 0px;
+	//border: 2px solid red;
+}
+
+.equip_bg>img{
+	width: 100%;
+}
+
+.equipment_content{
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
+}
+
+.map{
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+.map_bg{
+	position: relative;
+	z-index: -1;
+	margin: -42vw 0 -10vw 0px;
+	//border: 2px solid red;
+}
+
+.map_bg>img{
+	width: 100%;
+}
+
+.map_content{
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
+}
+
+.footer{
+	margin: 0;
+	//border: 2px solid LightSalmon;
+	position: relative;
+	//box-sizing: border-box;
+	box-sizing: content-box;
+}
+
+.footer_bg{
+	position: relative;
+	z-index: -1;
+	margin: -16vw 0 -10vw 0px;
+	//border: 2px solid red;
+}
+
+.footer_bg>img{
+	width: 100%;
+}
+
+.footer_content{
+	//border: 5px solid yellow;
+	width: 100%;
+	position: absolute;
+}
+
+/* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
+
+
+
+@media (max-width: 992px) {
+	.footer {
+		//margin-bottom: -750px;
+	}
+
+	.header_content {
+		text-align: center;
+	}
+}
+
+@media (min-width: 920px) and (max-width: 2000px) {
+	.footer_bg>img {
+		//margin-bottom: -550px;
+	}
+
+	.footer {
+		//margin-bottom: -550px;
+	}
 }
