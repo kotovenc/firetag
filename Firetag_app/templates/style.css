@@ -1,5 +1,6 @@
 .header {
 	background-color: #4d0625;
+	height: 350px;
 }
 
 .logo { 
@@ -31,29 +32,46 @@
 	background-color: #1a1e23;
 }
 
-.navbar_content {
-	margin-left: 10%;
-	height: 50px;
-	text-align: center;
-	font-size: 18px;
-	color: white;
-}
-
-.navbar {
-  min-height: 80px;
-}
-
 .rightbar {
 	background-color: #1a1e23;
 	height: 50px;
-	clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+	//clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
+
 .menu_content {
-	background-color: #4d0625;
+	//background-color: #4d0625;
 	height: 50px;
 }
 
+nav {
+	width: 100%;
+	margin-left: 60px;
+}
 
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+}
+
+.orderCall {
+	height: 50px;
+	width: 65%;
+	background-color: darkred;
+	color: white;
+	text-align: center;
+	border: 0.5px solid white;
+}
+
+#orderText {
+	position: relative;
+	top: 20%;
+}
 
 .fireLazertag {
 
@@ -260,8 +278,20 @@
 		text-align: center;
 	}
 
-.leftbar {
-	clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+	.leftbar {
+		clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+	}
+
+	#orderText {
+		font-size: 14px;
+		top: 30%;
+	}
+
+	.orderCall {
+		width: 80%;
+	}
+	.rightbar {
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
@@ -275,11 +305,18 @@
 	}
 
 	.leftbar {
-	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+	}
+
+	#orderText {
+	font-size: 1.5vw;
+	}
+	.rightbar {
+	clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
-@media (min-width: 992px) and (max-width: 2000px) {
+@media (min-width: 992px) and (max-width: 1200px) {
 	.footer_bg>img {
 		//margin-bottom: -550px;
 	}
@@ -290,5 +327,21 @@
 
 	.leftbar {
 	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+	}
+
+	#orderText {
+	font-size: 1.5vw;
+	}
+	.rightbar {
+	clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
+	.leftbar {
+	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+	}
+	.rightbar {
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }

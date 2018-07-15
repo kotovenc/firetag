@@ -72,19 +72,11 @@
         <div class="menu">
           <div class="container-fluid menu_content">
             <div class="row">
-              <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8 col-xl-8 leftbar">
+              <div class="col-xs-6 col-sm-7 col-md-7 col-lg-8 col-xl-8 leftbar">
                 <div class="row leftbar-row">
-                  <div class="navbar-header">
-                  <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarID">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-                  <div class="navbar_content collapse navbar-collapse" id="navbarID">
-                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Главная</a></li>
+                  <nav id="navbarID">
+                   <ul>
+                    <li><a href="#">Главная</a></li>
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">FireTag</a></li>
                     <li><a href="#">Новости</a></li>
@@ -92,10 +84,13 @@
                     <li><a href="#">Оборудование</a></li>
                     <li><a href="#">Контакты</a></li>
                   </ul>
-                </div>
+                </nav>
               </div>
             </div>
-             <div class="col-xs-offset-7 col-sm-offset-7 col-md-offset-7 col-lg-offset-8 col-xl-4 rightbar"></div>
+             <div class="col-xs-offset-6 col-sm-offset-7 col-md-offset-7 col-lg-offset-8 col-xl-4 rightbar">
+               <div class="orderCall">
+                <div id="orderText">Заказать звонок</div></div>
+             </div>
           </div>
         </div>
     </div>
