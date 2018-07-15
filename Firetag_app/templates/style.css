@@ -1,6 +1,7 @@
 .header {
 	background-color: #4d0625;
-	height: 350px;
+	height: 410px;
+	z-index: 3;
 }
 
 .logo { 
@@ -14,6 +15,7 @@
  .contact_block {
  	margin-top: 20px;
  	color: white;
+ 	font-size: 18px;
  }
 
 .icons {
@@ -21,60 +23,78 @@
 }
 
 .menu {
-	
 }
 
 .leftbar {
-	height: 50px;
+	height: 70px;
 	//-webkit-clip-path: polygon(0 0, 39% 0, 100% 100%, 0% 100%);
 	//clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-	z-index: 4;
 	background-color: #1a1e23;
 }
+
 
 .rightbar {
+	height: 70px;
 	background-color: #1a1e23;
-	height: 50px;
-	//clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.menu_content {
-	//background-color: #4d0625;
-	height: 50px;
+.orderCall {
+	position: relative;
+	top:10%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	background-color: darkred;
+	height: 55px;
+	width: 70%;
+	color: white;
+	bottom: 50%;
+	border: 0.5px solid grey;
+}
+
+
+#orderText {
+	font-size: 18px;
+	position: relative;
+	bottom: 30%;
 }
 
 nav {
 	width: 100%;
-	margin-left: 60px;
+	padding: 0px 0px 0px 8%;
+	height: 100%;
+}
+
+nav ul {
+	height: 81%;
+	margin-top: 5px;
+	border-bottom: 0.5px solid grey;
+	border-left: 0.5px solid grey;
 }
 
 nav li {
-	display: inline-block;
+	justify-content: center;
+	height: 100%;
+	display: inline-flex;
+	flex-direction: column;
 }
 
 nav a {
-	display: block;
+	display: flex;
+	align-self: center;
 	text-decoration: none;
-	padding: 20px;
+	padding: 10px 15px 0px 15px;
 	color: white;
+	font-size: 18px;
+	border-left: 1px dashed grey;
+	height: 70%;
 }
 
-.orderCall {
-	height: 50px;
-	width: 65%;
-	background-color: darkred;
-	color: white;
-	text-align: center;
-	border: 0.5px solid white;
-}
-
-#orderText {
-	position: relative;
-	top: 20%;
+#toggle-btn {
+	display: none;
 }
 
 .fireLazertag {
-
 	//border: 2px solid Turquoise;
 	position: relative;
 	//box-sizing: border-box;
@@ -282,16 +302,11 @@ nav a {
 		clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 	}
 
-	#orderText {
-		font-size: 14px;
-		top: 30%;
-	}
-
 	.orderCall {
 		width: 80%;
 	}
 	.rightbar {
-	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
@@ -308,11 +323,8 @@ nav a {
 		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
-	#orderText {
-	font-size: 1.5vw;
-	}
 	.rightbar {
-	clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
@@ -326,22 +338,36 @@ nav a {
 	}
 
 	.leftbar {
-	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
-	#orderText {
-	font-size: 1.5vw;
-	}
 	.rightbar {
-	clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
-@media (min-width: 1200px) and (max-width: 2000px) {
+@media (max-width: 1200px){
+	#toggle-btn{
+		display: inline-flex;
+		align-items: flex-start;
+		position: relative;
+		top:25%;
+	}
+
+	#toggle-btn:hover{
+		color: white;
+	}
+	.menu-item {
+		display: none;
+		background-color: #1a1e23;
+		z-index: 3;
+	}
+}
+@media (min-width: 1200px) {
 	.leftbar {
-	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+		clip-path: polygon(0% 0, 100% 0, 95% 100%, 0% 100%);
 	}
 	.rightbar {
-	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
