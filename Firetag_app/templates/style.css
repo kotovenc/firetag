@@ -82,9 +82,15 @@ nav a {
 }
 
 .fireLazertag_bg {
+	background-image: url(img/laser-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 52vw;
+	min-height: 519px;
+	margin: 0 0 -10vw 0px;
 	position:relative;
 	z-index: 2;
-	margin: 0 0 -10vw 0px;
+
 	//border: 2px solid blue;
 }
 
@@ -107,7 +113,12 @@ nav a {
 }
 
 .about_bg {
-	margin: -20vw 0 -10vw 0px;
+	background-image: url(img/about-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 61.8vw;
+	min-height: 613px;
+	margin: -20.3vw 0 -10vw 0px;
 	//border: 2px solid red;
 }
 
@@ -130,9 +141,14 @@ nav a {
 }
 
 .whatis_bg{
+	background-image: url(img/whatis-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 72.25vw;
+	min-height: 717px;
 	position: relative;
 	z-index: 2;
-	margin: -16.7vw 0 -10vw 0px;
+	margin: -16.8vw 0 -10vw 0px;
 	//border: 2px solid red;
 }
 
@@ -155,6 +171,11 @@ nav a {
 }
 
 .news_bg{
+	background-image: url(img/news-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 63.7vw;
+	min-height: 632px;
 	z-index: -1;
 	margin: -16.5vw 0 -10vw 0px;
 	//border: 2px solid red;
@@ -179,9 +200,14 @@ nav a {
 }
 
 .services_bg{
+	background-image: url(img/serv-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 68.9vw;
+	min-height: 683px;
 	position: relative;
 	z-index: 2;
-	margin: -16.5vw 0 -10vw 0px;
+	margin: -16.8vw 0 -10vw 0px;
 	//border: 2px solid red;
 }
 
@@ -204,6 +230,11 @@ nav a {
 }
 
 .equip_bg{
+	background-image: url(img/equip-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 140.35vw;
+	min-height: 1392px;
 	position: relative;
 	z-index: -1;
 	margin: -21vw 0 -10vw 0px;
@@ -221,6 +252,7 @@ nav a {
 }
 
 .map{
+	
 	margin: 0;
 	//border: 2px solid LightSalmon;
 	position: relative;
@@ -229,6 +261,13 @@ nav a {
 }
 
 .map_bg{
+	position: relative;
+	z-index: 5;
+	background-image: url(img/map.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 47.9vw;
+	min-height: 475px;
 	position: relative;
 	z-index: -1;
 	margin: -42vw 0 -10vw 0px;
@@ -249,11 +288,17 @@ nav a {
 	margin: 0;
 	//border: 2px solid LightSalmon;
 	position: relative;
+	z-index: 10;
 	//box-sizing: border-box;
 	box-sizing: content-box;
 }
 
 .footer_bg{
+	background-image: url(img/footer-bg.png);
+	background-size: auto 100%;
+	background-position: center;
+	height: 27vw;
+	min-height: 268px;
 	position: relative;
 	z-index: -1;
 	margin: -16vw 0 -10vw 0px;
@@ -313,6 +358,33 @@ nav a {
 	}
 	.rightbar {
 	clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@media (max-width: 992px){
+	.fireLazertag_bg {
+		margin: 0 0 -99px 0;
+	}
+	.about_bg {
+		margin: -201px 0 -99px 0;
+	}
+	.whatis_bg{
+		margin: -167px 0 -99px 0;
+	}
+	.news_bg{
+		margin: -164px 0 -99px 0;
+	}
+	.services_bg{
+		margin: -167px 0 -99px 0;
+	}
+	.equip_bg{
+		margin: -208px 0 -99px 0;
+	}
+	.map_bg{
+		margin: -417px 0 -99px 0;
+	}
+	.footer_bg{
+		margin: -159px 0 -99px 0;
 	}
 }
 
