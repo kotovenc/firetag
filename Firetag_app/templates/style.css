@@ -1,6 +1,11 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 .header {
 	background-color: #4d0625;
-	height: 410px;
+	height: 50%;
 	z-index: 3;
 }
 
@@ -22,13 +27,8 @@
 	margin-top: 10px;
 }
 
-.menu {
-}
-
 .leftbar {
 	height: 70px;
-	//-webkit-clip-path: polygon(0 0, 39% 0, 100% 100%, 0% 100%);
-	//clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 	background-color: #1a1e23;
 }
 
@@ -54,36 +54,36 @@
 
 
 #orderText {
-	font-size: 18px;
-	position: relative;
-	bottom: 30%;
+    margin-left: 25px;
+    align-self: center;
+    font-size: 18px;
 }
 
-nav {
+#navbarID {
 	width: 100%;
 	padding: 0px 0px 0px 8%;
 	height: 100%;
 }
 
-nav ul {
+#navbarID ul {
 	height: 81%;
 	margin-top: 5px;
 	border-bottom: 0.5px solid grey;
 	border-left: 0.5px solid grey;
 }
 
-nav li {
+#navbarID li {
 	justify-content: center;
 	height: 100%;
-	display: inline-flex;
+	//display: inline-flex;
 	flex-direction: column;
 }
 
-nav a {
+#navbarID a {
 	display: flex;
 	align-self: center;
 	text-decoration: none;
-	padding: 10px 15px 0px 15px;
+	padding: 8px 15px 0px 15px;
 	color: white;
 	font-size: 18px;
 	border-left: 1px dashed grey;
@@ -93,6 +93,43 @@ nav a {
 #toggle-btn {
 	display: none;
 }
+
+.mobile-tab {	
+	background-color: #1a1e23;
+	display: flex;
+	flex-direction: column;
+	clip-path: polygon(0 0, 95% 0, 75% 100%, 0% 100%);
+}
+.mobile-tab a{
+	font-size: 1.3em;
+	color: white;
+	width: 100px;
+	text-decoration: none;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+
+.mobile-tab li{
+	list-style-type: none;
+	margin: 2% 0 2% 2%;
+	border-bottom: 1px solid grey; 
+}
+
+.mobile-tab li:hover{
+	border-bottom: 1px solid dimgrey; 
+	background-color: dimgray;
+}
+
+
+
+.mobile-tab ul {
+	padding: 0px 0px 3px 7%;
+}
+
+.as {
+	height: 50px;
+}
+
 
 .fireLazertag {
 	//border: 2px solid Turquoise;
@@ -110,7 +147,6 @@ nav a {
 	margin: 0 0 -10vw 0px;
 	position:relative;
 	z-index: 2;
-
 	//border: 2px solid blue;
 }
 
@@ -122,6 +158,8 @@ nav a {
 	//border: 5px solid green;
 	width: 100%;
 	position: absolute;
+	z-index: 3;
+	//padding-left: 0px;
 }
 
 .about {
@@ -344,14 +382,14 @@ nav a {
 	}
 
 	.leftbar {
-		clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
 	.orderCall {
 		width: 80%;
 	}
 	.rightbar {
-		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
@@ -369,7 +407,7 @@ nav a {
 	}
 
 	.rightbar {
-		clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
@@ -401,20 +439,13 @@ nav a {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-	.footer_bg>img {
-		//margin-bottom: -550px;
-	}
-
-	.footer {
-		//margin-bottom: -550px;
-	}
 
 	.leftbar {
 		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
 	.rightbar {
-		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 }
 
@@ -426,10 +457,18 @@ nav a {
 		top:25%;
 	}
 
+	#navbarID ul {
+	border-bottom: none;
+	border-left: none;
+}
+
 	#toggle-btn:hover{
 		color: white;
 	}
-	.menu-item {
+	.desktop-menu-item{
+		display: none;
+	}
+	.mobile-tab {
 		display: none;
 		background-color: #1a1e23;
 		z-index: 3;
@@ -440,6 +479,15 @@ nav a {
 		clip-path: polygon(0% 0, 100% 0, 95% 100%, 0% 100%);
 	}
 	.rightbar {
-		clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	#navbarID li {
+	display: inline-flex;
+	}
+	.mobile-tab {
+		position: relative;
+		display: none!important;
+		background-color: #1a1e23;
+		z-index: 3;
 	}
 }

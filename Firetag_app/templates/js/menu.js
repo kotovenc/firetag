@@ -1,5 +1,11 @@
 $(document).ready(function() {
+	$('.mobile-tab').hide();
 	$('#toggle-btn').click(function(){
-		$('.menu-item').slideToggle("slow");
+		$('.mobile-tab').slideToggle("slow");
 	});
+
+	$('.menu-item').click(function(){
+				$('.mobile-tab').slideToggle("slow");
+			});
+
 });
