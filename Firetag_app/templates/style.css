@@ -27,12 +27,18 @@
 	margin-top: 10px;
 }
 
+.menu_content {
+	background-color: #4d0625;
+}
+
 .leftbar {
 	height: 70px;
 	background-color: #1a1e23;
 }
 
-
+.menu {
+	background-color: #1a1e23;
+}
 .rightbar {
 	height: 70px;
 	background-color: #1a1e23;
@@ -46,7 +52,7 @@
 	justify-content: center;
 	background-color: darkred;
 	height: 55px;
-	width: 70%;
+	width: 90%;
 	color: white;
 	bottom: 50%;
 	border: 0.5px solid grey;
@@ -54,14 +60,13 @@
 
 
 #orderText {
-    margin-left: 25px;
+   text-align: center;
     align-self: center;
     font-size: 18px;
 }
 
 #navbarID {
 	width: 100%;
-	padding: 0px 0px 0px 8%;
 	height: 100%;
 }
 
@@ -101,7 +106,7 @@
 	clip-path: polygon(0 0, 95% 0, 75% 100%, 0% 100%);
 }
 .mobile-tab a{
-	font-size: 1.3em;
+	font-size: 1.0em;
 	color: white;
 	width: 100px;
 	text-decoration: none;
@@ -391,6 +396,7 @@
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
