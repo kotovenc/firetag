@@ -185,9 +185,58 @@
 }
 
 .about_content {
-	//border: 5px solid yellow;
+	font-family: 'Open Sans', sans-serif;
+	border: 5px solid yellow;
 	width: 100%;
+	height: 80vh;
+	//margin-top: 0.7vw;
 	position: absolute;
+	z-index: 3;
+}
+
+.about_tit {
+	border: 2px solid LightSalmon;
+	margin-top: 12vh;
+	text-align: center;
+}
+
+.about_tit>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3vw;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.about_tit>img {
+	width: 10vw;
+	margin-top: -10px;
+}
+
+.about_text {
+	border: 2px solid blue;
+	height: 45vh;
+	width: 38vw;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+ul {
+  list-style-type:none;
+}
+
+.about_text ul li:before {
+	content:  "—";
+  position: relative;
+  left:     -5px;
+}
+
+.about_content .container {
+	margin-top: 8vh;
+}
+
+.about_circle {
+	border: 2px solid LightSalmon;
+	height: 45vh;
 }
 
 .whatIsFiretag{
@@ -390,6 +439,10 @@
 	}
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	
+	.about_text {
+		font-size: 13px;
 	}
 }
 
