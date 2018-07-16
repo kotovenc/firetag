@@ -427,6 +427,141 @@ ul {
 	position: absolute;
 }
 
+#slider{
+    width: 100%;
+    height: 35vw;
+
+    position: relative;
+}
+
+.imgContainer{
+    width: 57.5vw;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    
+    transition: left 1s;
+}
+
+.img.prev{
+    left: -100%;
+
+    display:block;
+}
+
+.img.curr{
+    left: 0;
+
+    display:block;
+}
+
+.img.next{
+    left: 100%;
+
+    //opacity: 0;
+
+    display:block;
+}
+
+.invis{
+    opacity: 0;
+}
+
+.pic{
+    height: 100%;
+    width: 100%;
+}
+
+#slider-left {
+    position: absolute;
+
+    top: 50%;  
+    left: 11%; 
+
+    z-index: 3;
+    /*left: 644px;*/                  
+    transform: translate(0, -50%); 
+
+    margin-left: 10%;
+
+    color: #fff;
+    font-size: 3vw;
+}
+
+#slider-right {
+    position: absolute;
+
+    top: 50%;  
+    right: 11%; 
+
+    z-index: 3;
+    /*left: 644px;*/                  
+    transform: translate(0, -50%); 
+
+    margin-right: 10%;
+
+    color: #fff;
+    font-size: 3vw;
+}
+
+#slider-left:hover{
+    color: #7092bf;
+}
+
+#slider-right:hover{
+    color: #7092bf;
+}
+/*Очень плохо*/
+.indicator{ 
+    width: 100%;
+    position: absolute;
+
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0); 
+
+    margin: 0 auto;
+    padding-left: 48%;
+}
+
+.indicator:after{      /*Сброс обтекания у ряда (создание псевдоэлемента after после обычного эл.)*/
+    clear: both; /*очистить поток слева и справа*/
+    content: "";      
+    display: table; /*корректное отображение*/
+}
+
+.circle{
+    float: left;
+    width: 1vw; 
+    height: 1vw;
+    border-radius: 50%;
+    background: white;
+    margin-right: 1%;
+}
+
+.on{
+    background: red;
+}
+
+/*Очень плохо*/
+
+@media (max-width: 920px) {
+    
+}
+
+@media (min-width: 2000px) {
+    
+}
+
 /* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
 
 @media (max-width: 768px) {
@@ -549,4 +684,8 @@ ul {
 		background-color: #1a1e23;
 		z-index: 3;
 	}
+}
+
+@media (min-width: 2050) and (max-width: 2350) {
+	
 }
