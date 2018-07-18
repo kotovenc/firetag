@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+p {
+	margin: 0;
+}
+
+/* HEADER BLOCK */
 .header {
 	background-color: #4d0625;
 	height: 50%;
@@ -26,6 +31,8 @@
 .icons {
 	margin-top: 10px;
 }
+
+/* MENU  BLOCK */
 
 .menu_content {
 	background-color: #4d0625;
@@ -125,16 +132,9 @@
 	background-color: dimgray;
 }
 
-
-
 .mobile-tab ul {
 	padding: 0px 0px 3px 7%;
 }
-
-.as {
-	height: 50px;
-}
-
 
 .fireLazertag {
 	//border: 2px solid Turquoise;
@@ -195,11 +195,11 @@
 	position: absolute;
 }
 
+/* WHAT IS FAIRTAG BLOCK */
+
 .whatIsFiretag{
 	margin: 0;
-	//border: 2px solid LightSalmon;
 	position: relative;
-	//box-sizing: border-box;
 	box-sizing: content-box;
 }
 
@@ -212,7 +212,6 @@
 	position: relative;
 	z-index: 2;
 	margin: -16.8vw 0 -10vw 0px;
-	//border: 2px solid red;
 }
 
 .whatis_bg>img{
@@ -220,10 +219,67 @@
 }
 
 .whatIsFiretag_content{
-	//border: 5px solid yellow;
+	margin-top: 12vw;
 	width: 100%;
 	position: absolute;
+	z-index: 3;
 }
+
+.whatis_title {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.whatis_title > h1 {
+	font-weight: bold;
+	font-size: 3vw;
+	color: #eb3741;
+}
+
+.whatis_title > p {
+	color: azure;
+	font-size: 1vw;
+}
+
+#colortitle { color: white; }
+
+.whatis_soldier{
+	text-align: center;
+}
+
+.superiority{
+	text-align: center;
+}
+
+.superiority > img{
+	width: 7vw;
+}
+
+.superiority_title {
+	color: azure;
+	font-weight: bold;
+	font-size: 1vw;
+	margin-top: 5px
+}
+
+.superiority_text {
+	color: #f1fff9;
+	font-weight: lighter;
+	font-size: 0.8vw;
+	margin: 5px 0 5px;
+}
+
+#superiority-5 {
+	text-align: center;
+}
+
+#superiority-5 > img {
+	width: 10vw;
+}
+
+
+/* CLUB NEWS BLOCK */
 
 .clubNews{
 	margin: 0;
@@ -380,7 +436,7 @@
 
 /* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	.header_content {
 		text-align: center;
@@ -393,8 +449,55 @@
 	.orderCall {
 		width: 80%;
 	}
+
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	.whatIsFiretag_content{
+		margin-top: 90px;
+	}
+
+	.row{
+	 height: 80%;
+	}
+
+	.whatis_title > h1 {
+		font-size: 20px;
+	}
+
+	.whatis_title > p {
+		font-size: 8px;
+		margin-bottom: 0px;
+	}
+	.whatis_title > img {
+		width: 10vw;
+	}
+
+	.whatis_title > img {
+		width: 78px;
+	}
+	.whatis_soldier {
+	}
+	.whatis_soldier > img {
+		min-width: 100px;
+		width: 20vw; 
+		position: relative;
+		top: -9vw;
+		z-index: 1;
+	}
+	.superiority > img{
+		width: 60.5px;
+	}
+	.superiority_title {
+		font-size: 1.6vw;
+	}
+	.superiority_text {
+		font-size: 1.5vw;
+		margin: 0px 0vw 0px 0vw;
+	}
+	#superiority-5 > img {
+		width: 100px;
 	}
 
 }
@@ -415,6 +518,16 @@
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
+
+	.whatis_title > img {
+		width: 10vw;
+	}
+	.whatis_soldier > img {
+	    width: 24vw;
+	    position: relative;
+	    top: -34vw;
+	}
+
 }
 
 @media (max-width: 992px){
@@ -442,6 +555,7 @@
 	.footer_bg{
 		margin: -159px 0 -99px 0;
 	}
+	
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -452,6 +566,15 @@
 
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+
+	.whatis_title > img {
+		width: 10vw;
+	}
+	.whatis_soldier > img {
+	    width: 24vw;
+	    position: relative;
+	    top: -34vw;
 	}
 }
 
@@ -466,14 +589,16 @@
 	#navbarID ul {
 	border-bottom: none;
 	border-left: none;
-}
+	}
 
 	#toggle-btn:hover{
 		color: white;
 	}
+
 	.desktop-menu-item{
 		display: none;
 	}
+
 	.mobile-tab {
 		display: none;
 		background-color: #1a1e23;
@@ -495,5 +620,11 @@
 		display: none!important;
 		background-color: #1a1e23;
 		z-index: 3;
+	}
+
+	.whatis_soldier > img {
+	    width: 24vw;
+	    position: relative;
+	    top: -34vw;
 	}
 }
