@@ -436,7 +436,9 @@ p {
 
 /* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
 
+<<<<<<< HEAD
 @media (max-width: 767px) {
+=======
 
 	.header_content {
 		text-align: center;
@@ -518,6 +520,7 @@ p {
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
+<<<<<<< HEAD
 
 	.whatis_title > img {
 		width: 10vw;
@@ -528,6 +531,18 @@ p {
 	    top: -34vw;
 	}
 
+=======
+	
+	.about_text {
+		font-size: 13px;
+		height: 53vh;
+		width: 55vw;
+	}
+	
+	.about .container {
+		margin-top: 0px;
+	}
+>>>>>>> a59881e9ab6edfa3618e2a849e32eef8712b3c21
 }
 
 @media (max-width: 992px){
@@ -567,6 +582,7 @@ p {
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
+<<<<<<< HEAD
 
 	.whatis_title > img {
 		width: 10vw;
@@ -575,6 +591,13 @@ p {
 	    width: 24vw;
 	    position: relative;
 	    top: -34vw;
+=======
+	
+	.about_text {
+		font-size: 13px;
+		height: 33vh;
+		width: 60vw;
+>>>>>>> a59881e9ab6edfa3618e2a849e32eef8712b3c21
 	}
 }
 
@@ -604,6 +627,10 @@ p {
 		background-color: #1a1e23;
 		z-index: 3;
 	}
+	.about_tit {
+		margin-top: 1.5vh;
+	}
+
 }
 @media (min-width: 1200px) {
 	.leftbar {
@@ -621,10 +648,41 @@ p {
 		background-color: #1a1e23;
 		z-index: 3;
 	}
+<<<<<<< HEAD
 
 	.whatis_soldier > img {
 	    width: 24vw;
 	    position: relative;
 	    top: -34vw;
+=======
+	
+	.about_text {
+		font-size: 16px;
+		height: 33vh;
+		width: 65vh;
+	}
+	
+}
+
+@media (min-width: 1500px) {
+	.about_text {
+		font-size: 16px;
+		height: 33vh;
+		width: 45vw;
+		//border: 2px solid red;
+	}
+}
+
+@media (min-width: 2050) and (max-width: 2350) {
+	.about_circle {
+		display: inline-block;
+	}
+	.about_text {
+		font-size: 20px;
+		height: 33vh;
+		width: 50vw;
+		display: inline-block;
+		position: right;
+>>>>>>> a59881e9ab6edfa3618e2a849e32eef8712b3c21
 	}
 }
