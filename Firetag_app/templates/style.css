@@ -3,11 +3,6 @@
 	padding: 0;
 }
 
-p {
-	margin: 0;
-}
-
-/* HEADER BLOCK */
 .header {
 	background-color: #4d0625;
 	height: 50%;
@@ -31,8 +26,6 @@ p {
 .icons {
 	margin-top: 10px;
 }
-
-/* MENU  BLOCK */
 
 .menu_content {
 	background-color: #4d0625;
@@ -132,9 +125,16 @@ p {
 	background-color: dimgray;
 }
 
+
+
 .mobile-tab ul {
 	padding: 0px 0px 3px 7%;
 }
+
+.as {
+	height: 50px;
+}
+
 
 .fireLazertag {
 	//border: 2px solid Turquoise;
@@ -190,9 +190,61 @@ p {
 }
 
 .about_content {
+	font-family: 'Open Sans', sans-serif;
 	//border: 5px solid yellow;
 	width: 100%;
+	height: 40vw;
+	//margin-top: 0.7vw;
 	position: absolute;
+	z-index: 3;
+}
+
+.about_tit {
+	//border: 2px solid LightSalmon;
+	margin-top: 3vw;
+	text-align: center;
+}
+
+.about_tit>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3vw;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.about_tit>img {
+	width: 10vw;
+	margin-top: -10px;
+}
+
+.about_text {
+	//border: 2px solid blue;
+	height: 25vw;
+	max-width: 100vw;
+	min-width: 38vw;
+	width: 60vw;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+
+ul {
+  list-style-type:none;
+}
+
+.about_text ul li:before {
+	content:  "—";
+  position: relative;
+  left:     -5px;
+}
+
+.about_content .container {
+	margin-top: 1.5vw;
+}
+
+.about_circle {
+	//border: 2px solid LightSalmon;
+	height: 45vh;
 }
 
 /* WHAT IS FAIRTAG BLOCK */
@@ -370,6 +422,56 @@ p {
 	position: absolute;
 }
 
+.equipment_tit {
+	border: 2px solid LightSalmon;
+	margin-top: 16vw;
+	text-align: center;
+}
+
+.equipment_tit>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vw;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.equipment_tit>img {
+	width: 10vw;
+	//margin-top: -6px;
+}
+
+.people {
+	width: 100%;
+	height: 40vw;
+	border: 2px solid blue;
+}
+
+.table {
+	text-align: center;
+	width: 70vw;
+	height: 37vw;
+	border: 2px solid green;
+}
+
+.table_el {
+	//text-align: center;
+	border: 1px solid red;
+	height: 18.5vw;
+	//width: 10vw;
+}
+
+.table_el>div {
+	background-color: black;
+	width: 80%;
+	height: 18.5vw;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.second_row {
+	width: 
+}
+
 .map{
 	
 	margin: 0;
@@ -434,11 +536,163 @@ p {
 	position: absolute;
 }
 
+#slider{
+    width: 100%;
+    height: 35vw;
+
+    position: relative;
+}
+
+.imgContainer{
+    width: 57.5vw;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    
+    transition: left 1s;
+}
+
+.img.prev{
+    left: -100%;
+
+    display:block;
+}
+
+.img.curr{
+    left: 0;
+
+    display:block;
+}
+
+.img.next{
+    left: 100%;
+
+    //opacity: 0;
+
+    display:block;
+}
+
+.invis{
+    opacity: 0;
+}
+
+.pic{
+    height: 100%;
+    width: 100%;
+}
+
+#slider-left {
+    position: absolute;
+
+    top: 50%;  
+    left: 11%; 
+
+    z-index: 3;
+    /*left: 644px;*/                  
+    transform: translate(0, -50%); 
+
+    margin-left: 10%;
+
+    color: #fff;
+    font-size: 3vw;
+}
+
+#slider-right {
+    position: absolute;
+
+    top: 50%;  
+    right: 11%; 
+
+    z-index: 3;
+    /*left: 644px;*/                  
+    transform: translate(0, -50%); 
+
+    margin-right: 10%;
+
+    color: #fff;
+    font-size: 3vw;
+}
+
+#slider-left:hover{
+    color: #7092bf;
+}
+
+#slider-right:hover{
+    color: #7092bf;
+}
+/*Очень плохо*/
+.indicator{ 
+    width: 100%;
+    position: absolute;
+
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0); 
+
+    margin: 0 auto;
+    padding-left: 48%;
+}
+
+.indicator:after{      /*Сброс обтекания у ряда (создание псевдоэлемента after после обычного эл.)*/
+    clear: both; /*очистить поток слева и справа*/
+    content: "";      
+    display: table; /*корректное отображение*/
+}
+
+.circle{
+    float: left;
+    width: 1vw; 
+    height: 1vw;
+    border-radius: 50%;
+    background: white;
+    margin-right: 1%;
+}
+
+.on{
+    background: red;
+}
+
+/*Очень плохо*/
+
+@media (max-width: 920px) {
+    .about_content {
+		height: 43vh;
+	}
+	/*.about_text {
+		font-size: 13px;
+		height: 33vh;
+		width: 60vw;
+	}*/
+}
+
+@media (min-width: 2000px) {
+    
+}
+
 /* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
 
-<<<<<<< HEAD
-@media (max-width: 767px) {
-=======
+@media (min-width: 300px) and (max-width: 768px) {
+	.about_text {
+		font-size: 13px;
+		height: 53vh;
+		width: 70vw;
+		font-size: 10px;
+	}
+	.about .container {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 768px) {
 
 	.header_content {
 		text-align: center;
@@ -451,20 +705,15 @@ p {
 	.orderCall {
 		width: 80%;
 	}
-
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
-
-	.whatIsFiretag_content{
-		margin-top: 90px;
+	
+	.about_content {
+		height: 43vh;
 	}
-
-	.row{
-	 height: 80%;
-	}
-
-	.whatis_title > h1 {
+	
+		.whatis_title > h1 {
 		font-size: 20px;
 	}
 
@@ -501,6 +750,7 @@ p {
 	#superiority-5 > img {
 		width: 100px;
 	}
+	
 
 }
 
@@ -520,18 +770,6 @@ p {
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
-<<<<<<< HEAD
-
-	.whatis_title > img {
-		width: 10vw;
-	}
-	.whatis_soldier > img {
-	    width: 24vw;
-	    position: relative;
-	    top: -34vw;
-	}
-
-=======
 	
 	.about_text {
 		font-size: 13px;
@@ -542,7 +780,15 @@ p {
 	.about .container {
 		margin-top: 0px;
 	}
->>>>>>> a59881e9ab6edfa3618e2a849e32eef8712b3c21
+
+		.whatis_title > img {
+		width: 10vw;
+	}
+	.whatis_soldier > img {
+	    width: 24vw;
+	    position: relative;
+	    top: -34vw;
+	}
 }
 
 @media (max-width: 992px){
@@ -570,7 +816,6 @@ p {
 	.footer_bg{
 		margin: -159px 0 -99px 0;
 	}
-	
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -582,7 +827,12 @@ p {
 	.rightbar {
 		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
 	}
-<<<<<<< HEAD
+	
+	.about_text {
+		font-size: 13px;
+		height: 33vh;
+		width: 60vw;
+	}
 
 	.whatis_title > img {
 		width: 10vw;
@@ -591,13 +841,6 @@ p {
 	    width: 24vw;
 	    position: relative;
 	    top: -34vw;
-=======
-	
-	.about_text {
-		font-size: 13px;
-		height: 33vh;
-		width: 60vw;
->>>>>>> a59881e9ab6edfa3618e2a849e32eef8712b3c21
 	}
 }
 
@@ -612,16 +855,14 @@ p {
 	#navbarID ul {
 	border-bottom: none;
 	border-left: none;
-	}
+}
 
 	#toggle-btn:hover{
 		color: white;
 	}
-
 	.desktop-menu-item{
 		display: none;
 	}
-
 	.mobile-tab {
 		display: none;
 		background-color: #1a1e23;
@@ -648,13 +889,6 @@ p {
 		background-color: #1a1e23;
 		z-index: 3;
 	}
-<<<<<<< HEAD
-
-	.whatis_soldier > img {
-	    width: 24vw;
-	    position: relative;
-	    top: -34vw;
-=======
 	
 	.about_text {
 		font-size: 16px;
@@ -662,6 +896,11 @@ p {
 		width: 65vh;
 	}
 	
+	.whatis_soldier > img {
+	    width: 24vw;
+	    position: relative;
+	    top: -34vw;
+	}
 }
 
 @media (min-width: 1500px) {
@@ -683,6 +922,5 @@ p {
 		width: 50vw;
 		display: inline-block;
 		position: right;
->>>>>>> a59881e9ab6edfa3618e2a849e32eef8712b3c21
 	}
 }
