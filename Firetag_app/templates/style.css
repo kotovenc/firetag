@@ -481,7 +481,7 @@ ul {
 	transition: opacity 1s;
 	z-index: 0;
 
-	background: #00ff00;
+	//background: #00ff00;
 }
 
 .curr{
