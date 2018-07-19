@@ -301,6 +301,7 @@ ul {
 #colortitle { color: white; }
 
 .whatis_soldier{
+	height: 0; /*без этого блок новости не робит (перекрывает его), сори Влад */
 	text-align: center;
 }
 
@@ -348,9 +349,12 @@ ul {
 
 /* CLUB NEWS BLOCK */
 
+/*------------------------NEWS-------------------------------*/
+
 .clubNews{
+	min-width: 420px;
 	margin: 0;
-	//border: 2px solid LightSalmon;
+	//border: 2px solid white;
 	position: relative;
 	//box-sizing: border-box;
 	box-sizing: content-box;
@@ -367,15 +371,169 @@ ul {
 	//border: 2px solid red;
 }
 
-.news_bg>img{
-	width: 100%;
-}
-
 .clubNews_content{
 	//border: 5px solid yellow;
 	width: 100%;
 	position: absolute;
 }
+
+.clubNews_tit {
+	//border: 2px solid LightSalmon;
+	margin-top: 16.25vw;
+	text-align: center;
+}
+
+.clubNews_tit>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vw;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.clubNews_tit>img {
+	width: 10vw;
+	margin-top: -10px;
+}
+
+.menu_news{
+	width: 100%;
+	height: 2vw;
+
+	margin-top: 2vw;
+	padding-left: 32.25vw;
+
+	//background: #ffffff;
+}
+
+.menu_news_container{
+	height: 100%;
+	float: left;
+	min-width: 240px;
+
+	border-bottom: 2px solid grey;
+
+	//background: #00ff00;
+}
+
+.news_button{
+	height: 2vw;
+	float: left;
+
+	margin-left: 2.75vw;
+
+	border-bottom: 2px solid grey; 
+	cursor: pointer;
+	transition: border-bottom 500ms;
+
+	//background: #FF0000;
+}
+
+.news_button>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1vw;
+	color: #FFFFFF;
+}
+
+.news_button:first-child{
+	margin-left: 0;
+}
+
+.news_button:hover{
+	border-bottom: 2px solid white; 
+}
+
+.news_content{
+	height: 17.75vw;
+
+	margin-top: 3.5vw;
+	padding-left: 20.75vw;
+
+	overflow: hidden;
+
+	//background: #ffffff;
+}
+
+.news_content_container{
+	width: 60vw;
+	height: 17.75vw;
+
+	left: 20.75vw;
+	position: absolute;
+
+	opacity: 0;
+	transition: opacity 1s;
+	z-index: 0;
+
+	//background: #00ff00;
+}
+
+.curr{
+	z-index: 1;
+	opacity: 1;
+}
+
+.news_content_block{
+	width: 18.5vw;
+	height: 17.75vw;
+
+	margin-left: 2.2vw;
+	float: left;
+
+	position: relative;
+
+	transition: background 500ms;
+
+	background: #a22b1b;
+}
+
+.news_content_block:hover{
+	background: #000000;
+}
+
+.news_block_img{
+	width: 100%;
+	height: 66%;
+}
+
+.news_block_text{
+	padding-left: 1vw;
+}
+
+.news_block_text>h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3vw;
+	line-height: 0.8vw;
+	color: #ecd5d1;
+}
+
+.news_block_text>p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8vw;
+	color: #ecd5d1;
+}
+
+.news_block_open{
+	margin-top: 0.5vw;
+	margin-left: 1vw;
+	position: absolute;
+}
+
+.news_block_open>p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7vw;
+	color: #ecd5d1;
+
+	border-bottom: 2px solid #ecd5d1; 
+}
+
+.news_content_block:first-child{
+	margin-left: 0;
+}
+
+.news_bg>img{
+	width: 100%;
+}
+/*------------------------NEWS-------------------------------*/
 
 .services{
 	margin: 0;
@@ -652,6 +810,8 @@ ul {
     top: 80%;
     left: 50%;
     transform: translate(-50%, 0); 
+
+    z-index: 1;
 
     margin: 0 auto;
     padding-left: 48%;
@@ -1034,3 +1194,137 @@ ul {
 		position: right;
 	}
 }
+
+/*------------------------NEWS-------------------------------*/
+
+@media (max-width: 1600px){
+	.news_block_open{
+		margin-top: -2.5vw;
+		margin-left: 70%;
+	}
+}
+
+@media (max-width: 992px){
+	.clubNews_tit {
+		//border: 2px solid LightSalmon;
+		margin-top: 140px;
+		text-align: center;
+	}
+
+	.news_block_open{
+		margin-top: -3vw;
+		margin-left: 70%;
+	}
+
+	.news_block_text>h1{
+		line-height: 0.3vw;
+		color: #ecd5d1;
+	}
+}
+
+@media (max-width: 768px){
+	.news_button>p {
+		font-size: 1.3vw;
+	} 
+}
+
+@media(max-width: 700px){
+	.news_content_container{
+		width: 350px;
+
+		left: 29vw;
+	}
+
+	.news_content_block{
+		width: 129.5px;
+		height: 124.25px;
+
+		margin-left: 15.4px;
+	}
+
+	.news_content_block:last-child{
+		margin-left: 70px;
+		margin-top: 17.5px;
+	}
+
+	.news_block_open{
+		margin-top: -28px;
+		margin-left: 100px;
+	}
+
+	.news_block_text>h1{
+		margin-top: 14px;
+	}
+
+	.clubNews_tit {
+		margin-top: 113.75px;
+	}
+
+	.clubNews_tit>p {
+		font-size: 14px;
+	}
+
+	.clubNews_tit>img {
+		width: 70px;
+	}
+
+	.menu_news{
+		height: 14px;
+
+		margin-top: 14px;
+	}
+
+	.news_button{
+		height: 14px;
+
+		margin-left: 19.25px;
+	}
+
+	.news_button>p {
+		font-size: 7px;
+	}
+
+	.news_content{
+		height: 124.25px;
+
+		margin-top: 24.5px;
+	}
+
+	.news_block_text{
+		padding-left: 7px;
+	}
+
+	.news_block_text>h1{
+		font-size: 7px;
+		line-height: 7px;
+	}
+
+	.news_block_text>p{
+		font-size: 7px;
+	}
+
+	.news_block_open{
+		margin-left: 85px;
+	}
+
+	.news_block_open>p{
+		font-size: 7px;
+	}
+}
+
+@media(max-width: 550px){
+	.news_content_container{
+		left: 27vw;
+	}
+}
+
+@media(max-width: 450px){
+	.news_content_container{
+		left: 70px;
+	}
+	.menu_news{
+		padding-left: 103.5px;
+	}
+}
+/*Для >2000 доделать
+/*------------------------NEWS-------------------------------*/
