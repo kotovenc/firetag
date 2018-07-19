@@ -15,6 +15,7 @@
 
 .logo { 
 	min-height: 100px;
+	padding: 0;
  }
 
  .logo img {
@@ -39,6 +40,7 @@
 .leftbar {
 	height: 70px;
 	background-color: #1a1e23;
+	padding: 0;
 }
 
 .menu {
@@ -100,8 +102,13 @@
 	height: 70%;
 }
 
+#no-border{
+	border-left: none!important;
+ }
+
 #toggle-btn {
 	display: none;
+	position: absolute;
 }
 
 .mobile-tab {	
@@ -869,6 +876,9 @@ ul {
 }
 
 @media (max-width: 500px) {
+	#orderText { 
+		font-size: 4vw;
+	 }
  
 	.whatis_soldier > button {
 		bottom: 12vw;
