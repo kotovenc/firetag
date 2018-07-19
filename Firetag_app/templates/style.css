@@ -286,10 +286,11 @@ ul {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
+	
 }
 
-.whatis_title > h1 {
-	font-weight: bold;
+.whatis_title > h1 > b {
+	font-weight: 700;
 	font-size: 3vw;
 	color: #eb3741;
 }
@@ -301,6 +302,7 @@ ul {
 .whatis_title > p {
 	color: azure;
 	font-size: 1vw;
+	font-family: 'Open Sans';
 }
 
 #colortitle { color: white; }
@@ -312,6 +314,7 @@ ul {
 
 .superiority{
 	text-align: center;
+
 }
 
 .superiority > img{
@@ -322,7 +325,9 @@ ul {
 	color: azure;
 	font-weight: bold;
 	font-size: 0.8vw;
-	margin-top: 5px
+	margin-top: 5px;
+	font-family: 'Open Sans';
+	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
 }
 
 .superiority_text {
@@ -330,6 +335,8 @@ ul {
 	font-weight: lighter;
 	font-size: 0.8vw;
 	margin: 0px;
+	font-family: 'Open Sans';
+	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000,0px 0px 20px #000000;
 }
 
 	.superiority_text {
@@ -355,6 +362,7 @@ ul {
 	font-weight: bolder;
 	border: none;
 	box-shadow: 0px 0.4px 0px 1px rgba(255,255,255,1);
+	font-family: 'Open Sans';
 }
 
 
@@ -875,7 +883,7 @@ ul {
 	}
 
    .whatIsFiretag_content {
-   		 margin-top: 25vw;
+   		 margin-top: 20vw;
 	}
 	.whatis_title > h1 {
 		font-size: 18px;
