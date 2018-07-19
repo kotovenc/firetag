@@ -10,12 +10,11 @@
 }
 
 .header_content {
-	padding: 0;
+
 }
 
 .logo { 
 	min-height: 100px;
-	padding: 0;
  }
 
  .logo img {
@@ -32,14 +31,15 @@
 	margin-top: 10px;
 }
 
-.menu_content {
-	background-color: #4d0625;
-	padding: 0;
-}
-
 .leftbar {
 	height: 70px;
 	background-color: #1a1e23;
+}
+
+.parallelogram {
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	background-color: #4d0625;
+	height: 70px;
 	padding: 0;
 }
 
@@ -47,8 +47,13 @@
 	background-color: #1a1e23;
 }
 .rightbar {
+	position: relative;
+	right: 6%;
 	height: 70px;
-	background-color: #1a1e23;
+	width: 25%;
+    background-color: #1a1e23;
+    padding: 0;
+    clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .orderCall {
@@ -57,9 +62,8 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	background-color: darkred;
+	background-color: #a32b1b;
 	height: 55px;
-	width: 90%;
 	color: white;
 	bottom: 50%;
 	border: 0.5px solid grey;
@@ -109,13 +113,17 @@
 #toggle-btn {
 	display: none;
 	position: absolute;
+	margin: 0px 15px;
 }
-
+.mobile-menu {
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+}
 .mobile-tab {	
-	background-color: #1a1e23;
-	display: flex;
-	flex-direction: column;
-	clip-path: polygon(0 0, 95% 0, 75% 100%, 0% 100%);
+	//background-color: #1a1e23;
+	clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+	padding: 0;
 }
 .mobile-tab a{
 	font-size: 1.0em;
@@ -124,6 +132,7 @@
 	text-decoration: none;
 	font-weight: lighter;
 	letter-spacing: 1px;
+
 }
 
 .mobile-tab li{
@@ -142,11 +151,6 @@
 .mobile-tab ul {
 	padding: 0px 0px 3px 7%;
 }
-
-.as {
-	height: 50px;
-}
-
 
 .fireLazertag {
 	//border: 2px solid Turquoise;
@@ -178,6 +182,8 @@
 	z-index: 3;
 	//padding-left: 0px;
 }
+
+.fireLazertag_content
 
 .about {
 	margin: 0;
@@ -883,7 +889,7 @@ ul {
 
 @media (max-width: 500px) {
 	#orderText { 
-		font-size: 4vw;
+		font-size: 4vw!important;
 	 }
  
 	.whatis_soldier > button {
@@ -954,6 +960,9 @@ ul {
 
 
 @media (min-width: 500px) and (max-width: 767px) {
+	#orderText {
+    font-size: 3vw;
+}
 
 	.whatis_title > h1 {
 		font-size: 18px;
@@ -1020,9 +1029,6 @@ ul {
 	.orderCall {
 		width: 80%;
 	}
-	.rightbar {
-		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
-	}
 	
 	.about_content {
 		height: 43vh;
@@ -1051,9 +1057,7 @@ ul {
 		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
-	.rightbar {
-		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
-	}
+
 	
 	.about_text {
 		font-size: 13px;
@@ -1114,10 +1118,7 @@ ul {
 		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
-	.rightbar {
-		clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
-	}
-	
+
 	.about_text {
 		font-size: 13px;
 		height: 33vh;
@@ -1176,7 +1177,7 @@ ul {
 		clip-path: polygon(0% 0, 100% 0, 95% 100%, 0% 100%);
 	}
 	.rightbar {
-		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 	#navbarID li {
 	display: inline-flex;
@@ -1208,7 +1209,7 @@ ul {
 		clip-path: polygon(0% 0, 100% 0, 95% 100%, 0% 100%);
 	}
 	.rightbar {
-		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
 	}
 	#navbarID li {
 	display: inline-flex;
