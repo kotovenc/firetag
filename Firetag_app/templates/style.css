@@ -9,6 +9,10 @@
 	z-index: 3;
 }
 
+.header_content {
+	padding: 0;
+}
+
 .logo { 
 	min-height: 100px;
  }
@@ -29,6 +33,7 @@
 
 .menu_content {
 	background-color: #4d0625;
+	padding: 0;
 }
 
 .leftbar {
@@ -271,7 +276,7 @@ ul {
 }
 
 .whatIsFiretag_content{
-	margin-top: 15vw;
+	margin-top: 14vw;
 	position: absolute;
 	width: 100%;
 	z-index: 3;
@@ -323,9 +328,13 @@ ul {
 .superiority_text {
 	color: #f1fff9;
 	font-weight: lighter;
-	font-size: 0.6vw;
-	margin: 5px 0 5px;
+	font-size: 0.8vw;
+	margin: 0px;
 }
+
+	.superiority_text {
+		
+	}
 
 #superiority-5 {
 	text-align: center;
@@ -339,11 +348,13 @@ ul {
 	position: relative;
 	width: 100%;
 	bottom: 27vw;
-	background: repeating-linear-gradient(-45deg,brown 1%, indianred 54%);
-	height: 4vw;
+ 	background: repeating-linear-gradient(-45deg, #a32b1b -100%,#9e384d 54%, indianred 54%);	
+ 	height: 4vw;
 	color: azure;
 	font-size: 1.2vw;
-	font-weight: lighter;
+	font-weight: bolder;
+	border: none;
+	box-shadow: 0px 0.4px 0px 1px rgba(255,255,255,1);
 }
 
 
@@ -850,16 +861,16 @@ ul {
 }
 
 @media (max-width: 500px) {
-    .whatIsFiretag_content {
-   		 margin-top: 25vw;
-	}
+ 
 	.whatis_soldier > button {
 		bottom: 12vw;
 		height: 5vw;
 		font-size: 2vw;
 	}
 
-
+   .whatIsFiretag_content {
+   		 margin-top: 25vw;
+	}
 	.whatis_title > h1 {
 		font-size: 18px;
 	}
@@ -881,9 +892,9 @@ ul {
 	}
 	
 	.whatis_soldier > button {
-		bottom: 12vw;
+		bottom: 10vw;
 		height: 5vw;
-		font-size: 1.7vw;
+		font-size: 2vw;
 	}
 
 	.superiority > img{
@@ -917,13 +928,15 @@ ul {
 
 }
 
-@media (min-width: 500px) and (max-width: 768px) {
+
+@media (min-width: 500px) and (max-width: 767px) {
+
 	.whatis_title > h1 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.whatis_title > p {
-		font-size: 8px;
+		font-size: 7px;
 		margin-bottom: 0px;
 	}
 	.whatis_title > img {
@@ -932,8 +945,6 @@ ul {
 
 	.whatis_title > img {
 		width: 78px;
-	}
-	.whatis_soldier {
 	}
 
 	.whatis_soldier > img {
@@ -944,19 +955,20 @@ ul {
 	}
 	
 	.whatis_soldier > button {
-		bottom: 13vw;
-		height: 5vw;
+		bottom: 10vw;
+		height: 4vw;
+		width: 85%;
 		font-size: 1.7vw;
 	}
 
 	.superiority > img{
-		width: 60.5px;
+		width: 50.5px;
 	}
 	.superiority_title {
 		font-size: 1.3vw;
 	}
 	.superiority_text {
-		font-size: 1vw;
+		font-size: 1.2vw;
 		margin: 0px;
 	}
 	#superiority-5 > img {
@@ -964,6 +976,11 @@ ul {
 	}
 
 
+}
+@media (min-width: 580px) and (max-width: 768px){
+	.whatIsFiretag_content {
+   		 margin-top: 13vw!important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -1036,7 +1053,7 @@ ul {
 	.whatis_soldier > button {
 		bottom: 36vw;
 		height: 4vw;
-		font-size: 1.2vw;
+		font-size: 1.4vw;
 	}
 }
 
@@ -1087,15 +1104,15 @@ ul {
 		width: 10vw;
 	}
 	.whatis_soldier > img {
-	    width: 24vw;
+	    width: 20vw;
 	    position: relative;
-	    top: -34vw;
+	    top: -29vw;
 	}
 
 	.whatis_soldier > button {
-		bottom: 36vw;
+		bottom: 31vw;
 		height: 4vw;
-		font-size: 1.2vw;
+		font-size: 1.4vw;
 	}
 	
 
@@ -1146,6 +1163,38 @@ ul {
 		background-color: #1a1e23;
 		z-index: 3;
 	}
+	.whatis_soldier > img {
+	    width: 15vw;
+	    position: relative;
+	    top: -30vw;
+	}
+
+	.whatIsFiretag_content {
+   		 margin-top: 12vw;
+	}
+
+	.whatis_title > img {
+		width: 10vw;
+	}
+
+}
+
+@media (min-width: 1200px) and (max-width: 2050px){
+	.leftbar {
+		clip-path: polygon(0% 0, 100% 0, 95% 100%, 0% 100%);
+	}
+	.rightbar {
+		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	#navbarID li {
+	display: inline-flex;
+	}
+	.mobile-tab {
+		position: relative;
+		display: none!important;
+		background-color: #1a1e23;
+		z-index: 3;
+	}
 	
 	.about_text {
 		font-size: 16px;
@@ -1158,18 +1207,26 @@ ul {
 	}
 
 	.whatis_soldier > img {
-	    width: 18vw;
+	    width: 22vw;
 	    position: relative;
-	    top: -25vw;
+	    top: -30vw;
 	}
 
 	.whatis_title > img {
 		width: 10vw;
 	}
-	
-	.superiority_text {
-		font-size: 0.6vw;
-		margin: 0px;
+
+	.whatis_soldier > button {
+		bottom: 32vw;
+		height: 4vw;
+		width: 85%;
+		font-size: 1.2vw;
+	}
+
+	.whatis_soldier > img {
+	    width: 20vw;
+	    position: relative;
+	    top: -30vw;
 	}
 }
 
@@ -1182,7 +1239,7 @@ ul {
 	}
 }
 
-@media (min-width: 2050) and (max-width: 2350) {
+@media (min-width: 2050px) and (max-width: 2560px) {
 	.about_circle {
 		display: inline-block;
 	}
@@ -1192,6 +1249,20 @@ ul {
 		width: 50vw;
 		display: inline-block;
 		position: right;
+	}
+
+	
+	.whatis_soldier > img {
+	    width: 17vw;
+	    position: relative;
+	    top: -24vw;
+	}
+
+	.whatis_soldier > button {
+		bottom: 26vw;
+		height: 4vw;
+		width: 110%;
+		font-size: 1.2vw;
 	}
 }
 
@@ -1312,7 +1383,7 @@ ul {
 	}
 }
 
-@media(max-width: 550px){
+@media(max-width: 580px){
 	.news_content_container{
 		left: 27vw;
 	}
@@ -1324,6 +1395,14 @@ ul {
 	}
 	.menu_news{
 		padding-left: 103.5px;
+	}
+
+	.superiority_title {
+		font-size: 2vw;
+	}
+	.superiority_text {
+		font-size: 1.8vw;
+		margin: 0px;
 	}
 }
 /*Для >2000 доделать
