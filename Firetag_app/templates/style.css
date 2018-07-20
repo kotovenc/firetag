@@ -13,10 +13,18 @@ html {
 	z-index: 3;
 }
 
-.header_content {
-
+.header_content{
+	position: relative;
+	z-index: 2;
 }
 
+#hidden {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	height: 100px;
+	background-color: azure;
+}
 .logo { 
 	min-height: 100px;
  }
@@ -326,8 +334,8 @@ ul {
 #colortitle { color: white; }
 
 .whatis_soldier{
-	height: 0; /*без этого блок новости не робит (перекрывает его), сори Влад */
-	text-align: center;
+	height: 0; /*без этого блок новости не робит (перекрывает его), сори Влад */ 		
+	text-align: center;/*  да лан ничё, я не в обиде*/
 }
 
 .superiority{
@@ -345,7 +353,7 @@ ul {
 	font-size: 0.8vw;
 	margin-top: 5px;
 	font-family: 'Open Sans';
-	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
+	text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 20px #000000;
 }
 
 .superiority_text {
@@ -354,7 +362,7 @@ ul {
 	font-size: 0.8vw;
 	margin: 0px;
 	font-family: 'Open Sans';
-	text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000,0px 0px 20px #000000;
+	text-shadow: 0px 0px 0px #000000, 0px 0px 0px #000000, 0px 0px 2px #000000;
 }
 
 	.superiority_text {
@@ -896,17 +904,46 @@ ul {
 		width: 60vw;
 	}*/
 }
+@media (max-width: 399px) {
+	.whatis_soldier > img {
+		min-width: 70px;
+	    width: 25vw;
+	    position: relative;
+	    top: -60vw;
+	}
+	
+	.whatis_soldier > button {
+		bottom: 64vw;
+	    height: 4vw;
+	    width: 100%;
+	    font-size: 1.7vw;
+	}
+	.superiority_title {
+		font-size: 3vw;
+	}
+	.superiority_text {
+		font-size: 2.5vw;
+		margin: 0px;
+	}
+	.superiority > img{
+		width: 60.5px;
+	}
 
-@media (max-width: 500px) {
+	.whatIsFiretag_content {
+   		 margin-top: 20vw;
+	}
+
+		.map_content {
+	    clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0 74%);
+	    margin-top: -5vw;
+	}
+
+}
+
+@media (min-width: 400px) and (max-width: 549px) {
 	#orderText { 
 		font-size: 4vw!important;
 	 }
- 
-	.whatis_soldier > button {
-		bottom: 12vw;
-		height: 5vw;
-		font-size: 2vw;
-	}
 
    .whatIsFiretag_content {
    		 margin-top: 20vw;
@@ -926,25 +963,26 @@ ul {
 
 	.whatis_soldier > img {
 		min-width: 70px;
-		width: 17vw; 
-		position: relative;
-		top: -7vw;
+	    width: 25vw;
+	    position: relative;
+	    top: -60vw;
 	}
 	
 	.whatis_soldier > button {
-		bottom: 10vw;
-		height: 5vw;
-		font-size: 2vw;
+		bottom: 64vw;
+	    height: 4vw;
+	    width: 100%;
+	    font-size: 1.7vw;
 	}
 
 	.superiority > img{
 		width: 60.5px;
 	}
 	.superiority_title {
-		font-size: 2vw;
+		font-size: 2.3vw;
 	}
 	.superiority_text {
-		font-size: 1.5vw;
+		font-size: 2vw;
 		margin: 0px;
 	}
 	#superiority-5 > img {
@@ -974,7 +1012,7 @@ ul {
 }
 
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 550px) and (max-width: 767px) {
 	#orderText {
     font-size: 2.3vw;
 }
@@ -997,28 +1035,30 @@ ul {
 
 	.whatis_soldier > img {
 		min-width: 70px;
-		width: 17vw; 
-		position: relative;
-		top: -9vw;
+	    width: 25vw;
+	    position: relative;
+	    top: -44vw;
 	}
 	
 	.whatis_soldier > button {
-		bottom: 10vw;
-		height: 4vw;
-		width: 85%;
+		bottom: 46vw;
+	    height: 4vw;
+	    width: 85%;
+	    font-size: 1.7vw;
+	}
+
+		.superiority_title {
+		font-size: 2vw;
+	}
+	.superiority_text {
 		font-size: 1.7vw;
+		margin: 0px;
 	}
 
 	.superiority > img{
 		width: 50.5px;
 	}
-	.superiority_title {
-		font-size: 1.3vw;
-	}
-	.superiority_text {
-		font-size: 1.2vw;
-		margin: 0px;
-	}
+	
 	#superiority-5 > img {
 		width: 100px;
 	}
@@ -1030,15 +1070,15 @@ ul {
 
 
 }
-@media (min-width: 580px) and (max-width: 768px){
+@media (min-width: 660px) and (max-width: 768px){
 	.whatIsFiretag_content {
-   		 margin-top: 13vw!important;
+   		 margin-top: 12vw!important;
 	}
 
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	.header_content {
 		text-align: center;
@@ -1084,8 +1124,6 @@ ul {
 		clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 	}
 
-
-	
 	.about_text {
 		font-size: 13px;
 		height: 53vh;
@@ -1110,8 +1148,8 @@ ul {
 		height: 4vw;
 		font-size: 1.4vw;
 	}
-
-		.map_content {
+	
+	.map_content {
 	    clip-path: polygon(0 9%, 100% 27%, 100% 100%, 0 74%);
 	    margin-top: -5vw;
 	}
@@ -1119,6 +1157,76 @@ ul {
 	.footer_bg{
 	    //height: 27.9vw;
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
+	}
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+	.whatIsFiretag_content{
+			margin-top: 16vw;
+	}
+
+
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+	.whatIsFiretag_content{
+			margin-top: 16vw;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 868px) {
+	.whatIsFiretag_content{
+			margin-top: 10vw;
+	}
+
+	.superiority_title {
+		font-size: 1.6vw;
+	}
+	.superiority_text {
+		font-size: 1vw;
+		margin: 0px;
+	}
+
+	.whatis_soldier > img {
+		min-width: 70px;
+	    width: 25vw;
+	    position: relative;
+	    top: -40vw;
+	}
+
+	.whatis_soldier > button {
+		bottom: 42vw;
+	    height: 4vw;
+	    width: 85%;
+	    font-size: 1.7vw;
+	}
+	
+}
+
+@media (min-width: 868px) and (max-width: 992px) {
+	.whatIsFiretag_content{
+			margin-top: 10vw;
+	}
+	.superiority_title {
+		font-size: 1em;
+	}
+	.superiority_text {
+		font-size: 0.6em;
+		margin: 0px;
+	}
+
+	.whatis_soldier > img {
+		min-width: 70px;
+	    width: 25vw;
+	    position: relative;
+	    top: -40vw;
+	}
+
+	.whatis_soldier > button {
+		bottom: 42vw;
+	    height: 4vw;
+	    width: 85%;
+	    font-size: 1.7vw;
 	}
 }
 
@@ -1161,10 +1269,21 @@ ul {
 		height: 33vh;
 		width: 60vw;
 	}
-
+	.whatIsFiretag_content{
+		margin-top: 11vw;
+	}
 	.whatis_title > img {
 		width: 10vw;
 	}
+
+	.superiority_title {
+		font-size: 1vw;
+	}
+	.superiority_text {
+		font-size: 0.9vw;
+		margin: 0px;
+	}
+
 	.whatis_soldier > img {
 	    width: 20vw;
 	    position: relative;
