@@ -697,10 +697,14 @@ ul {
 	box-sizing: content-box;
 }
 
+.map_content {
+	    clip-path: polygon(0 9%, 100% 29%, 100% 100%, 0 74%);
+}
+
 .map_bg{
 	position: relative;
 	z-index: 5;
-	background-image: url(img/map.png);
+	//background-image: url(img/map.png);
 	background-size: auto 100%;
 	background-position: center;
 	height: 47.9vw;
