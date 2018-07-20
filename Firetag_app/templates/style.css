@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .header {
 	background-color: #4d0625;
 	height: 50%;
@@ -65,7 +69,7 @@
 	background-color: #a32b1b;
 	height: 55px;
 	color: white;
-	bottom: 50%;
+	width: 100%;
 	border: 0.5px solid grey;
 }
 
@@ -120,15 +124,16 @@
 	width: 100%;
 	z-index: 3;
 }
+
 .mobile-tab {	
 	//background-color: #1a1e23;
-	clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-	padding: 0;
+	clip-path: polygon(0 0, 81% 0, 68% 100%, 0% 100%);
+
 }
 .mobile-tab a{
-	font-size: 1.0em;
+	font-size: 1.5em;
 	color: white;
-	width: 100px;
+	width: 100%;
 	text-decoration: none;
 	font-weight: lighter;
 	letter-spacing: 1px;
@@ -807,7 +812,7 @@ ul {
     top: 50%;  
     left: 11%; 
 
-    z-index: 3;
+    z-index: 2;
     /*left: 644px;*/                  
     transform: translate(0, -50%); 
 
@@ -823,7 +828,7 @@ ul {
     top: 50%;  
     right: 11%; 
 
-    z-index: 3;
+    z-index: 2;
     /*left: 644px;*/                  
     transform: translate(0, -50%); 
 

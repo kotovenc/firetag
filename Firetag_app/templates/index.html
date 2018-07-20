@@ -35,6 +35,7 @@ crossorigin="anonymous"></script>
 
 
 <body>
+	<a name="main"></a>
 <div class="header">
     <div class="container header_content ">
       <div class="row justify-content-center">
@@ -87,21 +88,21 @@ crossorigin="anonymous"></script>
         <nav id="navbarID">
          <ul>
           <i class="fas fa-bars fa-2x" id="toggle-btn"></i>
-          <li class="desktop-menu-item "><a id="no-border" href="#">Главная</a></li>
-          <li class="desktop-menu-item"><a href="#">О нас</a></li>
-          <li class="desktop-menu-item"><a href="#">FireTag</a></li>
-          <li class="desktop-menu-item"><a href="#">Новости</a></li>
-          <li class="desktop-menu-item"><a href="#">Услуги</a></li>
-          <li class="desktop-menu-item"><a href="#">Оборудование</a></li>
-          <li class="desktop-menu-item"><a href="#">Контакты</a></li>
+          <li class="desktop-menu-item "><a id="no-border" href="#main">Главная</a></li>
+          <li class="desktop-menu-item"><a href="#about">О нас</a></li>
+          <li class="desktop-menu-item"><a href="#firetag">FireTag</a></li>
+          <li class="desktop-menu-item"><a href="#news">Новости</a></li>
+          <li class="desktop-menu-item"><a href="#services">Услуги</a></li>
+          <li class="desktop-menu-item"><a href="#equip">Оборудование</a></li>
+          <li class="desktop-menu-item"><a href="#contact">Контакты</a></li>
         </ul>
       </nav>           
     </div>
     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 parallelogram"></div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 rightbar">
-      <div class="orderCall">
+      <button class="orderCall">
         <div id="orderText">Заказать звонок</div>
-      </div>
+      </button>
     </div>
   </div>
 </div>
@@ -109,38 +110,38 @@ crossorigin="anonymous"></script>
 </div>
 
 <div class="fireLazertag">
-
   <div class="fireLazertag_content">
   	<div class="container mobile-menu">
     <div class="row"> 
      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8  mobile-tab">
       <nav id="mobile">
         <ul>
-          <a href="#">
+          <a href="#main">
             <li class="menu-item">Главная</li>
           </a>
-          <a href="#">
+          <a href="#about">
             <li class="menu-item">О нас</li>
           </a>
-          <a href="#">
+          <a href="#firetag">
             <li class="menu-item">FireTag</li>
           </a>
-          <a href="#">
+          <a href="#news">
             <li class="menu-item">Новости</li>
           </a>
-          <a href="#">
+          <a href="#services">
             <li class="menu-item">Услуги</li>
           </a>
-          <a href="#">
+          <a href="#equip">
             <li class="menu-item">Оборудование</li>
           </a>
-          <a href="#">
+          <a href="#contact">
             <li class="menu-item">Контакты</li>
           </a>
         </ul>
       </nav>  
     </div>
-    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-4"></div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
 	</div> 
   </div>
   <div id="slider">
@@ -179,7 +180,7 @@ crossorigin="anonymous"></script>
 
 <div class="about">
   <div class="about_content">
-    <!--Код блока about-->
+    <a name="about"></a>
 	<div class="about_tit">
           <p>О НАС</p>
           <img src="img/about-separ.png" />
@@ -212,6 +213,7 @@ crossorigin="anonymous"></script>
 
 <div class="whatIsFiretag">
 	<div class="whatIsFiretag_content">
+		<a name="firetag"></a>
 		<div class="container">
 		<div class="row" >
 			<div class="col-12 whatis_title"><h1><b>Что такое <span id="colortitle">Firetag?</span></b></h1></div>
@@ -286,7 +288,7 @@ crossorigin="anonymous"></script>
 
 <div class="clubNews">
   <div class="clubNews_content">
-    <!--Код блока clubNews-->
+    <a name="news"></a>
     <div class="clubNews_tit">
           <p>НОВОСТИ КЛУБА</p>
           <img src="img/about-separ.png" />
@@ -441,6 +443,7 @@ crossorigin="anonymous"></script>
 
 <div class="services">
   <div class="services_content">
+  	<a name="services"></a>
     SERVICES
   </div>
   <div class="services_bg">
@@ -449,9 +452,11 @@ crossorigin="anonymous"></script>
 </div>
 
 <div class="equipment">
+	
   <div class="equipment_content">
    EQUIPMENT
 	<div class="equipment_tit">
+		<a name="equip"></a>
 		<p>ОБОРУДОВАНИЕ FIRETAG</p>
 		<img src="img/about-separ.png" />
 	</div>
@@ -459,6 +464,7 @@ crossorigin="anonymous"></script>
 	
 	</div>
 	<div class="container table">
+
 		<div class="row">
 			<div class="col-lg-3 table_el">
 				<div>
@@ -515,6 +521,7 @@ crossorigin="anonymous"></script>
 </div>
 
 <div class="footer">
+	<a name="contact"></a>
   <div class="footer_content">
     FOOOOOOTER
   </div>
