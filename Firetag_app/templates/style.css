@@ -614,6 +614,7 @@ ul {
 	position: relative;
 	//box-sizing: border-box;
 	box-sizing: content-box;
+	clip-path:polygon(0 0, 100% 10%, 100% 89%, 0 76%)
 }
 
 .equip_bg{
@@ -697,18 +698,16 @@ ul {
 	box-sizing: content-box;
 }
 
-.map_content {
-	    clip-path: polygon(0 9%, 100% 29%, 100% 100%, 0 74%);
-}
+
 
 .map_bg{
 	position: relative;
 	z-index: 5;
 	//background-image: url(img/map.png);
-	background-size: auto 100%;
-	background-position: center;
-	height: 47.9vw;
-	min-height: 475px;
+	//background-size: auto 100%;
+	//background-position: center;
+	height: 31.9vw;
+    min-height: 530px;
 	position: relative;
 	z-index: -1;
 	margin: -42vw 0 -10vw 0px;
@@ -732,18 +731,20 @@ ul {
 	z-index: 10;
 	//box-sizing: border-box;
 	box-sizing: content-box;
+	    clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 }
 
 .footer_bg{
 	background-image: url(img/footer-bg.png);
 	background-size: auto 100%;
 	background-position: center;
-	height: 27vw;
+	//height: 63.9vw;
 	min-height: 268px;
 	position: relative;
 	z-index: -1;
 	margin: -16vw 0 -10vw 0px;
 	//border: 2px solid red;
+	clip-path: polygon(0 10%, 100% 42%, 100% 100%, 0 100%);
 }
 
 .footer_bg>img{
@@ -910,7 +911,7 @@ ul {
    .whatIsFiretag_content {
    		 margin-top: 20vw;
 	}
-	.whatis_title > h1 {
+	.whatis_title > h1 > b {
 		font-size: 18px;
 	}
 
@@ -949,6 +950,11 @@ ul {
 	#superiority-5 > img {
 		width: 100px;
 	}
+
+	.map_content {
+	    clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0 74%);
+	    margin-top: -5vw;
+	}
 }
 
 /* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
@@ -970,7 +976,7 @@ ul {
 
 @media (min-width: 500px) and (max-width: 767px) {
 	#orderText {
-    font-size: 3vw;
+    font-size: 2.3vw;
 }
 
 	.whatis_title > h1 {
@@ -1017,12 +1023,19 @@ ul {
 		width: 100px;
 	}
 
+	.map_content {
+	    clip-path: polygon(0 9%, 100% 27%, 100% 100%, 0 74%);
+	    margin-top: -5vw;
+	}
+
 
 }
 @media (min-width: 580px) and (max-width: 768px){
 	.whatIsFiretag_content {
    		 margin-top: 13vw!important;
 	}
+
+
 }
 
 @media (max-width: 768px) {
@@ -1048,6 +1061,11 @@ ul {
 		height: 53vh;
 		width: 70vw;
 		font-size: 10px;
+	}
+
+	.footer_bg{
+	    height: 27.9vw;
+	    clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 	
 	
@@ -1091,6 +1109,16 @@ ul {
 		bottom: 36vw;
 		height: 4vw;
 		font-size: 1.4vw;
+	}
+
+		.map_content {
+	    clip-path: polygon(0 9%, 100% 27%, 100% 100%, 0 74%);
+	    margin-top: -5vw;
+	}
+
+	.footer_bg{
+	    height: 27.9vw;
+	    clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 }
 
@@ -1149,7 +1177,15 @@ ul {
 		font-size: 1.4vw;
 	}
 	
+	.map_content {
+	    clip-path: polygon(0 9%, 100% 40%, 100% 100%, 0 74%);
+	}
 
+	.footer_bg{
+	    height: 27.9vw;
+	    clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
+	}
+	
 }
 
 @media (max-width: 1200px){
@@ -1159,6 +1195,8 @@ ul {
 		position: relative;
 		top:25%;
 	}
+
+
 
 	#navbarID ul {
 	border-bottom: none;
@@ -1211,7 +1249,53 @@ ul {
 		width: 10vw;
 	}
 
+	.map_content {
+	    clip-path: polygon(0 9%, 100% 40%, 100% 100%, 0 100%);
+    	margin-top: 0vw;
+	}
 }
+
+@media (min-width: 1200px) and (max-width: 1600px){
+.map_content {
+	    clip-path: polygon(0 9%, 100% 40%, 100% 100%, 0 100%);
+    	margin-top: 0vw;
+	}
+
+	.map_bg{
+	height: 27vw;
+	}
+.footer_bg{
+	height: 50.9vw;
+	clip-path: polygon(0 10%, 100% 42%, 100% 100%, 0 100%);
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 1900px){
+	.map_content {
+	       clip-path: polygon(0 9%, 100% 57%, 100% 100%, 0 100%);
+    	margin-top: 1vw;
+	}
+}
+
+@media (min-width: 1900px) and (max-width: 2050px){
+	.map_content {
+	       clip-path: polygon(0 9%, 100% 49%, 100% 100%, 0 100%);
+    	margin-top: 1vw;
+	}
+}
+
+
+
+@media (min-width: 1600px) and (max-width: 2050px){
+	.map_bg{
+		height: 27vw;
+	}
+	.footer_bg{
+	    height: 43.9vw;
+	    clip-path: polygon(0 10%, 100% 42%, 100% 100%, 0 100%);
+	}
+}
+
 
 @media (min-width: 1200px) and (max-width: 2050px){
 	.leftbar {
@@ -1273,7 +1357,7 @@ ul {
 	}
 }
 
-@media (min-width: 2050px) and (max-width: 2560px) {
+@media (min-width: 2050px) {
 	.about_circle {
 		display: inline-block;
 	}
@@ -1283,6 +1367,14 @@ ul {
 		width: 50vw;
 		display: inline-block;
 		position: right;
+	}
+	.map_content {
+    	clip-path: polygon(0 5%, 100% 59%, 100% 100%, 0 100%);
+        margin-top: 3vw;;
+	}
+	.footer_bg{
+	    height: 27.9vw;
+	    clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 
 	
