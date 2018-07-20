@@ -622,7 +622,6 @@ ul {
 	position: relative;
 	//box-sizing: border-box;
 	box-sizing: content-box;
-	clip-path:polygon(0 0, 100% 10%, 100% 89%, 0 76%)
 }
 
 .equip_bg{
@@ -649,7 +648,7 @@ ul {
 
 .equipment_tit {
 	border: 2px solid LightSalmon;
-	margin-top: 16vw;
+	margin-top: 14vw;
 	text-align: center;
 }
 
@@ -666,9 +665,15 @@ ul {
 }
 
 .people {
+	text-align: center;
 	width: 100%;
-	height: 40vw;
+	height: 38vw;
 	border: 2px solid blue;
+}
+
+.people>img {
+	width: 54vw;
+	height: 37vw;
 }
 
 .table {
@@ -679,7 +684,9 @@ ul {
 }
 
 .table_el {
-	//text-align: center;
+	//text-align: ;
+	color: #FFFFFF;
+	font-size: 12px;
 	border: 1px solid red;
 	height: 18.5vw;
 	//width: 10vw;
@@ -687,15 +694,38 @@ ul {
 
 .table_el>div {
 	background-color: black;
-	width: 80%;
-	height: 18.5vw;
-	margin-left: 10%;
-	margin-right: 10%;
+	width: 88%;
+	height: 23vw;
+	margin-left: 6%;
+	margin-right: 6%;
+	padding: 6%;
 }
 
-.second_row {
-	width: 
+.table_el>div>img {
+	width: 10vw;
+	//margin-top: 8%;
 }
+
+.table_el>div>div {
+	margin-top: 2%;
+	text-align: left;
+	/*margin-left: 8%;*/
+	
+}
+
+.second_row{
+	width: 80%;
+	border: 1px solid white;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 8%;
+}
+
+.second_row .table_el>div {
+	height: 18vw;
+}
+
+/*------------------------EQUIPMENT-------------------------------*/
 
 .map{
 	
@@ -767,13 +797,15 @@ ul {
 
 #slider{
     width: 100%;
-    height: 35vw;
+    //height: 35vw;
+    height: 48vw;
 
     position: relative;
 }
 
 .imgContainer{
-    width: 57.5vw;
+    //width: 57.5vw;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
