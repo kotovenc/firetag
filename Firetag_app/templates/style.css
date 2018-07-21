@@ -243,9 +243,9 @@ html {
 .about_text {
 	//border: 2px solid blue;
 	height: 25vw;
-	max-width: 100vw;
+	max-width: 50vw;
 	min-width: 38vw;
-	width: 60vw;
+	width: 30vw;
 	font-size: 16px;
 	color: #FFFFFF;
 }
@@ -1304,6 +1304,12 @@ ul {
 	.map_content {
 	       clip-path: polygon(0 9%, 100% 57%, 100% 100%, 0 100%);
     	margin-top: 1vw;
+	}
+	
+	.about_text {
+		font-size: 16px;
+		height: 33vh;
+		width: 55vh;
 	}
 }
 
