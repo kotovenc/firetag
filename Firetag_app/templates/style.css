@@ -1903,5 +1903,63 @@ ul {
 		margin-left: 0;
 	}
 }
+
+@media(min-width: 1950px){
+	.menu_news{
+		height: 39px;
+
+		margin-top: 39px;
+	}
+
+	.news_button{
+		height: 39px;
+
+		margin-left: 53.625px;
+	}
+
+	.news_button>p {
+		font-size: 19.5px;
+	}
+
+	.news_content{
+		height: 346px;
+
+		margin-top: 68.25px;
+	}
+
+	.news_content_container{
+		height: 346px;
+	}
+
+
+	.news_content_block{
+		width: 360px;
+		height: 346px;
+
+		margin-left: 42px;
+	}
+
+	.news_block_text{
+		padding-left: 19.5px;
+	}
+
+	.news_block_text>h1{
+		font-size: 25.35px;
+		line-height: 15.6px;
+	}
+
+	.news_block_text>p{
+		font-size: 15.6px
+	}
+
+	.news_block_open{
+		margin-top: 9.75px;
+		margin-left: 19.5px;
+	}
+
+	.news_block_open>p{
+		font-size: 14px;
+	}
+}
 /*Для >2000 доделать
 /*------------------------NEWS-------------------------------*/
