@@ -513,6 +513,10 @@ ul {
 	border-bottom: 2px solid white; 
 }
 
+.curr_button{
+	border-bottom: 2px solid white;
+}
+
 .news_content{
 	height: 17.75vw;
 
