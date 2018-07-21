@@ -79,6 +79,15 @@ html {
 	color: white;
 	width: 100%;
 	border: 0.5px solid grey;
+	outline: none;
+}
+
+.orderCall:hover {
+	box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+}
+
+.orderCall:active {
+	box-shadow: inset 0px 0px 10px 2px rgba(8,2,8,1);
 }
 
 
@@ -118,6 +127,11 @@ html {
 	height: 70%;
 }
 
+#navbarID a:hover {
+	text-shadow: 2px 0px 1px rgba(150, 150, 150, 1);
+}
+
+
 #no-border{
 	border-left: none!important;
  }
@@ -139,7 +153,6 @@ html {
 
 }
 .mobile-tab a{
-	font-size: 1.5em;
 	color: white;
 	width: 100%;
 	text-decoration: none;
@@ -317,7 +330,7 @@ ul {
 
 .whatis_title > h1 > b {
 	font-weight: 700;
-	font-size: 3vw;
+	font-size: 3.5vw;
 	color: #eb3741;
 }
 
@@ -389,7 +402,17 @@ ul {
 	border: none;
 	box-shadow: 0px 0.4px 0px 1px rgba(255,255,255,1);
 	font-family: 'Open Sans';
+	outline: none;
 }
+
+.whatis_soldier > button:hover {
+	box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+}
+
+.whatis_soldier > button:active {
+	box-shadow: inset 0px 0px 10px 2px rgba(8,2,8,1);
+}
+
 
 
 /* CLUB NEWS BLOCK */
@@ -769,7 +792,7 @@ ul {
 	z-index: 10;
 	//box-sizing: border-box;
 	box-sizing: content-box;
-	clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
+	clip-path: polygon(0 0%, 100% 39%, 100% 100%, 0 100%);
 }
 
 .footer_bg{
@@ -937,6 +960,14 @@ ul {
 	}*/
 }
 @media (max-width: 399px) {
+
+
+	#orderText {
+	    text-align: center;
+	    align-self: center;
+	    font-size: 4vw;
+	}
+
 	.whatis_soldier > img {
 		min-width: 70px;
 	    width: 25vw;
@@ -948,24 +979,27 @@ ul {
 		bottom: 64vw;
 	    height: 4vw;
 	    width: 100%;
-	    font-size: 1.7vw;
+	    height: 10vw;
+	    font-size: 3vw;
 	}
 	.superiority_title {
 		font-size: 3vw;
 	}
 	.superiority_text {
-		font-size: 2.5vw;
+		font-size: 2.4vw;
 		margin: 0px;
 	}
 	.superiority > img{
 		width: 60.5px;
 	}
-
+		#superiority-5 > img {
+		width: 100px;
+	}
 	.whatIsFiretag_content {
    		 margin-top: 20vw;
 	}
 
-		.map_content {
+	.map_content {
 	    clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0 74%);
 	    margin-top: -5vw;
 	}
@@ -974,14 +1008,14 @@ ul {
 
 @media (min-width: 400px) and (max-width: 549px) {
 	#orderText { 
-		font-size: 4vw!important;
+		font-size: 3vw!important;
 	 }
 
    .whatIsFiretag_content {
    		 margin-top: 20vw;
 	}
 	.whatis_title > h1 > b {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.whatis_title > p {
@@ -1002,9 +1036,9 @@ ul {
 	
 	.whatis_soldier > button {
 		bottom: 64vw;
-	    height: 4vw;
+	    height: 6vw;
 	    width: 100%;
-	    font-size: 1.7vw;
+	    font-size: 2.5vw;
 	}
 
 	.superiority > img{
@@ -1121,7 +1155,7 @@ ul {
 	}
 
 	.orderCall {
-		width: 80%;
+		width: 100%;
 	}
 	
 	.about_content {
@@ -1329,7 +1363,7 @@ ul {
 	}
 	
 	.map_content {
-	    clip-path: polygon(0 9%, 100% 40%, 100% 100%, 0 74%);
+	    clip-path: polygon(0 9%, 100% 32%, 100% 100%, 0 74%);
 	}
 
 	.footer_bg{
@@ -1339,7 +1373,7 @@ ul {
 	
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1199px){
 	#toggle-btn{
 		display: inline-flex;
 		align-items: flex-start;
@@ -1347,12 +1381,10 @@ ul {
 		top:25%;
 	}
 
-
-
 	#navbarID ul {
 	border-bottom: none;
 	border-left: none;
-}
+    }
 
 	#toggle-btn:hover{
 		color: white;
@@ -1430,7 +1462,7 @@ ul {
 
 @media (min-width: 1900px) and (max-width: 2050px){
 	.map_content {
-	       clip-path: polygon(0 9%, 100% 49%, 100% 100%, 0 100%);
+	    clip-path: polygon(0 9%, 100% 59%, 100% 100%, 0 100%);
     	margin-top: 1vw;
 	}
 }
@@ -1520,8 +1552,8 @@ ul {
 		position: right;
 	}
 	.map_content {
-    	clip-path: polygon(0 5%, 100% 59%, 100% 100%, 0 100%);
-        margin-top: 7vw;;
+    	clip-path: polygon(0 5%, 100% 68%, 100% 100%, 0 100%);
+        margin-top: 13vw;;
 	}
 	.footer_bg{
 	    height: 27.9vw;
@@ -1568,12 +1600,24 @@ ul {
 		line-height: 0.3vw;
 		color: #ecd5d1;
 	}
+
+	
+}
+
+@media (min-width: 768px){
+	.mobile-tab a {
+    	font-size: 2vw;
+	}
 }
 
 @media (max-width: 768px){
 	.news_button>p {
 		font-size: 1.3vw;
-	} 
+	}
+
+	.mobile-tab a {
+    	font-size: 4vw;
+	}
 }
 
 @media(max-width: 700px){
