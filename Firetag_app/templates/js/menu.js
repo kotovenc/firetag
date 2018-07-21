@@ -14,6 +14,14 @@ $(document).ready(function() {
 
 	$('.close_btn').click(function(){
 	  $("#hidden").fadeOut("slow");
-});  
+	}); 
+
+	$('#more_btn1').click(function(){
+	  $("#hidden").fadeIn("slow");
+	});  
+
+	$('.close_btn').click(function(){
+	  $("#hidden").fadeOut("slow");
+	});  
 });
 

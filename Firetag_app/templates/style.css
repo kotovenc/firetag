@@ -18,13 +18,81 @@ html {
 	z-index: 2;
 }
 
+
 #hidden {
 	display: none;
-	position: absolute;
-	z-index: 3;
-	height: 100px;
-	background-color: azure;
+	position: fixed;
+	z-index: 10;
+	//height: 15vw;
+	//left: 29%;
+	background-color: white;
+	text-align: center;
+	margin: 50px 0 0 0 ;
+	padding-top: 25px;
+	border-radius: 15px;
 }
+
+.popup_title { 
+	text-transform: uppercase;
+	//font-size: 1.6vw;
+	font-weight: bold;
+	margin: 0;
+ }
+
+ .close_btn {
+ 	position: relative;
+    bottom: 73px;
+    left: 54%;
+ 	color: white;
+ }
+
+ .close_btn:hover {
+	cursor: pointer;
+ }
+
+form {
+	margin-top: 3%;
+}
+
+form > button {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 100px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #018dc4;
+    border-radius: 24px;
+    font: normal 16px/normal "Times New Roman", Times, serif;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    text-overflow: clip;
+    background: #a22b1b;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+    text-shadow: -1px -1px 0 rgba(15,73,168,0.66);
+    margin-top: 2%;
+    outline: none;
+}
+
+form > button:active {
+
+}
+
+input {
+	width: 43%;
+	margin: 0px 20%;
+ 	display: inline-block;
+	box-sizing: content-box;
+	padding: 10px 20px;
+	border: 1px solid #b7b7b7;
+	border-radius: 9px;
+	font: normal 16px/normal "Times New Roman", Times, serif;
+	color: black;
+	text-overflow: clip;
+	background: rgba(234,237,238,1);
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+	margin-top: 1%;
+	outline: none;
+} 
 .logo { 
 	min-height: 100px;
  }
@@ -181,8 +249,9 @@ html {
 .fireLazertag {
 	//border: 2px solid Turquoise;
 	position: relative;
-	//box-sizing: border-box;
-	box-sizing: content-box;
+	z-index: 5;
+	box-sizing: border-box;
+	//box-sizing: content-box;
 }
 
 .fireLazertag_bg {
@@ -192,13 +261,9 @@ html {
 	height: 52vw;
 	min-height: 519px;
 	margin: 0 0 -10vw 0px;
-	position:relative;
+	position: relative;
 	z-index: 2;
 	//border: 2px solid blue;
-}
-
-.fireLazertag_bg>img{
-	width: 100%;
 }
 
 .fireLazertag_content {
@@ -208,8 +273,6 @@ html {
 	z-index: 3;
 	//padding-left: 0px;
 }
-
-.fireLazertag_content
 
 .about {
 	margin: 0;
@@ -390,6 +453,11 @@ ul {
 	width: 10vw;
 }
 
+
+.whatis_soldier > img {
+	position: relative;
+	z-index: 3;
+}
 .whatis_soldier > button {
 	position: relative;
 	width: 100%;
@@ -403,6 +471,7 @@ ul {
 	box-shadow: 0px 0.4px 0px 1px rgba(255,255,255,1);
 	font-family: 'Open Sans';
 	outline: none;
+	z-index: 4;
 }
 
 .whatis_soldier > button:hover {
@@ -822,7 +891,6 @@ ul {
     width: 100%;
     //height: 35vw;
     height: 48vw;
-
     position: relative;
 }
 
@@ -832,7 +900,6 @@ ul {
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
-
     position: relative;
 }
 
@@ -840,8 +907,7 @@ ul {
     width: 100%;
     height: 100%;
     position: absolute;
-    display: none;
-    
+    display: none;    
     transition: left 1s;
 }
 
@@ -1173,8 +1239,18 @@ ul {
 	    height: 27.9vw;
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
-	
-	
+
+	#hidden {
+	left: 9%;
+	height: 300px;
+	}
+
+	.popup_title { 
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0;
+	 }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1608,6 +1684,17 @@ ul {
 	.mobile-tab a {
     	font-size: 2vw;
 	}
+
+	#hidden {
+	left: 29%;
+	height: 53%;
+}
+	.popup_title { 
+	text-transform: uppercase;
+	font-size: 1.3vw;
+	font-weight: bold;
+	margin: 0;
+ }
 }
 
 @media (max-width: 768px){

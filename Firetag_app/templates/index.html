@@ -111,8 +111,7 @@ crossorigin="anonymous"></script>
 
 <div class="fireLazertag">
   <div class="fireLazertag_content">
-  	<div class="container mobile-menu">
-    <div class="row"> 
+    <div class="row mobile-menu"> 
      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8  mobile-tab">
       <nav id="mobile">
         <ul>
@@ -143,8 +142,30 @@ crossorigin="anonymous"></script>
     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
 	</div> 
-  </div>
-  <div id="slider">
+	<div class="row">
+		<div class="col-lg-2"></div>
+			 <div class="col-xs-10 col-sm-5 col-md-5 col-lg-5" id="hidden">
+				<div class="row">
+					<i class="far fa-times-circle fa-3x close_btn"></i>
+					<p class="popup_title">
+						Заявка
+					</p>
+					<p class="popup_title">
+						на обратный звонок
+					</p>
+
+				</div>
+
+				<div class="row">
+					<form method="post" action="#">
+						<input required type="text" placeholder="Ваше имя" autocomplete="none" maxlength="40">
+						<input required type="number" placeholder="Телефон"  autocomplete="none">
+						<button>Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+  <div class="row" id="slider">
 		<div class="imgContainer">
 			<div class="img prev">
 				<img class="pic" src="img/Pic1.png">
@@ -172,15 +193,7 @@ crossorigin="anonymous"></script>
 		<a id="slider-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
    		<a id="slider-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3"></div>
-			 <div class="col-lg-6" id="hidden">
-			Привет
-			</div>
-			<div class="col-lg-3"></div>
-		</div>
-	</div>
+	
 </div>
 <div class="fireLazertag_bg">
   <!--img src="img/laser-bg.png" /-->
@@ -282,7 +295,7 @@ crossorigin="anonymous"></script>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 whatis_soldier">
 				<img src="img/whatis_soldier.png" alt="soldier">
-				<button>
+				<button id="more_btn1">
 					Записаться на игру
 				</button>
 			</div>
