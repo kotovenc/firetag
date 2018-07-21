@@ -459,7 +459,6 @@ ul {
 
 .clubNews_tit>img {
 	width: 10vw;
-	margin-top: -10px;
 }
 
 .menu_news{
@@ -471,11 +470,12 @@ ul {
 
 	position: relative;
 
-	//background: #ffffff;
+	//background: #00ff00;
 }
 
 .menu_news_container{
 	height: 100%;
+	max-width: 1170px;
 	position: absolute;
 
 	transform: translate(-50%, 0);
@@ -483,7 +483,7 @@ ul {
 
 	border-bottom: 2px solid grey;
 
-	//background: #00ff00;
+	//background: #ff0000;
 }
 
 .news_button{
@@ -527,6 +527,7 @@ ul {
 
 .news_content_container{
 	width: 60vw;
+	max-width: 1170px;
 	height: 17.75vw;
 
 	position: absolute;
@@ -609,6 +610,7 @@ ul {
 }
 /*------------------------NEWS-------------------------------*/
 
+/*------------------------SERVICES-------------------------------*/
 .services{
 	margin: 0;
 	//border: 2px solid LightSalmon;
@@ -629,6 +631,23 @@ ul {
 	//border: 2px solid red;
 }
 
+.clubServices_tit {
+	//border: 2px solid LightSalmon;
+	margin-top: 15vw;
+	text-align: center;
+}
+
+.clubServices_tit>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2vw;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.clubServices_tit>img {
+	width: 10vw;
+}
+
 .services_bg>img{
 	width: 100%;
 }
@@ -637,7 +656,157 @@ ul {
 	//border: 5px solid yellow;
 	width: 100%;
 	position: absolute;
+	z-index: 3;
 }
+
+.serv_content{
+	height: 26.5vw;
+
+	margin-top: 3.5vw;
+	//padding-left: 20.75vw;
+	//padding-right: 10vw;
+
+	position: relative;
+
+	background: #ffffff;
+}
+
+.serv_content_container{
+	width: 58.5vw;
+	max-width: 1170px;
+	height: 100%;
+
+	position: absolute;
+
+	transform: translate(-50%, 0);
+	left: 50%;
+
+	background: #00ff00;
+}
+
+.serv_content_block{
+	width: 13.5vw;
+	height: 100%;
+
+	margin-left: 1.35vw;
+	float: left;
+
+	position: relative;
+}
+
+.serv_block_img{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+}
+
+.serv_block_text{
+	width: 100%;
+	padding-left: 1vw;
+	top: 0;
+	margin-top: 22vw;
+	position: absolute;
+
+	overflow: hidden;
+	opacity: 1;
+
+	transition: opacity 1s;
+	background: #ff0000;
+}
+
+.serv_name_text{
+	width: 5vw;
+	height: 2px;
+
+	margin-bottom: 0.2vw;
+	transform: scale(1.0,1.0); /*ХЗ зачем, но без этого всё ломается*/
+
+	background: #ffffff;
+}
+
+.serv_block_text>p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3vw;
+	font-weight: 900;
+	line-height: 1.5vw;
+	letter-spacing: -0.5px;
+	-webkit-transform: scale(.65, 1.0);
+  	-moz-transform: scale(.65, 1.0);
+  	-ms-transform: scale(.65, 1.0);
+  	-o-transform: scale(.65, 1.0);
+  	transform: scale(.65,1.0);
+
+  	white-space: nowrap;
+
+	margin-left: -2.7vw;
+	margin-bottom: 0;
+	color: #ecd5d1;
+}
+
+.serv_content_block:first-child{
+	margin-left: 0;
+}
+
+.serv_block_open{
+	width: 100%;
+	height: 100%;
+
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 1.5vw;
+
+	opacity: 0;
+	transition: opacity 1s;
+
+	z-index: 2;
+}
+
+.serv_block_open_back{
+	width: 100%;
+	height: 100%;
+
+	top: 0;
+	left: 0;
+
+	opacity: 0.9;
+	position: absolute;
+	background: #000000;
+}
+
+.serv_on{
+	opacity: 1;
+}
+
+.serv_block_open>h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.15vw;
+	font-weight: bold;
+	letter-spacing: -1.5px;
+	-webkit-transform: scale(.75, 1.0);
+  	-moz-transform: scale(.75, 1.0);
+  	-ms-transform: scale(.75, 1.0);
+  	-o-transform: scale(.75, 1.0);
+  	transform: scale(.75,1.0);
+
+	margin-left: -1.7vw;
+	margin-bottom: 0.2vw;
+	margin-top: 0;
+	top: 0;
+	color: #FFFFFF;
+
+	white-space: nowrap;
+}
+
+.serv_block_open>p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1vw;
+	word-wrap: break-word;
+	transform: scale(1.0,1.0); /*ХЗ зачем, но без этого всё ломается*/
+	color: #FFFFFF;
+}
+
+/*------------------------SERVICES-------------------------------*/
 
 .equipment{
 	margin: 0;
@@ -1716,6 +1885,18 @@ ul {
 		height: 14px;
 
 		margin-left: 15px;
+	}
+}
+
+@media(max-width: 330px){
+	.menu_news{
+		overflow: hidden;
+	}
+	.news_button{
+		margin-left: 10px;
+	}
+	.news_button:first-child{
+		margin-left: 0;
 	}
 }
 /*Для >2000 доделать
