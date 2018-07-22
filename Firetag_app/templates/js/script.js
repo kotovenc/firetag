@@ -1,5 +1,7 @@
 var flagRight = 1;
 var flagLeft = 1;
+var flagCenter = 1;
+var timeWait = 0;
 
 funcRight = function(withTime){
 		if(flagRight == 1){
@@ -19,10 +21,8 @@ funcRight = function(withTime){
 			nextImg.removeClass('invis');
 			nextImg.addClass('curr');
 
-			if(withTime != 0){
-				$('.circle').eq(nextImgIndex).addClass('on');
-				$('.circle').eq(currImgIndex).removeClass('on');
-			}
+			$('.circle').eq(nextImgIndex).addClass('on');
+			$('.circle').eq(currImgIndex).removeClass('on');
 	
 			var newNextImgIndex = nextImgIndex + 1;
 			var newNextImg = $('.img').eq(newNextImgIndex);
@@ -39,7 +39,7 @@ funcRight = function(withTime){
 			
 			if(withTime != 0){
 				flagRight = 0;
-				setTimeout(function (){ flagRight = 1; }, 1000);
+				setTimeout(function (){ flagRight = 1; }, 990);
 			}
 
 			clearTimeout(timer);
@@ -69,10 +69,8 @@ funcLeft = function(withTime){
 
 			nextImg.removeClass('next');
 
-			if(withTime != 0){
-				$('.circle').eq(prevImgIndex).addClass('on');
-				$('.circle').eq(currImgIndex).removeClass('on');
-			}
+			$('.circle').eq(prevImgIndex).addClass('on');
+			$('.circle').eq(currImgIndex).removeClass('on');
 	
 			var newPrevImgIndex = prevImgIndex - 1;
 			var newPrevImg = $('.img').eq(newPrevImgIndex);
@@ -87,7 +85,7 @@ funcLeft = function(withTime){
 			
 			if(withTime != 0){
 				flagLeft = 0;
-				setTimeout(function (){ flagLeft = 1; }, 1000);
+				setTimeout(function (){ flagLeft = 1; }, 990);
 			}
 
 			clearTimeout(timer);
@@ -99,17 +97,28 @@ funcLeft = function(withTime){
 
 var timer = setTimeout(funcRight, 5000);
 
-$(document).ready ( function(){
-	$('#slider-right').click(funcRight)
+$(document).ready(function(){
+	$('#slider-right').click(function(){
+		if(flagCenter == 1){
+			funcRight(1);
+		}
+	});
 
-	$('#slider-left').click(funcLeft)
+	$('#slider-left').click(function(){
+		if(flagCenter == 1){
+			funcLeft(1);
+		}
+	});
 });
 
 var $set = $('.circle');
 
 $('.circle').click(function(eventObject){
-  	var n = $set.index(this);
+  if(flagCenter == 1){
+  	var n = $set.index(this);{}
   	var nImg = $('.img.curr').index();
+
+  	flagCenter = 0;
 
   	for(var i = 0; i <= ($('.circle:last').index()); i++){
   		$('.img').eq(i).addClass('fast-move');
@@ -129,7 +138,7 @@ $('.circle').click(function(eventObject){
   					funcRight(0);
   				}
 
-  				console.log(numRight);
+  				/*console.log(numRight);*/
 
   				if(numRight == -1){
   					for(var i = 0; i <= ($('.circle:last').index()); i++){
@@ -155,8 +164,7 @@ $('.circle').click(function(eventObject){
   					if(numRight <= 0){
   						funcLeft(0);
   					}
-
-  					console.log(numRight);
+  					/*console.log(numRight);*/
 
   					if(numRight == 1){
   						for(var i = 0; i <= ($('.circle:last').index()); i++){
@@ -171,16 +179,24 @@ $('.circle').click(function(eventObject){
   				}}, 499);
   			}
   		}else{
+  			$('.circle').eq(n).addClass('on');
   			for(var i = 0; i <= ($('.circle:last').index()); i++){
   				$('.img').eq(i).removeClass('fast-move');
   			}
   		}
   	}
 
-	$('.circle').eq(n).addClass('on');
+	/*$('.circle').eq(n).addClass('on');*/
 
 	clearTimeout(timer);
 	timer = setTimeout(funcRight, 5000);
 
+	timeWait = Math.abs(n - nImg)*500;
+	console.log(timeWait);
+
+	setTimeout(function (){ 
+		flagCenter = 1; 
+	}, timeWait);
   	/*console.log($('.circle:last').index());*/
+  }
 });
