@@ -749,7 +749,7 @@ ul {
 
 	margin-left: -1.9vw;
 	margin-bottom: 0;
-	color: #ecd5d1;
+	color: #ffffff;
 }
 
 #serv_corr_font{
@@ -2003,7 +2003,7 @@ ul {
 
 	.clubServices_tit>img {
 		width: 70px;
-		
+
 		margin-top: -15px;
 	}
 
@@ -2102,10 +2102,6 @@ ul {
 		margin-left: -39px;
 	}
 
-	#serv_corr_font_open{
-		font-size: 21.45px;
-	}
-
 	.serv_block_open{
 		padding-left: 19.5px;
 		padding-right: 19.5px;
@@ -2136,8 +2132,8 @@ ul {
 	}
 
 	#serv_corr_font{
-		font-size: 23.7px;
-		line-height: 23.7px;
+		font-size: 21.5px;
+		line-height: 23.4px;
 	}
 }
 
