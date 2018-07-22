@@ -1556,14 +1556,14 @@ ul {
 
 @media (min-width: 1600px) and (max-width: 1900px){
 	.map_content {
-	       clip-path: polygon(0 9%, 100% 57%, 100% 100%, 0 100%);
+	       clip-path: polygon(0 9%, 100% 47%, 100% 100%, 0 100%);
     	margin-top: 1vw;
 	}
 }
 
 @media (min-width: 1900px) and (max-width: 2050px){
 	.map_content {
-	    clip-path: polygon(0 9%, 100% 59%, 100% 100%, 0 100%);
+	    clip-path: polygon(0 9%, 100% 47%, 100% 100%, 0 100%);
     	margin-top: 1vw;
 	}
 }
@@ -1653,8 +1653,8 @@ ul {
 		position: right;
 	}
 	.map_content {
-    	clip-path: polygon(0 5%, 100% 68%, 100% 100%, 0 100%);
-        margin-top: 13vw;;
+    	clip-path: polygon(0 5%, 100% 58%, 100% 100%, 0 100%);
+        margin-top: 13vw;
 	}
 	.footer_bg{
 	    height: 27.9vw;
