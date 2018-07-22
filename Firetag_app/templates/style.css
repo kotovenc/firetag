@@ -284,6 +284,9 @@ ul {
 
 .about_content .container {
 	margin-top: 1.5vw;
+	min-width:400px;
+	max-width: 1700px;
+	width: 100%;
 }
 
 .about_circle {
@@ -718,7 +721,7 @@ ul {
 .table_el>div {
 	background-color: black;
 	width: 88%;
-	height: 23vw;
+	height: 100%;
 	margin-left: 6%;
 	margin-right: 6%;
 	padding: 6%;
@@ -1133,6 +1136,17 @@ ul {
 	    clip-path: polygon(0 9%, 100% 27%, 100% 100%, 0 74%);
 	    margin-top: -5vw;
 	}
+	
+	.about_content {
+		height: 43vh;
+	}
+
+	.about_text {
+		font-size: 13px;
+		height: 53vh;
+		width: 70vw;
+		font-size: 10px;
+	}
 
 
 }
@@ -1265,6 +1279,22 @@ ul {
 	    height: 4vw;
 	    width: 85%;
 	    font-size: 1.7vw;
+	}
+	
+	.container {
+		width: 90%;
+	}
+	
+	.table_el {
+		width: 16vw;
+		height: 30vw;
+		//margin: 20vw;
+	}
+	
+	.table_el>div {
+		width: 100%;
+		margin: 0;
+		
 	}
 	
 }
@@ -1505,9 +1535,10 @@ ul {
 	
 	.about_text {
 		font-size: 16px;
-		height: 33vh;
-		width: 65vh;
+		height: 33vw;
+		width: 35vw;
 	}
+	
 	
 	.whatIsFiretag_content {
    		 margin-top: 12vw;
@@ -1552,8 +1583,8 @@ ul {
 	}
 	.about_text {
 		font-size: 20px;
-		height: 33vh;
-		width: 50vw;
+		height: 33vw;
+		width: 40vw;
 		display: inline-block;
 		position: right;
 	}
