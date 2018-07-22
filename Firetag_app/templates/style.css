@@ -27,10 +27,11 @@ html {
 	//left: 29%;
 	background-color: white;
 	text-align: center;
-	margin: 50px 0 0 0 ;
-	padding-top: 25px;
+	margin: 5% 0 5% 0 ;
+	padding: 1% 0 5% 0;
 	border-radius: 15px;
 }
+
 
 .popup_title { 
 	text-transform: uppercase;
@@ -41,7 +42,7 @@ html {
 
  .close_btn {
  	position: relative;
-    bottom: 73px;
+    bottom: 60px;
     left: 54%;
  	color: white;
  }
@@ -249,7 +250,6 @@ input {
 .fireLazertag {
 	//border: 2px solid Turquoise;
 	position: relative;
-	z-index: 5;
 	box-sizing: border-box;
 	//box-sizing: content-box;
 }
@@ -270,7 +270,7 @@ input {
 	//border: 5px solid green;
 	width: 100%;
 	position: absolute;
-	z-index: 3;
+	z-index: 5;
 	//padding-left: 0px;
 }
 
@@ -1242,7 +1242,6 @@ ul {
 
 	#hidden {
 	left: 9%;
-	height: 300px;
 	}
 
 	.popup_title { 
@@ -1300,6 +1299,10 @@ ul {
 	    //height: 27.9vw;
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
+
+		#hidden {
+		left: 29%;
+	}
 }
 
 @media (min-width: 500px) and (max-width: 600px) {
@@ -1342,6 +1345,10 @@ ul {
 	    width: 85%;
 	    font-size: 1.7vw;
 	}
+
+		#hidden {
+	    left: 29%;
+}
 	
 }
 
@@ -1369,6 +1376,10 @@ ul {
 	    height: 4vw;
 	    width: 85%;
 	    font-size: 1.7vw;
+	}
+		#hidden {
+	left: 29%;
+
 	}
 }
 
@@ -1446,6 +1457,10 @@ ul {
 	    height: 27.9vw;
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
+
+		#hidden {
+		left: 29%;
+	}
 	
 }
 
@@ -1476,6 +1491,8 @@ ul {
 	.about_tit {
 		margin-top: 1.5vh;
 	}
+
+
 	
 }
 @media (min-width: 1200px) {
@@ -1488,6 +1505,12 @@ ul {
 	#navbarID li {
 	display: inline-flex;
 	}
+
+	#hidden {
+		left: 37%;
+	    width: 27vw;
+	}
+
 	.mobile-tab {
 		position: relative;
 		display: none!important;
@@ -1685,10 +1708,7 @@ ul {
     	font-size: 2vw;
 	}
 
-	#hidden {
-	left: 29%;
-	height: 53%;
-}
+
 	.popup_title { 
 	text-transform: uppercase;
 	font-size: 1.3vw;
