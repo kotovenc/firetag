@@ -21,23 +21,37 @@ html {
 
 #hidden {
 	display: none;
-	position: fixed;
+	 position: fixed;
+    /* center the element */
+    right: 0;
+    left: 0;
+    top:50%;
+    margin-right: auto;
+    margin-left: auto;
+    /* give it dimensions */
+    min-height: 11em;
+    min-width: 220px;
+    max-width: 600px;
 	z-index: 10;
 	//height: 15vw;
 	//left: 29%;
-	background-color: white;
+	width: 39vw;
+	background: url(img/popup-bg.png);
+	background-size: 100% 100%;
+	background-position: center;
 	text-align: center;
-	margin: 5% 0 5% 0 ;
-	padding: 1% 0 5% 0;
+	//margin: 5vw 36vw;
+	//margin: 0 auto;
+    padding: 0% 0 2% 0;
 	border-radius: 15px;
 }
 
 
 .popup_title { 
 	text-transform: uppercase;
-	//font-size: 1.6vw;
+	//font-size: 1em;
 	font-weight: bold;
-	margin: 0;
+	margin: 1%;
  }
 
  .close_btn {
@@ -60,7 +74,7 @@ form > button {
     box-sizing: content-box;
     width: 100px;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 6px 20px;
     border: 1px solid #018dc4;
     border-radius: 24px;
     font: normal 16px/normal "Times New Roman", Times, serif;
@@ -70,7 +84,7 @@ form > button {
     background: #a22b1b;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
     text-shadow: -1px -1px 0 rgba(15,73,168,0.66);
-    margin-top: 2%;
+    margin: 13px;
     outline: none;
 }
 
@@ -84,7 +98,7 @@ input {
  	display: inline-block;
 	box-sizing: content-box;
 	padding: 10px 20px;
-	border: 1px solid #b7b7b7;
+	border: 1px solid rgba(73,80,87,0);
 	border-radius: 9px;
 	font: normal 16px/normal "Times New Roman", Times, serif;
 	color: black;
@@ -1547,10 +1561,6 @@ ul {
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 
-	#hidden {
-	left: 9%;
-	}
-
 	.popup_title { 
 		text-transform: uppercase;
 		font-size: 18px;
@@ -1606,10 +1616,6 @@ ul {
 	    //height: 27.9vw;
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
-
-		#hidden {
-		left: 29%;
-	}
 }
 
 @media (min-width: 500px) and (max-width: 600px) {
@@ -1653,10 +1659,6 @@ ul {
 	    font-size: 1.7vw;
 	}
 
-		#hidden {
-	    left: 29%;
-}
-	
 	.container {
 		width: 90%;
 	}
@@ -1699,10 +1701,6 @@ ul {
 	    height: 4vw;
 	    width: 85%;
 	    font-size: 1.7vw;
-	}
-		#hidden {
-	left: 29%;
-
 	}
 }
 
@@ -1796,10 +1794,6 @@ ul {
 	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 
-		#hidden {
-		left: 29%;
-	}
-
 	 .document-links a{
 		font-size: 1vw;
 	}
@@ -1847,11 +1841,6 @@ ul {
 	}
 	#navbarID li {
 	display: inline-flex;
-	}
-
-	#hidden {
-		left: 37%;
-	    width: 27vw;
 	}
 
 	.mobile-tab {
@@ -1982,7 +1971,8 @@ ul {
 	    position: relative;
 	    top: -30vw;
 	}
-}
+
+
 
 @media (min-width: 1500px) {
 	.about_text {
@@ -2051,6 +2041,10 @@ ul {
 		line-height: 0.3vw;
 	}
 
+	#hidden {
+		top: 2vw;
+	}
+
 	
 }
 
@@ -2077,8 +2071,6 @@ ul {
 	.mobile-tab a {
     	font-size: 4vw;
 	}
-
-
 }
 
 @media(max-width: 700px){
