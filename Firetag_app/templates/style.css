@@ -1099,6 +1099,7 @@ ul {
 .contacts {
 	display: flex;
 	align-items: center;
+	margin-bottom: 1%;
 }
 
 .foot-logo {
@@ -1111,11 +1112,11 @@ ul {
 }
 
 .footer-logo img {
-	width: 100%;
+	width: 75%;
 }
 
 .flex-item > img {
-	width: 100%;
+	width: 80%;
 }
 
 .flex-item {
@@ -1134,7 +1135,7 @@ ul {
 	align-items: center;
 }
 .footer-adress {
-	font-size: 8px;
+	font-size: 9px;
 	width: 50%;
 	color: white;
 }
@@ -1148,10 +1149,32 @@ ul {
 .document-links a{
 	color: white;
 	text-decoration: underline;
-	font-size: 7px;
+	font-size: 55%;
 }
 
 .document-links p {
+	margin: 0;
+}
+
+.social {
+	background-color:rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 10px;
+	padding: 5% 10%;
+	margin: 0 5%;
+	outline: none;
+}
+
+.social:hover {
+	background-color: rgba(0,0,0,0.3); 
+}
+
+.social:active {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.fa-vk {
+	opacity: 1;
 }
 
 #slider{
@@ -1683,6 +1706,20 @@ ul {
 	}
 }
 
+@media (max-width: 991px){
+.contacts {
+		display: block;
+	}
+
+	.flex-item > img {
+		width: 50%;
+	}
+
+	.links {
+		height: 60px;
+	}
+}
+
 @media (max-width: 992px){
 	.fireLazertag_bg {
 		margin: 0 0 -99px 0;
@@ -1708,18 +1745,7 @@ ul {
 	.footer_bg{
 		margin: -159px 0 -99px 0;
 	}
-
-	.contacts {
-		display: block;
-	}
-
-	.flex-item > img {
-		width: 50%;
-	}
-
-	.links {
-		height: 60px;
-	}	
+	
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
