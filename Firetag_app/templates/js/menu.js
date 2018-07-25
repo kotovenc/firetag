@@ -22,6 +22,9 @@ $(document).ready(function() {
 
 	$('.close_btn').click(function(){
 	  $("#hidden").fadeOut("slow");
-	});  
+	}); 
+
+   $(".input-phone").mask("+7(999) 999-99-99");
+	
 });
 

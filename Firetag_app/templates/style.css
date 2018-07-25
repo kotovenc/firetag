@@ -25,7 +25,7 @@ html {
     /* center the element */
     right: 0;
     left: 0;
-    top:50%;
+    top:35%;
     margin-right: auto;
     margin-left: auto;
     /* give it dimensions */
@@ -44,6 +44,7 @@ html {
 	//margin: 0 auto;
     padding: 0% 0 2% 0;
 	border-radius: 15px;
+	box-shadow: 0px 0px 45px 1006px rgba(0,0,0,.9); 
 }
 
 
@@ -1054,15 +1055,11 @@ ul {
 .map_bg{
 	position: relative;
 	z-index: 5;
-	//background-image: url(img/map.png);
-	//background-size: auto 100%;
-	//background-position: center;
 	height: 31.9vw;
     min-height: 530px;
 	position: relative;
 	z-index: -1;
 	margin: -42vw 0 -10vw 0px;
-	//border: 2px solid red;
 }
 
 .map_bg>img{
@@ -1070,19 +1067,17 @@ ul {
 }
 
 .map_content{
-	//border: 5px solid yellow;
 	width: 100%;
 	position: absolute;
 }
 
 .footer{
 	margin: 0;
-	//border: 2px solid LightSalmon;
 	position: relative;
-	z-index: 10;
-	//box-sizing: border-box;
+	z-index: 4;
 	box-sizing: content-box;
-	clip-path: polygon(0 0%, 100% 39%, 100% 100%, 0 100%);
+	//clip-path: polygon(67% 38%, 100% 48%, 100% 100%, 0 100%, 0 5%);
+	clip-path: polygon(62% 38%, 100% 55%, 100% 100%, 0% 100%, 0% 1%);
 }
 
 .footer_bg{
@@ -1093,9 +1088,6 @@ ul {
 	min-height: 268px;
 	position: relative;
 	z-index: -1;
-	//margin: -16vw 0 -10vw 0px;
-	//border: 2px solid red;
-	//clip-path: polygon(0 10%, 100% 42%, 100% 100%, 0 100%);
 }
 
 .footer_bg>img{
@@ -1381,6 +1373,10 @@ ul {
 	    margin-top: -5vw;
 	}
 
+	.footer {
+		clip-path: polygon(72% 36%, 101% 41%, 100% 100%, 0% 100%, 0% 20%);
+	}
+
 }
 
 @media (min-width: 400px) and (max-width: 549px) {
@@ -1436,6 +1432,10 @@ ul {
 	    clip-path: polygon(0 9%, 100% 20%, 100% 100%, 0 74%);
 	    margin-top: -5vw;
 	}
+
+	.footer {
+		clip-path: polygon(72% 36%, 101% 41%, 100% 100%, 0% 100%, 0% 15%);
+	}
 }
 
 /* ===== WARNING! ===== АДАПТИВНОСТЬ ===== WARNING! ===== */
@@ -1457,7 +1457,7 @@ ul {
 @media (min-width: 550px) and (max-width: 767px) {
 	#orderText {
     font-size: 2.3vw;
-}
+	}
 
 	.whatis_title > h1 {
 		font-size: 18px;
@@ -1520,7 +1520,9 @@ ul {
 		width: 70vw;
 		font-size: 10px;
 	}
-
+	.footer {
+		clip-path: polygon(62% 34%, 100% 43%, 100% 100%, 0% 100%, 0% 9%);
+	}
 
 }
 @media (min-width: 660px) and (max-width: 768px){
@@ -1558,7 +1560,6 @@ ul {
 
 	.footer_bg{
 	    height: 27.9vw;
-	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 
 	.popup_title { 
@@ -1571,7 +1572,7 @@ ul {
 
 @media (min-width: 768px) and (max-width: 992px) {
 	.footer {
-		//margin-bottom: -750px;
+		clip-path: polygon(67% 38%, 100% 48%, 100% 100%, 0% 100%, 0% 1%);
 	}
 
 	.header_content {
@@ -1610,11 +1611,6 @@ ul {
 	.map_content {
 	    clip-path: polygon(0 9%, 100% 27%, 100% 100%, 0 74%);
 	    margin-top: -5vw;
-	}
-
-	.footer_bg{
-	    //height: 27.9vw;
-	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 }
 
@@ -1791,7 +1787,6 @@ ul {
 
 	.footer_bg{
 	    height: 27.9vw;
-	    //clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
 	}
 
 	 .document-links a{
@@ -1828,9 +1823,43 @@ ul {
 	.about_tit {
 		margin-top: 1.5vh;
 	}
+}
 
+@media (min-width: 2050px) {
+	.about_circle {
+		display: inline-block;
+	}
+	.about_text {
+		font-size: 20px;
+		height: 33vw;
+		width: 40vw;
+		display: inline-block;
+		position: right;
+	}
+
+	.map_content {
+    	clip-path: polygon(0 5%, 100% 58%, 100% 100%, 0 100%);
+        margin-top: 13vw;
+	}
+
+	.footer_bg{
+	    height: 27.9vw;
+	}
 
 	
+	.whatis_soldier > img {
+	    width: 17vw;
+	    position: relative;
+	    top: -24vw;
+	}
+
+	.whatis_soldier > button {
+		bottom: 26vw;
+		height: 4vw;
+		width: 110%;
+		font-size: 1.2vw;
+	}
+
 }
 @media (min-width: 1200px) {
 	.leftbar {
@@ -1863,11 +1892,6 @@ ul {
 		width: 10vw;
 	}
 
-	.map_content {
-	    clip-path: polygon(0 9%, 100% 40%, 100% 100%, 0 100%);
-    	margin-top: 0vw;
-	}
-
 	 .document-links a{
 		font-size: 12px;
 	}
@@ -1881,10 +1905,6 @@ ul {
 
 	.map_bg{
 	height: 27vw;
-	}
-.footer_bg{
-	//height: 50.9vw;
-	//clip-path: polygon(0 10%, 100% 42%, 100% 100%, 0 100%);
 	}
 }
 
@@ -1904,7 +1924,7 @@ ul {
 @media (min-width: 1900px) and (max-width: 2050px){
 	.map_content {
 	    clip-path: polygon(0 9%, 100% 47%, 100% 100%, 0 100%);
-    	margin-top: 1vw;
+    	margin-top: 1.5vw;
 	}
 }
 
@@ -1913,10 +1933,6 @@ ul {
 @media (min-width: 1600px) and (max-width: 2050px){
 	.map_bg{
 		height: 27vw;
-	}
-	.footer_bg{
-	    //height: 43.9vw;
-	    //clip-path: polygon(0 10%, 100% 42%, 100% 100%, 0 100%);
 	}
 }
 
@@ -1983,40 +1999,7 @@ ul {
 	}
 }
 
-@media (min-width: 2050px) {
-	.about_circle {
-		display: inline-block;
-	}
-	.about_text {
-		font-size: 20px;
-		height: 33vw;
-		width: 40vw;
-		display: inline-block;
-		position: right;
-	}
-	.map_content {
-    	clip-path: polygon(0 5%, 100% 58%, 100% 100%, 0 100%);
-        margin-top: 13vw;
-	}
-	.footer_bg{
-	    height: 27.9vw;
-	   // clip-path: polygon(0 0%, 100% 42%, 100% 100%, 0 100%);
-	}
 
-	
-	.whatis_soldier > img {
-	    width: 17vw;
-	    position: relative;
-	    top: -24vw;
-	}
-
-	.whatis_soldier > button {
-		bottom: 26vw;
-		height: 4vw;
-		width: 110%;
-		font-size: 1.2vw;
-	}
-}
 
 /*------------------------NEWS-------------------------------*/
 
