@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  {% load staticfiles %}
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>13 РАЙОН</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
-	<script src="js/script.js" defer></script>
-	<script src="js/news_script.js" defer></script>
-	<script src="js/serv_script.js" defer></script>
+  <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="{% static 'js/jquery.maskedinput.min.js' %}" type="text/javascript"></script>
+	<script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+	<script src="{% static 'js/script.js' %}" defer></script>
+	<script src="{% static 'js/news_script.js' %}" defer></script>
+	<script src="{% static 'js/serv_script.js' %}" defer></script>
 </head>
-
 
 <body>
 
@@ -28,7 +27,7 @@
     <div class="container header_content ">
       <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 logo">
-          <img src="img/logo.png">
+          <img src="{% static 'img/logo.png' %}">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 col-xl-8 col-lg-8">
           <div class="row">
@@ -148,15 +147,15 @@
      <div id="slider">
 		<div class="imgContainer">
 			<div class="img prev">
-				<img class="pic" src="img/Pic1.png">
+				<img class="pic" src="{% static 'img/Pic1.png' %}">
 			</div>
 	
 			<div class="img curr">
-				<img class="pic" src="img/Pic2.png">
+				<img class="pic" src="{% static 'img/Pic2.png' %}">
 			</div>
 	
 			<div class="img next">
-				<img class="pic" src="img/Pic3.png">
+				<img class="pic" src="{% static 'img/Pic3.png' %}">
 			</div>
 
 			<!-- Сюда добавлять картинки -->
@@ -175,9 +174,7 @@
 	</div>
 	
 </div>
-<div class="fireLazertag_bg">
-  <!--img src="img/laser-bg.png" /-->
-</div>
+<div class="fireLazertag_bg"></div>
 </div>
 
 <div class="about">
@@ -185,16 +182,16 @@
     <a name="about"></a>
 	<div class="about_tit">
           <p>О НАС</p>
-          <img src="img/about-separ.png" />
+          <img src="{% static 'img/about-separ.png' %}">
     </div>
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-xs-3 about_circle">
         <div class=about-in-circle>
-          <img class=about_img src="img/About_cir1.png">
-          <img class=about_img src="img/About_cir3.png">
-          <img class=about_img src="img/About_cir2.png">
-          <img class=about_img src="img/About_cir4.png">
+          <img class=about_img src="{% static 'img/About_cir1.png' %}">
+          <img class=about_img src="{% static 'img/About_cir3.png' %}">
+          <img class=about_img src="{% static 'img/About_cir2.png' %}">
+          <img class=about_img src="{% static 'img/About_cir4.png' %}">
           <div class="about_click_img about_click1"></div>
           <div class="about_click_img about_click2"></div>
           <div class="about_click_img about_click3"></div>
@@ -218,9 +215,7 @@
 	  </div>
 	</div>
   </div>
-  <div class="about_bg">
-    <!--img src="img/about-bg.png" /-->
-  </div>
+  <div class="about_bg"></div>
 </div>
 
 <div class="whatIsFiretag">
@@ -235,18 +230,18 @@
 				<p>
 					Firetag &mdash; первая реалистичная имитация боевых действий
 				</p>
-				<img src="img/about-separ.png" alt="">
+				<img src="{% static 'img/about-separ.png' %}" alt="">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 "></div>
 			<div class="col-xs-5 col-sm-5 col-md-3 col-lg-3  superiority">
-				<img src="img/superiority-1.png" alt="superiority-1">
+				<img src="{% static 'img/superiority-1.png' %}" alt="superiority-1">
 				<p class="superiority_title">Максимальный реализм</p>
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 "></div>
 			<div class="col-xs-5 col-sm-5 col-md-3 col-lg-3  superiority">
-				<img src="img/superiority-2.png" alt="superiority-2">
+				<img src="{% static 'img/superiority-2.png' %}" alt="superiority-2">
 				<p class="superiority_title">Поле боя будущего</p>
 			</div>
 			<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 "></div>
@@ -254,13 +249,13 @@
 		<div class="row">
 			<div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
 			<div class="col-xs-5 col-sm-3 col-md-2 col-lg-2 superiority">
-				<img src="img/superiority-3.png" alt="superiority-3">
+				<img src="{% static 'img/superiority-3.png' %}" alt="superiority-3">
 				<p class="superiority_title">Тактика и стратегия</p>
 				<p class="superiority_text">Современное оборудование позволяет в реальном времени упаравлять боем</p>
-			</div>
+			</div>' %}'
 			<div class="col-xs-2 col-sm-4 col-md-6 col-lg-6"></div>
 			<div class="col-xs-5 col-sm-3 col-md-2 col-lg-2 superiority">
-				<img src="img/superiority-4.png" alt="superiority-4">
+				<img src="{% static 'img/superiority-4.png' %}" alt="superiority-4">
 				<p class="superiority_title">Рейтинговая система</p>
 			</div>
 			<div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
@@ -268,14 +263,14 @@
 		<div class="row">
 			<div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
 			<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3"  id="superiority-5">
-				<img src="img/superiority-5.png" alt="superiority-5">
+				<img src="{% static 'img/superiority-5.png' %}" alt="superiority-5">
 				<p class="superiority_title">Современная экипировка</p>
 				<p class="superiority_text">Полностью переработанная экипировка может использоваться с любой формой и нечувствительная к рикошету</p>
 			</div>
 			<div class="col-xs-2 col-sm-4 col-md-4 col-lg-4">
 			</div>
 			<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 superiority">
-				<img src="img/superiority-6.png" alt="superiority-6">
+				<img src="{% static 'img/superiority-6.png' %}" alt="superiority-6">
 				<p class="superiority_title">Буря эмоций</p>
 				<p class="superiority_text">От лихорадочного стресса боя до восторга победы</p>
 			</div>
@@ -284,7 +279,7 @@
 		<div class="row">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 whatis_soldier">
-				<img src="img/whatis_soldier.png" alt="soldier">
+				<img src="{% static 'img/whatis_soldier.png' %}" alt="soldier">
 				<button id="more_btn1">
 					Записаться на игру
 				</button>
@@ -293,9 +288,7 @@
 		</div>
 		</div>
 	</div>
- <div class="whatis_bg">
-	<!--img src="img/whatis-bg.png" /-->
-</div>
+ <div class="whatis_bg"></div>
 </div>
 
 <div class="clubNews">
@@ -303,7 +296,7 @@
     <a name="news"></a>
     <div class="clubNews_tit">
           <p>НОВОСТИ КЛУБА</p>
-          <img src="img/about-separ.png" />
+          <img src="{% static 'img/about-separ.png' %}" >
     </div>
 
     <div class="menu_news">
@@ -325,7 +318,7 @@
     <div class="news_content">
       <div class="news_content_container curr">
         <div class="news_content_block">
-          <img class="news_block_img" src="img/place.png"/>
+          <img class="news_block_img" src="{% static 'img/place.png' %}">
 
           <div class="news_block_text">
             <h1>Площадка №1</h1>
@@ -338,7 +331,7 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="img/place.png"/>
+          <img class="news_block_img" src="{% static 'img/place.png' %}">
 
           <div class="news_block_text">
             <h1>Площадка №2</h1>
@@ -351,7 +344,7 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="img/place.png"/>
+          <img class="news_block_img" src="{% static 'img/place.png' %}">
 
           <div class="news_block_text">
             <h1>Площадка №3</h1>
@@ -366,7 +359,7 @@
 
       <div class="news_content_container">
         <div class="news_content_block">
-          <img class="news_block_img" src="img/item1.png"/>
+          <img class="news_block_img" src="{% static 'img/item1.png' %}">
 
           <div class="news_block_text">
             <h1>Алмазный меч</h1>
@@ -379,7 +372,7 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="img/item2.png"/>
+          <img class="news_block_img" src="{% static 'img/item2.png' %}">
 
           <div class="news_block_text">
             <h1>Алмазная кирка</h1>
@@ -392,7 +385,7 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="img/item3.png"/>
+          <img class="news_block_img" src="{% static 'img/item3.png' %}">
 
           <div class="news_block_text">
             <h1>Алмазный топор</h1>
@@ -407,7 +400,7 @@
 
       <div class="news_content_container">
         <div class="news_content_block">
-          <img class="news_block_img" src="img/event1.png"/>
+          <img class="news_block_img" src="{% static 'img/event1.png' %}">
 
           <div class="news_block_text">
             <h1>Ивент №1</h1>
@@ -420,7 +413,7 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="img/event2.png"/>
+          <img class="news_block_img" src="{% static 'img/event2.png' %}">
 
           <div class="news_block_text">
             <h1>Ивент №2</h1>
@@ -433,7 +426,7 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="img/event3.png"/>
+          <img class="news_block_img" src="{% static 'img/event3.png' %}">
 
           <div class="news_block_text">
             <h1>Ивент №3</h1>
@@ -448,9 +441,7 @@
     </div>
   </div>
 
-  <div class="news_bg">
-    <!--img src="img/news-bg.png" /-->
-  </div>
+  <div class="news_bg"></div>
 </div>
 
 <div class="services">
@@ -458,13 +449,13 @@
   	<a name="services"></a>
     <div class="clubServices_tit">
           <h1><span class="serv_red_title">НАШИ</span> УСЛУГИ</h1>
-          <img src="img/about-separ.png" />
+          <img src="{% static 'img/about-separ.png' %}" />
     </div>
 
     <div class="serv_content">
 		  <div class="serv_content_container">
 			  <div class="serv_content_block">
-          <img class="serv_block_img" src="img/serv1.png"/>
+          <img class="serv_block_img" src="{% static 'img/serv1.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
@@ -482,7 +473,7 @@
         </div>
 
         <div class="serv_content_block">
-          <img class="serv_block_img" src="img/serv2.png"/>
+          <img class="serv_block_img" src="{% static 'img/serv2.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
@@ -502,7 +493,7 @@
         </div>
 
         <div class="serv_content_block">
-          <img class="serv_block_img" src="img/serv3.png"/>
+          <img class="serv_block_img" src="{% static 'img/serv3.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
@@ -520,7 +511,7 @@
         </div>
 
         <div class="serv_content_block">
-          <img class="serv_block_img" src="img/serv4.png"/>
+          <img class="serv_block_img" src="{% static 'img/serv4.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
@@ -537,9 +528,7 @@
 		  </div>
     </div>
   </div>
-  <div class="services_bg">
-    <!--img src="img/serv-bg.png" /-->
-  </div>
+  <div class="services_bg"></div>
 </div>
 
 <div class="equipment">
@@ -548,17 +537,17 @@
 	<div class="equipment_tit">
 		<a name="equip"></a>
 		<p>ОБОРУДОВАНИЕ FIRETAG</p>
-		<img src="img/about-separ.png" />
+		<img src="{% static 'img/about-separ.png' %}" />
 	</div>
 	<div class="people">
-		<img src="img/pupa_lupa_and_kupa.png">
+		<img src="{% static 'img/Pupa_lupa_and_kupa.png' %}">
 	</div>
 	<div class="container table">
 
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
 				<div>
-					<img src="img/eq-1.png">
+					<img src="{% static 'img/eq-1.png' %}">
 					<div>
 						Штабное оборудование позволяет контролировать поле боя в реальном времени.
 					</div>
@@ -566,7 +555,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
 				<div>
-					<img src="img/eq-2.png">
+					<img src="{% static 'img/eq-2.png' %}">
 					<div>
 						БПЛА способны оказывать воздушную поддержку подразделениям
 						1)Бомбометание
@@ -577,7 +566,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
 				<div>
-					<img src="img/eq-3.png">
+					<img src="{% static 'img/eq-3.png' %}">
 					<div>
 						Универсальные лазерные
 						модули могут использоваться
@@ -588,7 +577,7 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
 				<div>
-					<img src="img/eq-4.png">
+					<img src="{% static 'img/eq-4.png' %}">
 					<div>
 						Датчики, созданные по новой
 						технологии не чувствительны
@@ -600,7 +589,7 @@
 		<div class="row second_row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table_el">
 				<div>
-					<img src="img/eq-5.png">
+					<img src="{% static 'img/eq-5.png' %}">
 					<div>
 						Миниатюрные разведывательные дроны
 						(удаленное управление с наручного компьютера)
@@ -609,7 +598,7 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table_el">
 				<div>
-					<img src="img/eq-6.png">
+					<img src="{% static 'img/eq-6.png' %}">
 					<div>
 						Носимые турели.
 						(удаленное управление с наручного компьютера)
@@ -618,7 +607,7 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table_el">
 				<div>
-					<img src="img/eq-7.png">
+					<img src="{% static 'img/eq-7.png' %}">
 					<div>
 						Наручный компьютер позволяет получать своевременную
 						информацию из штаба и запрашивать поддержку
@@ -628,18 +617,14 @@
 		</div>
 	</div>
  </div>
- <div class="equip_bg">
-  <!--img src="img/equip-bg.png" /-->
-</div>
+ <div class="equip_bg"></div>
 </div>
 
 <div class="map">
   <div class="map_content">
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A81144eebb208395635786e319f5bbbd9441ede046e60c3526ae8e51a9e54b03c&amp;width=100%25&amp;height=620&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
-  <div class="map_bg">
-    <!--img src="img/map.png" /-->
-  </div>
+  <div class="map_bg"></div>
 </div>
 
 <div class="footer">
@@ -650,7 +635,7 @@
   			<div class="col-xs-12 col-md-6">
   			<div class="row foot-logo"> 
 			    <div class="col-xs-4 col-md-6 footer-logo">
-					<img src="img/logo1-1.png" alt="13 район">
+					<img src="{% static 'img/logo1-1.png' %}" alt="13 район">
 			    </div>
 			    <div class="col-xs-8 col-md-6 footer-adress">
 			    	<hr>
@@ -661,13 +646,13 @@
 	  	<div class="col-xs-12 col-md-6">
 	  	 	<div class="row footer_partners">
 			    <div class="col-xs-4 flex-item">
-			    	<img src="img/logo2.png" alt="TEXET">
+			    	<img src="{% static 'img/logo2.png' %}" alt="TEXET">
 			    </div>
 			    <div class="col-xs-4 flex-item">
-			    	<img src="img/logo3.png" alt="IFSA">
+			    	<img src="{% static 'img/logo3.png' %}" alt="IFSA">
 			    </div>
 			    <div class="col-xs-4 flex-item">
-			    	<img src="img/logo4.png" alt="Фармтек">
+			    	<img src="{% static 'img/logo4.png' %}" alt="Фармтек">
 			    </div>
 			</div>
 	  	 </div>

@@ -55,7 +55,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+EMAIL_HOST = 'nakmak1998@gmail.com'
+EMAIL_PASSWORD = 'yesterday98'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
