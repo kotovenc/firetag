@@ -1616,9 +1616,56 @@ ul {
 	}
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+	.table_el {
+		height: 36vw;
+		font-size: 6px;
+	}
+	
+	.second_row>div {
+		height: 36vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 45%;
+	}
+	
+	.people>img {
+		width: 80vw;
+		height: 70vw;
+	}
+	
+	.people {
+		height: 70vw;
+	}
+}
+
 @media (min-width: 500px) and (max-width: 600px) {
 	.whatIsFiretag_content{
 			margin-top: 16vw;
+	}
+	
+	.table_el {
+		height: 36vw;
+		font-size: 8px;
+	}
+	
+	.second_row>div {
+		height: 36vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 25%;
 	}
 
 
@@ -1628,6 +1675,98 @@ ul {
 	.whatIsFiretag_content{
 			margin-top: 16vw;
 	}
+	
+	.table_el {
+		height: 33vw;
+		font-size: 9px;
+	}
+	
+	.second_row>div {
+		height: 33vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 25%;
+	}
+	
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+	.table_el {
+		height: 25vw;
+		font-size: 9px;
+	}
+	
+	.second_row>div {
+		height: 22vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 25%;
+	}
+	
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+	
+	.container {
+		width: 90%;
+	}
+	
+	.table_el {
+		height: 20vw;
+		font-size: 9px;
+	}
+	
+	.second_row>div {
+		height: 20vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 15%;
+	}
+	
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+	
+	.container {
+		width: 90%;
+	}
+	
+	.table_el {
+		height: 18vw;
+		font-size: 9px;
+	}
+	
+	.second_row>div {
+		height: 18vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 15%;
+	}
+	
 }
 
 @media (min-width: 768px) and (max-width: 868px) {
@@ -1657,21 +1796,29 @@ ul {
 	    font-size: 1.7vw;
 	}
 
-	.container {
+	/*.container {
 		width: 90%;
 	}
 	
-	.table_el {
-		width: 16vw;
-		height: 30vw;
-		//margin: 20vw;
-	}
-	
 	.table_el>div {
+		font-size: 10px;
 		width: 100%;
 		margin: 0;
 		
 	}
+	
+	.table_el {
+		height: 20vw;
+	}
+	
+	.second_row>div {
+		height: 20vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}*/
 	
 }
 
@@ -1700,6 +1847,7 @@ ul {
 	    width: 85%;
 	    font-size: 1.7vw;
 	}
+	
 }
 
 @media (max-width: 991px){
@@ -1714,6 +1862,40 @@ ul {
 	.links {
 		height: 60px;
 	}
+	
+	.container {
+		width: 90%;
+		
+	}
+	
+	/*.table_el {
+		width: 16vw;
+		height: 30vw;
+		//margin: 20vw;
+	}*/
+	
+	.table_el>div {
+		width: 100%;
+		margin: 0;
+		
+	}
+	
+	/*.table_el {
+		height: 25vw;
+	}
+	
+	.second_row>div {
+		height: 25vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 25%;
+	}*/
 }
 
 @media (max-width: 992px){
