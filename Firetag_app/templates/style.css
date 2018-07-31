@@ -961,7 +961,7 @@ ul {
 }
 
 .equipment_tit {
-	border: 2px solid LightSalmon;
+	//border: 2px solid LightSalmon;
 	margin-top: 14vw;
 	text-align: center;
 }
@@ -982,7 +982,7 @@ ul {
 	text-align: center;
 	width: 100%;
 	height: 38vw;
-	border: 2px solid blue;
+	//border: 2px solid blue;
 }
 
 .people>img {
@@ -994,14 +994,14 @@ ul {
 	text-align: center;
 	width: 70vw;
 	height: 37vw;
-	border: 2px solid green;
+	//border: 2px solid green;
 }
 
 .table_el {
 	//text-align: ;
 	color: #FFFFFF;
 	font-size: 12px;
-	border: 1px solid red;
+	//border: 1px solid red;
 	height: 18.5vw;
 	//width: 10vw;
 }
@@ -1029,7 +1029,7 @@ ul {
 
 .second_row{
 	width: 80%;
-	border: 1px solid white;
+	//border: 1px solid white;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 8%;
@@ -1322,11 +1322,6 @@ ul {
     .about_content {
 		height: 43vh;
 	}
-	/*.about_text {
-		font-size: 13px;
-		height: 33vh;
-		width: 60vw;
-	}*/
 }
 @media (max-width: 399px) {
 
@@ -1614,7 +1609,36 @@ ul {
 	}
 }
 
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 400px) {
+	.table_el {
+		height: 50vw;
+		font-size: 6px;
+	}
+	
+	.second_row>div {
+		height: 50vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 45%;
+	}
+	
+	.people>img {
+		width: 90vw;
+		height: 90vw;
+	}
+	
+	.people {
+		height: 90vw;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
 	.table_el {
 		height: 36vw;
 		font-size: 6px;
@@ -1715,9 +1739,35 @@ ul {
 	
 }
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 800px) and (max-width: 900px) {
 	
 	.container {
+		width: 90%;
+	}
+	
+	.table_el {
+		height: 20vw;
+		font-size: 9px;
+	}
+	
+	.second_row>div {
+		height: 20vw;
+		//background-color: red;
+	}
+	
+	.second_row .table_el>div {
+		height: 100%;
+	}
+	
+	.equipment_tit {
+		margin-top: 20%;
+	}
+	
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+	
+		.container {
 		width: 90%;
 	}
 	
