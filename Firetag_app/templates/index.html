@@ -138,9 +138,10 @@
 				на обратный звонок
 			</p>
 
-			<form method="post" action="#">
-				<input required type="text" placeholder="Ваше имя" autocomplete="none" maxlength="40">
-				<input required class="input-phone" placeholder="Телефон"  autocomplete="none">
+			<form method="post" action="/order/">
+        {% csrf_token %}
+				<input required type="text" placeholder="Ваше имя" autocomplete="none" maxlength="40" name="name">
+				<input required class="input-phone" placeholder="Телефон"  autocomplete="none" name="phone">
 				<button>Отправить</button>
 			</form>
     </div>

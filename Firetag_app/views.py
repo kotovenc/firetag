@@ -12,8 +12,9 @@ def home(request):
 
 def order(request):
 	phone_num = request.POST.get('phone','')
-	to = "to@address.com"
+	to = "nakmak1998@gmail.com"
 	sender = "from@address.com"
 	subject = request.POST.get('name','')
 	send_mail(subject, phone_num, 'from@example.com',
     [to], fail_silently=False)
+	return HttpResponse("Succes")
