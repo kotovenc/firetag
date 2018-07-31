@@ -370,6 +370,8 @@ ul {
 .about_circle {
 	//border: 2px solid LightSalmon;
 	height: 45vh;
+
+	position: relative;
 }
 
 /* WHAT IS FAIRTAG BLOCK */
@@ -2386,4 +2388,57 @@ ul {
 	#slider{
     	height: 476.16px;
 	}
+}
+
+/*----------ABOUT Circle---------*/
+.about-in-circle{
+	width: 18.5vw;
+	height: 18.5vw;
+
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about_img{
+	position: absolute;
+}
+
+.about_img:first-child{
+	width: 12.2vw;
+	
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.about_img:nth-child(2){
+	width: 12.2vw;
+	
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.about_img:nth-child(3){
+	height: 12.2vw;
+	
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.about_img:nth-child(4){
+	height: 12.2vw;
+
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.about_click_img{
+	width: 12.2vw;
+	height: 12.2vw;
+	
+	position: absolute;
 }
