@@ -51,7 +51,6 @@
 <body>
 {%cms_toolbar%}
     <a name="main"></a>
-}
 <div class="header">
     <div class="container header_content ">
       <div class="row justify-content-center">
@@ -327,7 +326,7 @@
        </div>
 
         <div class="news_button" onclick="equip()">
-          <p>Новые оборудование</p>
+          <p>Новое оборудование</p>
         </div>
 
         <div class="news_button" onclick="events()">
@@ -342,8 +341,8 @@
           <img class="news_block_img" src="{% static 'img/place.png' %}">
 
           <div class="news_block_text">
-            <h1>Площадка №1</h1>
-            <p>Описание площадки</p>
+            <h1>Place 1</h1>
+            {% placeholder "descr_place1" %}
           </div>
           
           <div class="news_block_open">
@@ -355,8 +354,8 @@
           <img class="news_block_img" src="{% static 'img/place.png' %}">
 
           <div class="news_block_text">
-            <h1>Площадка №2</h1>
-            <p>Описание площадки</p>
+            <h1>Place 2</h1>
+            {% placeholder "descr_place2" %}
           </div>
           
           <div class="news_block_open">
@@ -368,12 +367,12 @@
           <img class="news_block_img" src="{% static 'img/place.png' %}">
 
           <div class="news_block_text">
-            <h1>Площадка №3</h1>
-            <p>Описание площадки</p>
+            <h1>Place 3</h1>
+            {% placeholder "descr_place3" %}
           </div>
           
           <div class="news_block_open">
-            <p>Открыть ></p>
+            <p>Открыть</p>
           </div>
         </div>
       </div>
@@ -383,8 +382,8 @@
           <img class="news_block_img" src="{% static 'img/item1.png' %}">
 
           <div class="news_block_text">
-            <h1>Алмазный меч</h1>
-            <p>Описание меча</p>
+            <h1>Item 1</h1>
+            {% placeholder "descr_item1" %}
           </div>
           
           <div class="news_block_open">
@@ -396,8 +395,8 @@
           <img class="news_block_img" src="{% static 'img/item2.png' %}">
 
           <div class="news_block_text">
-            <h1>Алмазная кирка</h1>
-            <p>Описание кирки</p>
+            <h1>Item 2</h1>
+            {% placeholder "descr_item2" %}
           </div>
           
           <div class="news_block_open">
@@ -409,8 +408,8 @@
           <img class="news_block_img" src="{% static 'img/item3.png' %}">
 
           <div class="news_block_text">
-            <h1>Алмазный топор</h1>
-            <p>Описание топора</p>
+            <h1>Item 3</h1>
+            {% placeholder "descr_item3" %}
           </div>
           
           <div class="news_block_open">
@@ -424,8 +423,8 @@
           <img class="news_block_img" src="{% static 'img/event1.png' %}">
 
           <div class="news_block_text">
-            <h1>Ивент №1</h1>
-            <p>Описание события</p>
+            <h1>Event 1</h1>
+            {% placeholder "descr_event1" %}
           </div>
           
           <div class="news_block_open">
@@ -437,8 +436,8 @@
           <img class="news_block_img" src="{% static 'img/event2.png' %}">
 
           <div class="news_block_text">
-            <h1>Ивент №2</h1>
-            <p>Описание события</p>
+            <h1>Event 2</h1>
+            {% placeholder "descr_event2" %}
           </div>
           
           <div class="news_block_open">
@@ -450,8 +449,8 @@
           <img class="news_block_img" src="{% static 'img/event3.png' %}">
 
           <div class="news_block_text">
-            <h1>Ивент №3</h1>
-            <p>Описание события</p>
+            <h1>Event 3</h1>
+            {% placeholder "descr_event3" %}
           </div>
           
           <div class="news_block_open">
@@ -487,9 +486,7 @@
             <div class="serv_block_open_back"></div>
             <h1>КОРПОРАТИВНЫЕ ИГРЫ</h1>
             <div class="serv_name_text"></div>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
+            {% placeholder "game1" %}
           </div>
         </div>
 
@@ -507,9 +504,7 @@
             <h1 id="serv_corr_font_open_1">КРУПНЫЕ</h1>
             <h1 id="serv_corr_font_open_2">ВОЕННО-ТАКТИЧЕСКИЕ ИГРЫ</h1>
             <div class="serv_name_text"></div>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
+            {% placeholder "game2" %}
           </div>
         </div>
 
@@ -525,9 +520,7 @@
             <div class="serv_block_open_back"></div>
             <h1>ДЕТСКИЙ ЛАЗЕРТАГ</h1>
             <div class="serv_name_text"></div>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
-            <p>qwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop</p>
+            {% placeholder "game3" %}
           </div>
         </div>
 
@@ -543,7 +536,7 @@
             <div class="serv_block_open_back"></div>
             <h1>АРЕННЫЙ ЛАЗЕРТАГ</h1>
             <div class="serv_name_text"></div>
-            <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.</p>
+            {% placeholder "game4" %}
           </div>
         </div>
           </div>
