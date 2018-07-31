@@ -8,7 +8,7 @@ from django.core.mail import send_mail, BadHeaderError
 import json
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'fullwidth.html')
 
 def order(request):
 	phone_num = request.POST.get('phone','')
