@@ -1631,12 +1631,16 @@ ul {
 	}
 	
 	.people>img {
-		width: 90vw;
-		height: 90vw;
+		width: 80vw;
+		height: 60vw;
 	}
 	
 	.people {
 		height: 90vw;
+	}
+	
+	.about_text {
+		font-size: 8px;
 	}
 }
 
@@ -1661,7 +1665,7 @@ ul {
 	
 	.people>img {
 		width: 80vw;
-		height: 70vw;
+		height: 60vw;
 	}
 	
 	.people {
@@ -1846,29 +1850,6 @@ ul {
 	    font-size: 1.7vw;
 	}
 
-	/*.container {
-		width: 90%;
-	}
-	
-	.table_el>div {
-		font-size: 10px;
-		width: 100%;
-		margin: 0;
-		
-	}
-	
-	.table_el {
-		height: 20vw;
-	}
-	
-	.second_row>div {
-		height: 20vw;
-		//background-color: red;
-	}
-	
-	.second_row .table_el>div {
-		height: 100%;
-	}*/
 	
 }
 
@@ -1917,35 +1898,14 @@ ul {
 		width: 90%;
 		
 	}
-	
-	/*.table_el {
-		width: 16vw;
-		height: 30vw;
-		//margin: 20vw;
-	}*/
+
 	
 	.table_el>div {
 		width: 100%;
 		margin: 0;
 		
 	}
-	
-	/*.table_el {
-		height: 25vw;
-	}
-	
-	.second_row>div {
-		height: 25vw;
-		//background-color: red;
-	}
-	
-	.second_row .table_el>div {
-		height: 100%;
-	}
-	
-	.equipment_tit {
-		margin-top: 25%;
-	}*/
+
 }
 
 @media (max-width: 992px){
