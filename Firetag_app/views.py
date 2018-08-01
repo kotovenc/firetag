@@ -11,10 +11,12 @@ def home(request):
     return render(request, 'fullwidth.html')
 
 def order(request):
-	phone_num = request.POST.get('phone','')
+	phone_num = request.POST.get("phone",'')
+	name = request.POST.get("name",'')
 	to = "nakmak1998@gmail.com"
 	sender = "from@address.com"
-	subject = request.POST.get('name','')
-	send_mail(subject, phone_num, 'from@example.com',
+	message = name + '\n' + phone_num
+	subject = '13 Район: заказ звонка'
+	send_mail(subject, message, 'from@example.com',
     [to], fail_silently=False)
 	return HttpResponse("Succes")
