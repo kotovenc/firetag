@@ -2,11 +2,13 @@
 from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.http import HttpResponseRedirect
 from django.template import loader
-from django.core.mail import send_mail, BadHeaderError
+from django.core.mail import send_mail
+from django.views.decorators.cache import cache_page
 import json
 
+
+@cache_page(60*15)
 def home(request):
     return render(request, 'fullwidth.html')
 
