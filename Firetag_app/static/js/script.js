@@ -200,3 +200,89 @@ $('.circle').click(function(eventObject){
   	/*console.log($('.circle:last').index());*/
   }
 });
+
+/*MENU*/
+
+$(document).ready(function() {
+	$('.mobile-tab').hide();
+	$('#toggle-btn').click(function(){
+		$('.mobile-tab').slideToggle("slow");
+	});
+
+	$('.menu-item').click(function(){
+				$('.mobile-tab').slideToggle("slow");
+			});
+
+	$('#more_btn').click(function(){
+	  $("#hidden").fadeIn("slow");
+	});  
+
+	$('.close_btn').click(function(){
+	  $("#hidden").fadeOut("slow");
+	}); 
+
+	$('#more_btn1').click(function(){
+	  $("#hidden").fadeIn("slow");
+	});  
+
+	$('.close_btn').click(function(){
+	  $("#hidden").fadeOut("slow");
+	}); 
+
+   $(".input-phone").mask("+7(999) 999-99-99");
+	
+});
+
+/*NEWS*/
+
+var button = 0
+
+function parkButton(){
+	if(button != 0){
+		$('.news_content_container').eq(button).removeClass('curr');
+		$('.news_content_container').eq(0).addClass('curr');
+
+		$('.news_button').eq(button).removeClass('curr_button');
+		$('.news_button').eq(0).addClass('curr_button');
+
+		button = 0;
+	}
+}
+
+function equip(){
+	if(button != 1){
+		$('.news_content_container').eq(button).removeClass('curr');
+		$('.news_content_container').eq(1).addClass('curr');
+
+		$('.news_button').eq(button).removeClass('curr_button');
+		$('.news_button').eq(1).addClass('curr_button');
+
+		button = 1;
+	}
+}
+
+function events(){
+	if(button != 2){
+		$('.news_content_container').eq(button).removeClass('curr');
+		$('.news_content_container').eq($('.news_content_container:last').index()).addClass('curr');
+
+		$('.news_button').eq(button).removeClass('curr_button');
+		$('.news_button').eq($('.news_content_container:last').index()).addClass('curr_button');
+
+
+		button = $('.news_content_container:last').index();
+	}
+}
+
+/*SERV*/
+$('.serv_content_block').mouseenter(function(eventObject){
+  	$(this).children('.serv_block_open').addClass('serv_on');
+  	$(this).children('.serv_block_open_back').addClass('serv_on_back');
+  	$(this).children('.serv_block_text').css('opacity', '0');
+});
+
+$('.serv_content_block').mouseleave(function(eventObject){
+  	$(this).children('.serv_block_open').removeClass('serv_on');
+  	$(this).children('.serv_block_open_back').removeClass('serv_on_back');
+  	$(this).children('.serv_block_text').css('opacity', '1');
+});
