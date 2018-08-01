@@ -2,62 +2,46 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  {% load staticfiles %}
-  <title>{% block title %}13 район{% endblock title %}</title>
-        <style type="text/css">
-            .nav {
-                padding-left: 0;
-            }
-            .nav li {
-                display: inline;
-                list-style-type: none;
-                padding-right: 20px;
-            }
-            .container {
-                width: 940px;
-                margin: 0 auto
-            }
-            .content {
-                float: left;
-                width: 80%;
-            }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            .test {
-                background-color: orange;
-            }
-            .sidebar {
-                float: left;
-                width: 20%;
-            }
+
+    <meta name="description" content="">  <!--WARNING-->
+
+    <link rel="icon" type="image/png" href="">  <!--WARNING-->
+
+
+  {% load staticfiles %}
+  <title>13 район</title>
+        <style type="text/css">
+            .nav {padding-left: 0;}.nav li {display: inline;list-style-type: none;padding-right: 20px;}.container {width: 940px;margin: 0 auto}.content {float: left;width: 80%;}.test {background-color: orange;}.sidebar {float: left;width: 20%;}
         </style>
         {% render_block "css" %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="{% static 'style.css' %}">
+    <noscript><link rel="stylesheet" href="{% static 'style.css' %}"></noscript>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="{% static 'js/jquery.maskedinput.min.js' %}" type="text/javascript"></script>
-    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
     <script src="{% static 'js/script.js' %}" defer></script>
     <script src="{% static 'js/news_script.js' %}" defer></script>
     <script src="{% static 'js/serv_script.js' %}" defer></script>
 </head>
-
 <body>
 {%cms_toolbar%}
-    <a name="main"></a>
-<div class="header">
+<a name="main"></a>
+<header class="header">
     <div class="container header_content ">
       <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-12 col-md-4 col-xl-4 col-lg-4 logo">
-          <img src="{% static 'img/logo.png' %}">
+          <img src="{% static 'img/logo.png' %}" alt="logo">
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-8 col-xl-8 col-lg-8">
+        <section class="col-xs-12 col-sm-12 col-md-8 col-xl-8 col-lg-8">
           <div class="row">
             <div class="col-xs-6 col-sm-4 col-md-4 col-xl-4 col-lg-4 contact_block">
               <div class="row">
@@ -93,7 +77,7 @@
         </div>    
       </div>
     </div>
-  </div>
+  </section>
 </div>
 </div>
 <div class="menu">
@@ -122,7 +106,7 @@
   </div>
 </div>
 </div>     
-</div>
+</header>
 
 <div class="fireLazertag">
   <div class="fireLazertag_content">
@@ -168,23 +152,23 @@
 
             <form method="post" action="/order/">
         {% csrf_token %}
-                <input required type="text" placeholder="Ваше имя" autocomplete="none" maxlength="40" name="name">
-                <input required class="input-phone" placeholder="Телефон"  autocomplete="none" name="phone">
+                <input required type="text" placeholder="Ваше имя" maxlength="40" name="name">
+                <input required class="input-phone" placeholder="Телефон" name="phone">
                 <button>Отправить</button>
             </form>
     </div>
      <div id="slider">
         <div class="imgContainer">
             <div class="img prev">
-                <img class="pic" src="{% static 'img/Pic1.png' %}">
+                <img alt="Pic1" class="pic" src="{% static 'img/Pic1.png' %}">
             </div>
     
             <div class="img curr">
-                <img class="pic" src="{% static 'img/Pic2.png' %}">
+                <img alt="Pic2" class="pic" src="{% static 'img/Pic2.png' %}">
             </div>
     
             <div class="img next">
-                <img class="pic" src="{% static 'img/Pic3.png' %}">
+                <img alt="Pic3" class="pic" src="{% static 'img/Pic3.png' %}">
             </div>
 
             <!-- Сюда добавлять картинки -->
@@ -211,16 +195,16 @@
     <a name="about"></a>
     <div class="about_tit">
           <p>О НАС</p>
-          <img src="{% static 'img/about-separ.png' %}">
+          <img alt="separ" src="{% static 'img/about-separ.png' %}">
     </div>
     <div class="container">
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 col-xs-3 about_circle">
         <div class=about-in-circle>
-          <img class=about_img src="{% static 'img/About_cir1.png' %}">
-          <img class=about_img src="{% static 'img/About_cir3.png' %}">
-          <img class=about_img src="{% static 'img/About_cir2.png' %}">
-          <img class=about_img src="{% static 'img/About_cir4.png' %}">
+          <img alt="About_Pic1" class=about_img src="{% static 'img/About_cir1.png' %}">
+          <img alt="About_Pic2" class=about_img src="{% static 'img/About_cir3.png' %}">
+          <img alt="About_Pic3" class=about_img src="{% static 'img/About_cir2.png' %}">
+          <img alt="About_Pic4" class=about_img src="{% static 'img/About_cir4.png' %}">
           <div class="about_click_img about_click1"></div>
           <div class="about_click_img about_click2"></div>
           <div class="about_click_img about_click3"></div>
@@ -228,9 +212,9 @@
         </div>
             </div>
 
-            <div class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-xs-9 about_text">
+            <section class="col-xl-8 col-lg-8 col-md-9 col-sm-9 col-xs-9 about_text">
               {% block content %}{% endblock content %}
-            </div>
+            </section>
         </div>
       </div>
     </div>
@@ -250,18 +234,18 @@
                 <p>
                     Firetag &mdash; первая реалистичная имитация боевых действий
                 </p>
-                <img src="{% static 'img/about-separ.png' %}" alt="">
+                <img alt="separ"  src="{% static 'img/about-separ.png' %}" alt="">
             </div>
         </div>
         <div class="row">
             <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 "></div>
             <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3  superiority">
-                <img src="{% static 'img/superiority-1.png' %}" alt="superiority-1">
+                <img alt="superiority1" src="{% static 'img/superiority-1.png' %}" alt="superiority-1">
                 <p class="superiority_title">Максимальный реализм</p>
             </div>
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 "></div>
             <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3  superiority">
-                <img src="{% static 'img/superiority-2.png' %}" alt="superiority-2">
+                <img alt="superiority2" src="{% static 'img/superiority-2.png' %}" alt="superiority-2">
                 <p class="superiority_title">Поле боя будущего</p>
             </div>
             <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 "></div>
@@ -269,13 +253,13 @@
         <div class="row">
             <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
             <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2 superiority">
-                <img src="{% static 'img/superiority-3.png' %}" alt="superiority-3">
+                <img alt="superiority3" src="{% static 'img/superiority-3.png' %}" alt="superiority-3">
                 <p class="superiority_title">Тактика и стратегия</p>
                 <p class="superiority_text">Современное оборудование позволяет в реальном времени упаравлять боем</p>
             </div>' %}'
             <div class="col-xs-2 col-sm-4 col-md-6 col-lg-6"></div>
             <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2 superiority">
-                <img src="{% static 'img/superiority-4.png' %}" alt="superiority-4">
+                <img alt="superiority4" src="{% static 'img/superiority-4.png' %}" alt="superiority-4">
                 <p class="superiority_title">Рейтинговая система</p>
             </div>
             <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
@@ -283,14 +267,14 @@
         <div class="row">
             <div class="col-xs-0 col-sm-1 col-md-1 col-lg-1"></div>
             <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3"  id="superiority-5">
-                <img src="{% static 'img/superiority-5.png' %}" alt="superiority-5">
+                <img alt="superiority5" src="{% static 'img/superiority-5.png' %}" alt="superiority-5">
                 <p class="superiority_title">Современная экипировка</p>
                 <p class="superiority_text">Полностью переработанная экипировка может использоваться с любой формой и нечувствительная к рикошету</p>
             </div>
             <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4">
             </div>
             <div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 superiority">
-                <img src="{% static 'img/superiority-6.png' %}" alt="superiority-6">
+                <img alt="superiority6" src="{% static 'img/superiority-6.png' %}" alt="superiority-6">
                 <p class="superiority_title">Буря эмоций</p>
                 <p class="superiority_text">От лихорадочного стресса боя до восторга победы</p>
             </div>
@@ -299,7 +283,7 @@
         <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 whatis_soldier">
-                <img src="{% static 'img/whatis_soldier.png' %}" alt="soldier">
+                <img alt="soldier" src="{% static 'img/whatis_soldier.png' %}" alt="soldier">
                 <button id="more_btn1">
                     Записаться на игру
                 </button>
@@ -316,7 +300,7 @@
     <a name="news"></a>
     <div class="clubNews_tit">
           <p>НОВОСТИ КЛУБА</p>
-          <img src="{% static 'img/about-separ.png' %}" >
+          <img alt="separ" src="{% static 'img/about-separ.png' %}" >
     </div>
 
     <div class="menu_news">
@@ -338,25 +322,25 @@
     <div class="news_content">
       <div class="news_content_container curr">
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/place.png' %}">
+          <img alt="place" class="news_block_img" src="{% static 'img/place.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Place 1</h1>
             {% placeholder "descr_place1" %}
-          </div>
+          </section>
           
-          <div class="news_block_open">
+          <section class="news_block_open">
             <p>Открыть ></p>
-          </div>
+          </section>
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/place.png' %}">
+          <img alt="place" class="news_block_img" src="{% static 'img/place.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Place 2</h1>
             {% placeholder "descr_place2" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -364,12 +348,12 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/place.png' %}">
+          <img alt="place" class="news_block_img" src="{% static 'img/place.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Place 3</h1>
             {% placeholder "descr_place3" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть</p>
@@ -379,12 +363,12 @@
 
       <div class="news_content_container">
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/item1.png' %}">
+          <img alt="item1" class="news_block_img" src="{% static 'img/item1.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Item 1</h1>
             {% placeholder "descr_item1" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -392,12 +376,12 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/item2.png' %}">
+          <img alt="item2"  class="news_block_img" src="{% static 'img/item2.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Item 2</h1>
             {% placeholder "descr_item2" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -405,12 +389,12 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/item3.png' %}">
+          <img alt="item3"  class="news_block_img" src="{% static 'img/item3.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Item 3</h1>
             {% placeholder "descr_item3" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -420,12 +404,12 @@
 
       <div class="news_content_container">
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/event1.png' %}">
+          <img alt="event1"  class="news_block_img" src="{% static 'img/event1.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Event 1</h1>
             {% placeholder "descr_event1" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -433,12 +417,12 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/event2.png' %}">
+          <img alt="event2" class="news_block_img" src="{% static 'img/event2.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Event 2</h1>
             {% placeholder "descr_event2" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -446,12 +430,12 @@
         </div>
 
         <div class="news_content_block">
-          <img class="news_block_img" src="{% static 'img/event3.png' %}">
+          <img alt="event3" class="news_block_img" src="{% static 'img/event3.png' %}">
 
-          <div class="news_block_text">
+          <section class="news_block_text">
             <h1>Event 3</h1>
             {% placeholder "descr_event3" %}
-          </div>
+          </section>
           
           <div class="news_block_open">
             <p>Открыть ></p>
@@ -469,29 +453,29 @@
     <a name="services"></a>
     <div class="clubServices_tit">
           <h1><span class="serv_red_title">НАШИ</span> УСЛУГИ</h1>
-          <img src="{% static 'img/about-separ.png' %}" />
+          <img alt="separ" src="{% static 'img/about-separ.png' %}" />
     </div>
 
     <div class="serv_content">
           <div class="serv_content_container">
               <div class="serv_content_block">
-          <img class="serv_block_img" src="{% static 'img/serv1.png' %}">
+          <img alt="serv1" class="serv_block_img" src="{% static 'img/serv1.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
             <p>КОРПОРАТИВНЫЕ ИГРЫ</p>
           </div>
           
-          <div class="serv_block_open">
+          <section class="serv_block_open">
             <div class="serv_block_open_back"></div>
             <h1>КОРПОРАТИВНЫЕ ИГРЫ</h1>
             <div class="serv_name_text"></div>
             {% placeholder "game1" %}
-          </div>
+          </section>
         </div>
 
         <div class="serv_content_block">
-          <img class="serv_block_img" src="{% static 'img/serv2.png' %}">
+          <img alt="serv2" class="serv_block_img" src="{% static 'img/serv2.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
@@ -499,45 +483,45 @@
             <p id="serv_corr_font">ВОЕННО-ТАКТИЧЕСКИЕ ИГРЫ</p>
           </div>
           
-          <div class="serv_block_open">
+          <section class="serv_block_open">
             <div class="serv_block_open_back"></div>
             <h1 id="serv_corr_font_open_1">КРУПНЫЕ</h1>
             <h1 id="serv_corr_font_open_2">ВОЕННО-ТАКТИЧЕСКИЕ ИГРЫ</h1>
             <div class="serv_name_text"></div>
             {% placeholder "game2" %}
-          </div>
+          </section>
         </div>
 
         <div class="serv_content_block">
-          <img class="serv_block_img" src="{% static 'img/serv3.png' %}">
+          <img alt="serv3" class="serv_block_img" src="{% static 'img/serv3.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
             <p>ДЕТСКИЙ ЛАЗЕРТАГ</p>
           </div>
           
-          <div class="serv_block_open">
+          <section class="serv_block_open">
             <div class="serv_block_open_back"></div>
             <h1>ДЕТСКИЙ ЛАЗЕРТАГ</h1>
             <div class="serv_name_text"></div>
             {% placeholder "game3" %}
-          </div>
+          </section>
         </div>
 
         <div class="serv_content_block">
-          <img class="serv_block_img" src="{% static 'img/serv4.png' %}">
+          <img alt="serv4"  class="serv_block_img" src="{% static 'img/serv4.png' %}">
           <div class="serv_block_text">
             <div class="serv_name_text"> </div>
 
             <p>АРЕННЫЙ ЛАЗЕРТАГ</p>
           </div>
           
-          <div class="serv_block_open">
+          <section class="serv_block_open">
             <div class="serv_block_open_back"></div>
             <h1>АРЕННЫЙ ЛАЗЕРТАГ</h1>
             <div class="serv_name_text"></div>
             {% placeholder "game4" %}
-          </div>
+          </section>
         </div>
           </div>
     </div>
@@ -551,81 +535,81 @@
     <div class="equipment_tit">
         <a name="equip"></a>
         <p>ОБОРУДОВАНИЕ FIRETAG</p>
-        <img src="{% static 'img/about-separ.png' %}" />
+        <img alt="separ" src="{% static 'img/about-separ.png' %}" />
     </div>
     <div class="people">
-        <img src="{% static 'img/Pupa_lupa_and_kupa.png' %}">
+        <img alt="pupa" src="{% static 'img/Pupa_lupa_and_kupa.png' %}">
     </div>
     <div class="container table">
 
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
                 <div>
-                    <img src="{% static 'img/eq-1.png' %}">
-                    <div>
+                    <img alt="eq-1"  src="{% static 'img/eq-1.png' %}">
+                    <section>
                         Штабное оборудование позволяет контролировать поле боя в реальном времени.
-                    </div>
+                    </section>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
                 <div>
-                    <img src="{% static 'img/eq-2.png' %}">
-                    <div>
+                    <img alt="eq-2" src="{% static 'img/eq-2.png' %}">
+                    <section>
                         БПЛА способны оказывать воздушную поддержку подразделениям
                         1)Бомбометание
                         <br>2)Разведка
                         <br>3)Сброс снабжения 
-                    </div>
+                    </section>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
                 <div>
-                    <img src="{% static 'img/eq-3.png' %}">
-                    <div>
+                    <img alt="eq-3" src="{% static 'img/eq-3.png' %}">
+                    <section>
                         Универсальные лазерные
                         модули могут использоваться
                         с любым видом охолощенного
                         оружия
-                    </div>
+                    </section>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 table_el">
                 <div>
-                    <img src="{% static 'img/eq-4.png' %}">
-                    <div>
+                    <img alt="eq-4" src="{% static 'img/eq-4.png' %}">
+                    <section>
                         Датчики, созданные по новой
                         технологии не чувствительны
                         к переотражению( очень большая проблема для лазертага и фаертага)
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
         <div class="row second_row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table_el">
                 <div>
-                    <img src="{% static 'img/eq-5.png' %}">
-                    <div>
+                    <img alt="eq-5" src="{% static 'img/eq-5.png' %}">
+                    <section>
                         Миниатюрные разведывательные дроны
                         (удаленное управление с наручного компьютера)
-                    </div>
+                    </section>>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table_el">
                 <div>
-                    <img src="{% static 'img/eq-6.png' %}">
-                    <div>
+                    <img alt="eq-6" src="{% static 'img/eq-6.png' %}">
+                    <section>
                         Носимые турели.
                         (удаленное управление с наручного компьютера)
-                    </div>
+                    </section>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table_el">
                 <div>
-                    <img src="{% static 'img/eq-7.png' %}">
-                    <div>
+                    <img alt="eq-7" src="{% static 'img/eq-7.png' %}">
+                    <section>
                         Наручный компьютер позволяет получать своевременную
                         информацию из штаба и запрашивать поддержку
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -636,12 +620,12 @@
 
 <div class="map">
   <div class="map_content">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A81144eebb208395635786e319f5bbbd9441ede046e60c3526ae8e51a9e54b03c&amp;width=100%25&amp;height=620&amp;lang=ru_RU&amp;scroll=true"></script>
+<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A81144eebb208395635786e319f5bbbd9441ede046e60c3526ae8e51a9e54b03c&amp;width=100%25&amp;height=620&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
   <div class="map_bg"></div>
 </div>
 
-<div class="footer">
+<footer class="footer">
     <a name="contact"></a>
   <div class="footer_content">
     <div class="container footer_container">
@@ -649,7 +633,7 @@
             <div class="col-xs-12 col-md-6">
             <div class="row foot-logo"> 
                 <div class="col-xs-4 col-md-6 footer-logo">
-                    <img src="{% static 'img/logo1-1.png' %}" alt="13 район">
+                    <img alt="logo1" src="{% static 'img/logo1-1.png' %}" alt="13 район">
                 </div>
                 <div class="col-xs-8 col-md-6 footer-adress">
                     <hr>
@@ -660,13 +644,13 @@
         <div class="col-xs-12 col-md-6">
             <div class="row footer_partners">
                 <div class="col-xs-4 flex-item">
-                    <img src="{% static 'img/logo2.png' %}" alt="TEXET">
+                    <img alt="logo2" src="{% static 'img/logo2.png' %}" alt="TEXET">
                 </div>
                 <div class="col-xs-4 flex-item">
-                    <img src="{% static 'img/logo3.png' %}" alt="IFSA">
+                    <img alt="logo3" src="{% static 'img/logo3.png' %}" alt="IFSA">
                 </div>
                 <div class="col-xs-4 flex-item">
-                    <img src="{% static 'img/logo4.png' %}" alt="Фармтек">
+                    <img alt="logo4" src="{% static 'img/logo4.png' %}" alt="Фармтек">
                 </div>
             </div>
          </div>
@@ -690,7 +674,7 @@
   </div>
   <div class="footer_bg">
   </div>
-</div>
+</footer>
 {%render_block "js"%}
 </body>
 </html>
