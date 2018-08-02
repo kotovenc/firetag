@@ -382,8 +382,8 @@ ul {
 	width: 12.2vw;
 	max-width: 238px;
 
-	right: -24%;
-	bottom: -9%;
+	right: -23%;
+	bottom: -8%;
 	transform: rotate(-45deg);
 
 	pointer-events: none;
@@ -395,7 +395,7 @@ ul {
 	max-width: 238px;
 
 	left: -23%;
-	top: -7%;
+	top: -8%;
 	transform: rotate(-45deg);
 
 	pointer-events: none;
@@ -406,7 +406,7 @@ ul {
 	height: 12.2vw;
 	max-height: 238px;
 	left: -8%;
-	top: 22%;
+	top: 21%;
 	transform: rotate(-45deg);
 	
 	pointer-events: none;
@@ -417,7 +417,7 @@ ul {
 	height: 12.2vw;
 	max-height: 238px;
 	right: -8%;
-	bottom: 22%;
+	bottom: 21%;
 	transform: rotate(-45deg);
 	
 	pointer-events: none;
