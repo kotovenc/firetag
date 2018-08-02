@@ -349,6 +349,147 @@ ul {
 	position: relative;
 }
 
+/*----------ABOUT Circle---------*/
+.about_border_circle{
+	width: 23vw;
+	height: 23vw;
+	max-width: 448px;
+	max-height: 448px;
+
+	position: absolute;
+	
+	right: 0;
+	top: 80%;
+	transform: translate(0, -50%);
+
+	overflow: hidden;
+}
+
+.about-in-circle{
+	width: 18.5vw;
+	height: 18.5vw;
+	max-width: 360px;
+	max-height: 360px;
+
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about_img1{
+	width: 12.2vw;
+	max-width: 238px;
+
+	right: -24%;
+	bottom: -9%;
+	transform: rotate(-45deg);
+
+	pointer-events: none;
+	position: absolute;
+}
+
+.about_img2{
+	width: 12.2vw;
+	max-width: 238px;
+
+	left: -23%;
+	top: -7%;
+	transform: rotate(-45deg);
+
+	pointer-events: none;
+	position: absolute;
+}
+
+.about_img3{
+	height: 12.2vw;
+	max-height: 238px;
+	left: -8%;
+	top: 22%;
+	transform: rotate(-45deg);
+	
+	pointer-events: none;
+	position: absolute;
+}
+
+.about_img4{
+	height: 12.2vw;
+	max-height: 238px;
+	right: -8%;
+	bottom: 22%;
+	transform: rotate(-45deg);
+	
+	pointer-events: none;
+	position: absolute;
+}
+
+.about_click_img{
+	width: 12vw;
+	height: 12vw;	
+	max-width: 234px;
+	max-height: 234px;
+	position: absolute;
+
+	transition: all 200ms;
+
+	z-index: 1;
+}
+
+.about_click1{
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -45%) rotate(45deg);
+}
+
+.about_click2{
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 45%) rotate(45deg);
+}
+
+.about_click3{
+	right: 0;
+	top: 50%;
+	transform: translate(45%, -50%) rotate(45deg);
+}
+
+.about_click4{
+	left: 0;
+	top: 50%;
+	transform: translate(-45%, -50%) rotate(45deg);
+}
+
+.about_click1:hover{
+	top: -9%;
+	transform: translate(-50%, -45%) rotate(45deg) scale(1.2);
+
+	z-index: 0;
+}
+
+.about_click2:hover{
+	bottom: -9%;
+	transform: translate(-50%, 45%) rotate(45deg) scale(1.2);
+
+	z-index: 0;
+}
+
+.about_click3:hover{
+	right: -9%;
+	transform: translate(45%, -50%) rotate(45deg) scale(1.2);
+
+	z-index: 0;
+}
+
+.about_click4:hover{
+	left: -9%;
+	transform: translate(-45%, -50%) rotate(45deg) scale(1.2);
+
+	z-index: 0;
+}
+
+/*ABOUT CIRCLE*/
+
 .whatIsFiretag{
 	margin: 0;
 	position: relative;
@@ -2247,8 +2388,8 @@ ul {
 	.footer_bg{
 		margin: -159px 0 -99px 0;
 	}
-
 }
+
 @media(max-width: 700px){
 	.clubServices_tit {
 		margin-top: 105px;
@@ -2396,55 +2537,40 @@ ul {
 	}
 }
 
-/*-----------SLIDER---------*/
+/*ABOUT CIRCLE*/
+@media (max-width: 400px){
+	.about_border_circle{
+	width: 92px;
+	height: 92px;
+	}
 
+	.about-in-circle{
+		width: 74px;
+		height: 74px;
+	}
 
+	.about_img1{
+		width:  48.8px;
+	}
 
-/*----------ABOUT Circle---------*/
-.about-in-circle{
-	width: 18.5vw;
-	height: 18.5vw;
+	.about_img2{
+		width: 48.8px;
+	}
 
-	position: absolute;
+	.about_img3{
+		height: 48.8px;
+	}
 
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	.about_img4{
+		height: 48.8px;
+	}
+
+	.about_click_img{
+		width: 48px;
+		height: 48px;	
+	}
 }
 
-.about_img{
-	position: absolute;
-}
 
-.about_img:first-child{
-	width: 12.2vw;
-	
-	left: 50%;
-	transform: translate(-50%, 0);
-}
 
-.about_img:nth-child(2){
-	width: 12.2vw;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
 
-.about_img:nth-child(3){
-	height: 12.2vw;
-	right: 0;
-	top: 50%;
-	transform: translate(0, -50%);
-}
-
-.about_img:nth-child(4){
-	height: 12.2vw;
-	top: 50%;
-	transform: translate(0, -50%);
-}
-
-.about_click_img{
-	width: 12.2vw;
-	height: 12.2vw;	
-	position: absolute;
-}
