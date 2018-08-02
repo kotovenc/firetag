@@ -2199,6 +2199,56 @@ ul {
 	}
 }
 
+@media (max-width: 992px){
+	#slider{
+    	height: 476.16px;
+	}
+	.clubNews_tit {
+		margin-top: 140px;
+	}
+
+	.news_block_open{
+		margin-top: -3vw;
+		margin-left: 70%;
+	}
+
+	.news_block_text>h1{
+		line-height: 0.3vw;
+	}
+
+	#hidden {
+		top: 2vw;
+	}
+	.clubServices_tit {
+		margin-top: 148.8px;
+	}
+
+	.fireLazertag_bg {
+		margin: 0 0 -99px 0;
+	}
+	.about_bg {
+		margin: -201px 0 -99px 0;
+	}
+	.whatis_bg{
+		margin: -167px 0 -99px 0;
+	}
+	.news_bg{
+		margin: -164px 0 -99px 0;
+	}
+	.services_bg{
+		margin: -167px 0 -99px 0;
+	}
+	.equip_bg{
+		margin: -208px 0 -99px 0;
+	}
+	.map_bg{
+		margin: -417px 0 -99px 0;
+	}
+	.footer_bg{
+		margin: -159px 0 -99px 0;
+	}
+
+}
 @media(max-width: 700px){
 	.clubServices_tit {
 		margin-top: 105px;
@@ -2348,56 +2398,7 @@ ul {
 
 /*-----------SLIDER---------*/
 
-@media (max-width: 992px){
-	#slider{
-    	height: 476.16px;
-	}
-	.clubNews_tit {
-		margin-top: 140px;
-	}
 
-	.news_block_open{
-		margin-top: -3vw;
-		margin-left: 70%;
-	}
-
-	.news_block_text>h1{
-		line-height: 0.3vw;
-	}
-
-	#hidden {
-		top: 2vw;
-	}
-	.clubServices_tit {
-		margin-top: 148.8px;
-	}
-
-	.fireLazertag_bg {
-		margin: 0 0 -99px 0;
-	}
-	.about_bg {
-		margin: -201px 0 -99px 0;
-	}
-	.whatis_bg{
-		margin: -167px 0 -99px 0;
-	}
-	.news_bg{
-		margin: -164px 0 -99px 0;
-	}
-	.services_bg{
-		margin: -167px 0 -99px 0;
-	}
-	.equip_bg{
-		margin: -208px 0 -99px 0;
-	}
-	.map_bg{
-		margin: -417px 0 -99px 0;
-	}
-	.footer_bg{
-		margin: -159px 0 -99px 0;
-	}
-
-}
 
 /*----------ABOUT Circle---------*/
 .about-in-circle{

@@ -230,6 +230,25 @@ $(document).ready(function() {
 	}); 
 
    $(".input-phone").mask("+7(999) 999-99-99");
+
+   $('form').submit(function(e){ 
+		e.preventDefault(); 
+		$.ajax({ 
+		url: "/order/", 
+		type: "POST", 
+		data: $('#form').serialize(), 
+		success: function(response) { 
+		$('#form').empty(); 
+		$('#form').append(function() { 
+		return "<p>Спасибо!</p><p>С вами свяжутся в ближайшее время.</p><br><br>" 
+		}); 
+		$('#form')[0].reset(); 
+		}, 
+		error: function(response) { 
+		//обработка ошибок при отправке 
+		} 
+		}); 
+	});
 	
 });
 

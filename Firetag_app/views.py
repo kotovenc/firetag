@@ -21,4 +21,4 @@ def order(request):
 	subject = '13 Район: заказ звонка'
 	send_mail(subject, message, 'from@example.com',
     [to], fail_silently=False)
-	return HttpResponse("Succes")
+	return HttpResponse()
