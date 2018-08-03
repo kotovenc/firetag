@@ -359,7 +359,7 @@ ul {
 	position: absolute;
 	
 	right: 0;
-	top: 40%;
+	top: 10vw;
 	transform: translate(0, -50%);
 
 	overflow: hidden;
@@ -2538,6 +2538,12 @@ ul {
 }
 
 /*ABOUT CIRCLE*/
+@media (max-width: 900px){
+	.about_border_circle{
+		top: 90px;
+	}
+}
+
 @media (max-width: 400px){
 	.about_border_circle{
 	width: 92px;
