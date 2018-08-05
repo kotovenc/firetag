@@ -452,8 +452,8 @@ ul {
 
 .about_content .container {
 	margin-top: 1.5vw;
-	min-width:400px;
-	max-width: 1700px;
+	min-width:320px;
+	max-width: 1170px;
 	width: 100%;
 }
 
