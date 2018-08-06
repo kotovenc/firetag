@@ -234,7 +234,7 @@ $(document).ready(function() {
    $('form').submit(function(e){ 
 		e.preventDefault(); 
 		$.ajax({ 
-		url: "/order/", 
+		url: "order/", 
 		type: "POST", 
 		data: $('#form').serialize(), 
 		success: function(response) { 
@@ -245,7 +245,8 @@ $(document).ready(function() {
 		$('#form')[0].reset(); 
 		}, 
 		error: function(response) { 
-		//обработка ошибок при отправке 
+		console.log(response);
+ 
 		} 
 		}); 
 	});

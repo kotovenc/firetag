@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=sr5cl2n=3)vbjcf1!n1@g-ad5swr+bqn3c$@$o83+!^sb#68g'
-
+#SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -33,9 +33,6 @@ ALLOWED_HOSTS = ['142.93.33.152',
 
 
 # Application definition
-
-
-
 
 
 ROOT_URLCONF = 'Firetag_app.urls'
@@ -56,8 +53,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-EMAIL_HOST = 'nakmak1998@gmail.com'
-EMAIL_PASSWORD = 'yesterday98'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -153,8 +148,10 @@ LANGUAGES = (
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'nakmak1998@gmail.com'
+ENAIL_HOST_USER = 'nakmak1998@gmail.com'
 EMAIL_HOST_PASSWORD = 'yesterday98'
+#EMAIL_HOST_USER = 'constructorica@gmail.com'
+#EMAIL_HOST_PASSWORD = '2017441000'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
