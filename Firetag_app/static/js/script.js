@@ -231,7 +231,7 @@ $(document).ready(function() {
 
    $(".input-phone").mask("+7(999) 999-99-99");
 
-   $('form').submit(function(e){ 
+/*   $('form').submit(function(e){ 
 		e.preventDefault(); 
 		$.ajax({ 
 		url: "/order/", 
@@ -248,7 +248,7 @@ $(document).ready(function() {
 		//обработка ошибок при отправке 
 		} 
 		}); 
-	});
+	});*/
 	
 });
 

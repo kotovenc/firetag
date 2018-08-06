@@ -38,7 +38,7 @@
                 на обратный звонок
             </p>
 
-            <form id="form">
+            <form id="form" method="post" action="/order/">
                 {% csrf_token %}
                 <input required type="text" placeholder="Ваше имя" maxlength="40" name="name">
                 <input required class="input-phone" placeholder="Телефон" name="phone">

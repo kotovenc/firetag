@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.core.mail import send_mail
 from django.views.decorators.cache import cache_page
@@ -21,4 +21,4 @@ def order(request):
 	subject = '13 Район: заказ звонка'
 	send_mail(subject, message, 'from@example.com',
     [to], fail_silently=False)
-	return HttpResponse()
+	return HttpResponseRedirect('/thanks/')

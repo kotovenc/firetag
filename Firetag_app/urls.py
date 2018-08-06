@@ -17,7 +17,8 @@ urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^$', views.home, name='home'),
-    url(r'^order/', views.order, name='order')
+    url(r'^order/', views.order, name='order'),
+    url(r'^thanks/', views.home, name='home'),
 ]
 
 urlpatterns += i18n_patterns(
