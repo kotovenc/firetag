@@ -1,0 +1,105 @@
+[2018-08-04 21:02:07 +0000] [1266] [INFO] Starting gunicorn 19.9.0
+[2018-08-04 21:02:07 +0000] [1266] [INFO] Listening at: unix:/home/firetag13/firetag/firetag.sock (1266)
+[2018-08-04 21:02:07 +0000] [1266] [INFO] Using worker: sync
+[2018-08-04 21:02:07 +0000] [1271] [INFO] Booting worker with pid: 1271
+[2018-08-04 21:02:07 +0000] [1273] [INFO] Booting worker with pid: 1273
+[2018-08-06 14:53:06 +0000] [1266] [CRITICAL] WORKER TIMEOUT (pid:1271)
+[2018-08-06 17:53:06 +0300] [1271] [INFO] Worker exiting (pid: 1271)
+[2018-08-06 14:53:06 +0000] [24586] [INFO] Booting worker with pid: 24586
+[2018-08-06 14:53:07 +0000] [24586] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/firetag13/web/lib/python3.5/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/firetag13/firetag/Firetag_app/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/firetag13/web/lib/python3.5/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/firetag13/web/lib/python3.5/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/firetag13/web/lib/python3.5/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/home/firetag13/web/lib/python3.5/site-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/firetag13/web/lib/python3.5/site-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/home/firetag13/web/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/firetag13/firetag/Firetag_app/settings.py", line 27, in <module>
+    SECRET_KEY = os.environ['SECRET_KEY']
+  File "/home/firetag13/web/lib/python3.5/os.py", line 725, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'SECRET_KEY'
+[2018-08-06 14:53:07 +0000] [24586] [INFO] Worker exiting (pid: 24586)
+[2018-08-06 14:53:37 +0000] [1266] [INFO] Shutting down: Master
+[2018-08-06 14:53:37 +0000] [1266] [INFO] Reason: Worker failed to boot.
+[2018-08-06 16:54:33 +0000] [26162] [INFO] Starting gunicorn 19.9.0
+[2018-08-06 16:54:33 +0000] [26162] [INFO] Listening at: unix:/home/firetag13/firetag/firetag.sock (26162)
+[2018-08-06 16:54:33 +0000] [26162] [INFO] Using worker: sync
+[2018-08-06 16:54:33 +0000] [26166] [INFO] Booting worker with pid: 26166
+[2018-08-06 16:54:33 +0000] [26168] [INFO] Booting worker with pid: 26168
+[2018-08-06 16:56:23 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26166)
+[2018-08-06 19:56:23 +0300] [26166] [INFO] Worker exiting (pid: 26166)
+[2018-08-06 16:56:23 +0000] [26196] [INFO] Booting worker with pid: 26196
+[2018-08-06 17:03:46 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26196)
+[2018-08-06 20:03:46 +0300] [26196] [INFO] Worker exiting (pid: 26196)
+[2018-08-06 17:03:46 +0000] [26254] [INFO] Booting worker with pid: 26254
+[2018-08-06 17:09:12 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26254)
+[2018-08-06 20:09:12 +0300] [26254] [INFO] Worker exiting (pid: 26254)
+[2018-08-06 17:09:12 +0000] [26315] [INFO] Booting worker with pid: 26315
+[2018-08-06 17:14:57 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26168)
+[2018-08-06 20:14:57 +0300] [26168] [INFO] Worker exiting (pid: 26168)
+[2018-08-06 17:14:57 +0000] [26405] [INFO] Booting worker with pid: 26405
+[2018-08-06 17:27:36 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26315)
+[2018-08-06 20:27:36 +0300] [26315] [INFO] Worker exiting (pid: 26315)
+[2018-08-06 17:27:36 +0000] [26579] [INFO] Booting worker with pid: 26579
+[2018-08-06 17:28:35 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26405)
+[2018-08-06 20:28:35 +0300] [26405] [INFO] Worker exiting (pid: 26405)
+[2018-08-06 17:28:35 +0000] [26585] [INFO] Booting worker with pid: 26585
+[2018-08-06 17:28:40 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26579)
+[2018-08-06 20:28:40 +0300] [26579] [INFO] Worker exiting (pid: 26579)
+[2018-08-06 17:28:40 +0000] [26589] [INFO] Booting worker with pid: 26589
+[2018-08-06 17:29:07 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26585)
+[2018-08-06 20:29:07 +0300] [26585] [INFO] Worker exiting (pid: 26585)
+[2018-08-06 17:29:07 +0000] [26593] [INFO] Booting worker with pid: 26593
+[2018-08-06 17:29:11 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26589)
+[2018-08-06 20:29:11 +0300] [26589] [INFO] Worker exiting (pid: 26589)
+[2018-08-06 17:29:11 +0000] [26610] [INFO] Booting worker with pid: 26610
+[2018-08-06 17:30:09 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26610)
+[2018-08-06 20:30:09 +0300] [26610] [INFO] Worker exiting (pid: 26610)
+[2018-08-06 17:30:09 +0000] [26622] [INFO] Booting worker with pid: 26622
+[2018-08-06 17:30:49 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26593)
+[2018-08-06 20:30:49 +0300] [26593] [INFO] Worker exiting (pid: 26593)
+[2018-08-06 17:30:49 +0000] [26626] [INFO] Booting worker with pid: 26626
+[2018-08-06 17:33:12 +0000] [26162] [CRITICAL] WORKER TIMEOUT (pid:26626)
+[2018-08-06 20:33:12 +0300] [26626] [INFO] Worker exiting (pid: 26626)
+[2018-08-06 17:33:12 +0000] [26667] [INFO] Booting worker with pid: 26667
+[2018-08-06 20:57:24 +0300] [26622] [INFO] Worker exiting (pid: 26622)
+[2018-08-06 20:57:24 +0300] [26667] [INFO] Worker exiting (pid: 26667)
+[2018-08-06 17:57:24 +0000] [26162] [INFO] Handling signal: term
+[2018-08-06 17:57:24 +0000] [26162] [INFO] Shutting down: Master
+[2018-08-06 17:57:25 +0000] [27015] [INFO] Starting gunicorn 19.9.0
+[2018-08-06 17:57:25 +0000] [27015] [INFO] Listening at: unix:/home/firetag13/firetag/firetag.sock (27015)
+[2018-08-06 17:57:25 +0000] [27015] [INFO] Using worker: sync
+[2018-08-06 17:57:25 +0000] [27019] [INFO] Booting worker with pid: 27019
+[2018-08-06 17:57:25 +0000] [27021] [INFO] Booting worker with pid: 27021
+[2018-08-06 17:58:39 +0000] [27015] [CRITICAL] WORKER TIMEOUT (pid:27021)
+[2018-08-06 20:58:39 +0300] [27021] [INFO] Worker exiting (pid: 27021)
+[2018-08-06 17:58:39 +0000] [27047] [INFO] Booting worker with pid: 27047
+[2018-08-06 17:59:05 +0000] [27015] [CRITICAL] WORKER TIMEOUT (pid:27019)
+[2018-08-06 20:59:05 +0300] [27019] [INFO] Worker exiting (pid: 27019)
+[2018-08-06 17:59:05 +0000] [27055] [INFO] Booting worker with pid: 27055
+[2018-08-06 18:07:20 +0000] [27015] [CRITICAL] WORKER TIMEOUT (pid:27055)
+[2018-08-06 21:07:20 +0300] [27055] [INFO] Worker exiting (pid: 27055)
+[2018-08-06 18:07:20 +0000] [27224] [INFO] Booting worker with pid: 27224
