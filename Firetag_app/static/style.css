@@ -617,7 +617,7 @@ ul {
 	min-height: 717px;
 	position: relative;
 	z-index: 2;
-	margin: -16.8vw 0 -10vw 0px;
+	margin: -16.85vw 0 -10vw 0px;
 }
 
 .whatis_bg>img{
@@ -2143,7 +2143,6 @@ ul {
 	.about_text {
 		font-size: 16px;
 		height: 33vh;
-		width: 45vw;
 	}
 }
 
