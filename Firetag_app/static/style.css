@@ -432,9 +432,6 @@ input {
 
 .about_text {
 	height: 25vw;
-	max-width: 50vw;
-	min-width: 38vw;
-	width: 30vw;
 	font-size: 16px;
 	color: #FFFFFF;
 }
@@ -617,7 +614,7 @@ ul {
 	min-height: 717px;
 	position: relative;
 	z-index: 2;
-	margin: -16.85vw 0 -10vw 0px;
+	margin: -17vw 0 -10vw 0px;
 }
 
 .whatis_bg>img{
@@ -1116,7 +1113,7 @@ ul {
 }
 
 .equipment_tit>img {
-	width: 25%;
+	width: 10%;
 }
 
 .people {
@@ -1980,7 +1977,6 @@ ul {
 	.about_text {
 		font-size: 20px;
 		height: 33vw;
-		width: 40vw;
 		display: inline-block;
 		position: relative;
 	}
@@ -2065,7 +2061,6 @@ ul {
 	.about_text {
 		font-size: 16px;
 		height: 33vh;
-		width: 55vh;
 	}
 }
 
@@ -2105,9 +2100,7 @@ ul {
 	.about_text {
 		font-size: 16px;
 		height: 33vw;
-		width: 35vw;
 	}
-	
 	
 	.whatIsFiretag_content {
    		 margin-top: 12vw;
@@ -2159,7 +2152,6 @@ ul {
 	.mobile-tab a {
     	font-size: 2vw;
 	}
-
 
 	.popup_title { 
 	text-transform: uppercase;
