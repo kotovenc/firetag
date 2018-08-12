@@ -418,18 +418,6 @@ input {
 	text-align: center;
 }
 
-.about_tit>p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 3vw;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-
-.about_tit>img {
-	width: 10vw;
-	margin-top: -10px;
-}
-
 .about_text {
 	height: 25vw;
 	font-size: 16px;
@@ -646,7 +634,7 @@ ul {
 
 .whatis_title > p {
 	color: azure;
-	font-size: 1vw;
+	font-size: 1rem;
 	font-family: 'Open Sans';
 }
 
@@ -1546,9 +1534,14 @@ ul {
 		font-weight: bold;
 		margin: 0;
 	 }
+
+	 .about_tit>img {
+		width: 80px;
+	}
 	.whatis_title > h1 > b {
 		font-size: 21px;
 	}
+
 	.equipment_tit>img {
 		width: 80px;
 	}
