@@ -418,6 +418,18 @@ input {
 	text-align: center;
 }
 
+.about_tit>p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3vw;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.about_tit>img {
+	width: 7rem;
+	margin-top: -10px;
+}
+
 .about_text {
 	height: 25vw;
 	font-size: 16px;
