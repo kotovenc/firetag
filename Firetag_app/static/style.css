@@ -53,7 +53,7 @@ html {
 	position: relative;
 	right: 6%;
 	height: 70px;
-	width: 25%;
+	width: 30%;
     background-color: #1a1e23;
     padding: 0;
     clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
@@ -138,7 +138,7 @@ html {
 }
 
 .mobile-tab {	
-	clip-path: polygon(0 0, 81% 0, 68% 100%, 0% 100%);
+	clip-path: polygon(0 0, 88% 0, 68% 100%, 0% 100%);
 
 }
 .mobile-tab a{
@@ -152,7 +152,7 @@ html {
 
 .mobile-tab li{
 	list-style-type: none;
-	margin: 2% 0 2% 2%;
+	margin: 12% 0 2% 2%;
 	border-bottom: 1px solid grey; 
 }
 
@@ -636,12 +636,12 @@ ul {
 
 .whatis_title > h1 > b {
 	font-weight: 700;
-	font-size: 3.5vw;
+	font-size: 3vw;
 	color: #eb3741;
 }
 
 .whatis_title > img {
-	width: 10vw;
+	width: 23vw;
 }
 
 .whatis_title > p {
@@ -897,7 +897,7 @@ ul {
 	min-height: 683px;
 	position: relative;
 	z-index: 2;
-	margin: -16.8vw 0 -10vw 0px;
+	margin: -17vw 0 -10vw 0px;
 }
 
 .clubServices_tit {
@@ -1113,7 +1113,7 @@ ul {
 }
 
 .equipment_tit>img {
-	width: 10%;
+	width: 10vw;
 }
 
 .people {
@@ -1546,6 +1546,12 @@ ul {
 		font-weight: bold;
 		margin: 0;
 	 }
+	.whatis_title > h1 > b {
+		font-size: 21px;
+	}
+	.equipment_tit>img {
+		width: 80px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1796,7 +1802,7 @@ ul {
 	
 }
 
-@media (min-width: 768px) and (max-width: 868px) {
+@media (min-width: 767px) and (max-width: 868px) {
 	.whatIsFiretag_content{
 			margin-top: 10vw;
 	}
@@ -1868,7 +1874,7 @@ ul {
 	}
 	
 	.container {
-		width: 90%;
+		width: 100%;
 		
 	}
 
