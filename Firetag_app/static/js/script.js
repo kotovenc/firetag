@@ -204,14 +204,14 @@ $('.circle').click(function(eventObject){
 /*MENU*/
 
 $(document).ready(function() {
-	$('.mobile-tab').hide();
-	$('#toggle-btn').click(function(){
-		$('.mobile-tab').slideToggle("slow");
+	$('.mobile-menu').hide();
+	$('.burger').click(function(){
+		$('.mobile-menu').slideToggle("slow");
 	});
 
-	$('.menu-item').click(function(){
-				$('.mobile-tab').slideToggle("slow");
-			});
+	$('.mobile-menu').click(function(){
+		$('.mobile-menu').slideToggle("slow");
+	});
 
 	$('#more_btn').click(function(){
 	  $("#hidden").fadeIn("slow");
