@@ -29,7 +29,9 @@ SECRET_KEY = '=sr5cl2n=3)vbjcf1!n1@g-ad5swr+bqn3c$@$o83+!^sb#68g'
 DEBUG = True
 
 ALLOWED_HOSTS = ['142.93.33.152',
-                '127.0.0.1']
+                '127.0.0.1',
+		'www.club13msk.ru',
+		'club13msk.ru']
 
 
 # Application definition

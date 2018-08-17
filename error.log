@@ -103,3 +103,8 @@ KeyError: 'SECRET_KEY'
 [2018-08-06 18:07:20 +0000] [27015] [CRITICAL] WORKER TIMEOUT (pid:27055)
 [2018-08-06 21:07:20 +0300] [27055] [INFO] Worker exiting (pid: 27055)
 [2018-08-06 18:07:20 +0000] [27224] [INFO] Booting worker with pid: 27224
+[2018-08-17 13:30:50 +0000] [24767] [INFO] Starting gunicorn 19.9.0
+[2018-08-17 13:30:50 +0000] [24767] [INFO] Listening at: unix:/home/firetag13/firetag/firetag.sock (24767)
+[2018-08-17 13:30:50 +0000] [24767] [INFO] Using worker: sync
+[2018-08-17 13:30:50 +0000] [24772] [INFO] Booting worker with pid: 24772
+[2018-08-17 13:30:50 +0000] [24774] [INFO] Booting worker with pid: 24774
